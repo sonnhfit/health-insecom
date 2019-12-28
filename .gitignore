@@ -10,7 +10,8 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-#dist/
+
+dist/
 downloads/
 eggs/
 .eggs/
@@ -50,7 +51,8 @@ coverage.xml
 .pytest_cache/
 
 # Translations
-#*.mo
+
+*.mo
 *.pot
 
 # Django stuff:
@@ -116,6 +118,7 @@ dmypy.json
 
 
 .idea/
+
 
 # celery 
 .celerybeat.pid
