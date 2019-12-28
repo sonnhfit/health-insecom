@@ -1,3 +1,1325 @@
-<h1>
-    xin chao
-</h1>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="manifest" href="https://health.policybazaar.com/manifest.json">
+    <meta name="theme-color" content="#43ceb3">
+    <!-- <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap.js?v=543" src="../../static/prepayment/js/bootstrap.js"></script> -->
+    <base href=".">
+    <meta name="google-site-verification" content="R0LOTJf4ISWcLl_2PlGOJo_TRpysOeoNUllkRz9nK3U">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>PolicyBazaar Health Insurance: Cover Rs.5 Lac @Rs. 10/Day</title>
+    <meta name="keywords" content="health insurance, online health policy, buy medical plans, low cost mediclaim, medical insurance India, medical policies, quotes, health covers, compare health insurance, health insurance comparison, claims, premium">
+    <meta name="description" content="PolicyBazaar Health insurance takes care of your medical expenses and ensures that out-of-pocket expenses are curtailed upto the Sum insured.">
+    <link rel="stylesheet" href="../../static/prepayment/css/angular-rzslide-health.css">
+    <!-- <link type="text/css" rel="stylesheet" href=".css/angular-rzslide-health.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="scroll_remove" onclick="resetSession()">
+    <div ng-view="" style="height:100%;" class="ng-scope">
+        <link rel="stylesheet" type="text/css" href="../../static/prepayment/css/health-proposal-new.css" class="ng-scope">
+        <div ng-controller="PaymentFirstProposalIndexController" id="popupContainer" class="proposalbody ng-scope">
+            <div class="ng-scope">
+            </div>
+
+            <div class="proposerFormContainer">
+                <div class="row cAlign pTop">
+                    <div class="ng-scope">
+                        <!-- <link type="text/css" rel="stylesheet" href="./css/health-header.css" class="ng-scope"> -->
+                        <div layout="row" class="prequote-header-padding animated bounceInDown ng-scope" show-gt-sm="" hide-gt-sm="">
+                            <div hide="" show-gt-sm="" flex="">
+                                <a href="">
+                                    <img src="../../static/prepayment/images/pb-logo.png">
+                                </a>
+                            </div>
+
+                            <div hide="" show-gt-sm="" flex="" class="text-right">
+                                <div class="toll-box-new">
+                                    <div class="toll-text-new">Toll Free</div>
+                                    <div class="toll-box-open">
+                                        <div class="inner-toll-box">Have Not Paid Yet (Sales)
+                                            <br> <a href="tel:18004197715">1800-419-7715</a> </div>
+                                        <div class="inner-toll-box">Have Already Paid (Service)
+                                            <br> <a href="tel:18002585970">1800-258-5970</a> <span>(Use Registered Mobile Only)</span></div>
+                                        <div class="inner-toll-box"><a href="tel:911246656507">+91124-6656507</a>
+                                            <br><span>(For NRI's Also)</span></div>
+                                        <div class="inner-toll-box bdr-none-toll"><a href="tel:18005723919">1800-572-3919</a>
+                                            <br><span>(For Renewal Customers only)</span></div>
+                                    </div>
+                                </div>
+
+                                <div flex="" class="email-content2">
+                                    <a class="claim-link" href="http://claim.policybazaar.com/health.html" target="_blank"><i class="fa fa-umbrella"></i> Claim Assistance</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div layout="row" class="prequote-header-padding animated bounceInDown header-mob-fix ng-scope" hide-gt-sm="">
+                            <div hide-gt-sm="" flex="15">
+                                <a href="https://policybazaar.com/">
+                                    <img src="../../static/prepayment/images/logo_icon@2x.png" width="35" height="35">
+                                </a>
+                            </div>
+                            <div hide-gt-sm="" flex="60" style="text-align:left"><span class="text-header">Health Insurance</span> </div>
+
+                            <div hide-gt-sm="" flex="15" style="text-align:right">
+
+                            </div>
+
+                            <div hide-gt-sm="" flex="10" style="text-align:right">
+
+                                <div class="toll-box-new"> <i class="fa fa-phone top-header-icon" tabindex="0"></i>
+                                    <div class="toll-box-open">
+                                        <div class="inner-toll-box">Have Not Paid Yet (Sales)
+                                            <br> <a href="tel:18004197715">1800-419-7715</a></div>
+                                        <div class="inner-toll-box">Have Already Paid (Service)
+                                            <br> <a href="tel:18002585970">1800-258-5970</a> <span>(Use Registered Mobile Only)</span></div>
+                                        <div class="inner-toll-box"><a href="tel:911246656507">+91124-6656507</a>
+                                            <br><span>(For NRI's Also)</span></div>
+                                        <div class="inner-toll-box bdr-none-toll"><a href="tel:18005723919">1800-572-3919</a>
+                                            <br><span>(For Renewal Customers only)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div leyout="row">
+                    <div flex="" class="proposal_back proposal_noChat">
+                        <span>
+     <i class="fa fa-long-arrow-left" ></i> <a tabindex="0"> Go Back to the Quotes Screen</a>
+      </span>
+
+                    </div>
+                </div>
+
+                <div class="row cAlign pTB about-ie">
+                    <div class="proposal_profile_wrapper">
+                        <div class="ng-scope">
+
+                            <div class="booking-margin ng-scope">
+                                <div layout="row" layout-align="center center" class="proposal_booking_wrapper" layout-sm="column">
+                                    <div flex="20" flex-sm="100">
+                                        <div layout="row">
+                                            <div flex="" class="perposal-addons-plans ng-binding">
+
+                                                <em class="profile_number ng-binding">1</em>
+                                                <h2>
+                                                    <span>Self(35)</span>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div flex="80" flex-sm="100">
+                                        <div layout="row" layout-sm="column" class="perposal-main ng-scope">
+                                            <div flex="" class="perposal_profile_1 addons-right">
+                                                <h2 class="ng-scope">Health Insurance</h2>
+                                            </div>
+                                            <div flex="" flex-sm="100" class="perposal_profile_2 addons-right">
+                                                <div layout="row" layout-sm="row" class="proposal_row" layout-align="center center">
+                                                    <div flex="30">
+                                                        <img ng-src="supplier-logo/Religare.png" src="../../static/prepayment/images/Religare.png">
+                                                    </div>
+                                                    <div flex="60">
+                                                        <p class="ng-binding">NCB Super Premium </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div flex="" flex-sm="100">
+                                                <div layout="row" layout-sm="row" class="perposal_profile_3" layout-align="center center">
+                                                    <div flex="60">
+                                                        <p> <b>Sum Insured</b>
+                                                            <em class="ng-binding"> <i class="fa fa-inr" ></i>5.5 Lacs</em></p>
+                                                    </div>
+                                                    <div flex="40" class="total-new-amount">
+                                                        <h5 class="sp-right-proposal ng-binding"><i class="fa fa-inr" ></i> 30,869</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div layout="row" class="space-align-text ng-scope">
+                                <div flex="85" flex-sm="60">
+                                    <div class="total-new-amount">Total Premium</div>
+                                </div>
+                                <div flex="15" flex-sm="40" class="text-total-blue">
+                                    <div class="total-sum-amount ng-binding"> <i class="fa fa-inr"></i> 30,869</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col accordionBox">
+                        <div id="proposerForm" class="Accordion">
+                            <div class="ng-scope">
+                                <div id="tabMember" class="AccordionPane2 ng-scope AccordionPanelOpen">
+                                    <div class="AccordionPanelTab">
+                                        <h3>Insured Members </h3>
+                                    </div>
+                                    <div class="AccordionPanelContent AccordionContentShow">
+                                        <form novalidate="" class="ng-dirty ng-valid-parse ng-valid-invalidchar ng-valid-pattern ng-valid-invaliddate ng-valid-required ng-invalid ng-invalid-invalidrange">
+
+                                            <div>
+                                                <div class="proposal_member_wrapper ng-scope" ng-if="isPanFirst || !isMobile">
+                                                    <div>
+                                                        <div layout="row" class="proposal_member_header pan-sp" layout-align="cenrer center">
+
+                                                            <div flex="50" flex-sm="100" class="ng-scope">
+                                                                <h4>Email Address</h4>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="nomine-flex nominee-pan">
+
+                                                        <div class="par-input-contaner rel ng-scope" ng-if="isEditEmail">
+                                                            <div layout="row">
+                                                                <div flex="10"><em><i class="fa fa-envelope-o" ></i></em></div>
+                                                                <div flex="20"><span>Email Address</span></div>
+                                                                <div flex="auto">
+                                                                    <div class="box-email ng-binding">###s@gmail.com</div>
+                                                                    <div class="info-complete-edit" tabindex="0"> Edit </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+
+                                                    <div class="clear"></div>
+                                                </div>
+
+                                                <div class="proposal_member_wrapper ng-scope">
+                                                    <div layout="row" class="proposal_member_header" layout-align="cenrer center">
+                                                        <div flex="100" flex-sm="100">
+                                                            <h4 class="ng-binding">Self (48 <em>Years</em>)</h4></div>
+                                                    </div>
+                                                    <div layout="row" class="proposal_member_form">
+                                                        <div flex="">
+                                                            <duv layout="row" layout-sm="column">
+
+                                                                <div flex="">
+                                                                    <div class="par-input-contaner">
+                                                                        <div layout="row">
+                                                                            <div flex="10" flex-xs="20">
+                                                                                <em><i class="icons a_salutation" ></i></em>
+                                                                            </div>
+                                                                            <div flex="20" flex-xs="30"><span>Salutation</span></div>
+                                                                            <div flex="auto" class="proposal_select_box disable_inout">
+                                                                                <label></label>
+                                                                                Mrs.
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div flex="" class="pos-rel-last">
+                                                                    <div class="par-input-contaner">
+                                                                        <div layout="row">
+                                                                            <div flex="10">
+                                                                                <em><i class="full_name icons" ></i></em>
+                                                                            </div>
+                                                                            <div flex="20"><span>Full Name</span></div>
+
+                                                                            <div flex="auto">
+
+                                                                                <md-input-container class="md-default-theme md-input-has-value">
+
+                                                                                    <input name="membername-57032240" placeholder="Self Name" valid-char="" maximum-length="100" class="ng-pristine ng-untouched ng-valid md-input ng-valid-invalidchar ng-valid-required ng-valid-pattern" id="input_1" tabindex="0" required="required">
+
+                                                                                    <div>
+
+                                                                                    </div>
+                                                                                    <div class="singhle_line_space ng-hide ng-inactive">
+                                                                                        <div></div>
+                                                                                    </div>
+                                                                                </md-input-container>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </duv>
+                                                        </div>
+                                                    </div>
+                                                    <div layout="row" class="proposal_member_form">
+                                                        <div flex="">
+                                                            <div layout="row" layout-sm="column">
+                                                                <div flex="">
+                                                                    <div class="par-input-contaner" style="position: relative;">
+                                                                        <div layout="row">
+                                                                            <div flex="10"><em><i class="icons dbo" ></i></em></div>
+                                                                            <div flex="20"><span style="line-height: 15px; padding-top:5px; height: 88%;">Date of birth <br>DD-MM-YYYY</span></div>
+                                                                            <div flex="auto">
+                                                                                <md-input-container class="md-input-has-value md-default-theme">
+                                                                                    <input pikaday="DOB" name="dob-57032240" default-date="12/31/1970" min-date="12/28/1970" set-default-date="" max-date="12/27/1971" format="DD-MM-YYYY" placeholder="DD-MM-YYYY" date-validator="" ng-readonly="true" title="You dob is" class="ng-pristine ng-untouched ng-valid ng-isolate-scope md-input ng-valid-required ng-valid-invaliddate" aria-label="DD-MM-YYYY" id="input_2" tabindex="0" required="required" readonly="readonly">
+                                                                                    <div class="ng-hide ng-inactive">
+
+                                                                                    </div>
+                                                                                </md-input-container>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div flex="">
+                                                                    <div class="par-input-contaner">
+                                                                        <div layout="row">
+                                                                            <div flex="10"><em><i class="icons height"></i></em></div>
+                                                                            <div flex="20"><span>Height</span></div>
+                                                                            <div flex="auto">
+                                                                                <div layout="row">
+                                                                                    <div flex="">
+                                                                                        <md-input-container class="md-default-theme">
+                                                                                            <select name="feet-57032240" class="combobox1 combobox-full1 ng-pristine ng-untouched ng-valid ng-valid-required" tabindex="0" required="required">
+                                                                                                <option value="">Feet</option>
+                                                                                                <option value="1">
+                                                                                                    1 feet
+                                                                                                </option>
+                                                                                                <option value="2">
+                                                                                                    2 feet
+                                                                                                </option>
+                                                                                                <option value="3">
+                                                                                                    3 feet
+                                                                                                </option>
+                                                                                                <option value="4">
+                                                                                                    4 feet
+                                                                                                </option>
+                                                                                                <option value="5">
+                                                                                                    5 feet
+                                                                                                </option>
+                                                                                                <option value="6" selected="selected">
+                                                                                                    6 feet
+                                                                                                </option>
+                                                                                                <option value="7">
+                                                                                                    7 feet
+                                                                                                </option>
+                                                                                                <option value="8">
+                                                                                                    8 feet
+                                                                                                </option>
+                                                                                            </select>
+                                                                                            <div class="error_select ng-hide ng-inactive">
+
+                                                                                            </div>
+                                                                                        </md-input-container>
+                                                                                    </div>
+                                                                                    <div flex="">
+                                                                                        <md-input-container class="md-default-theme">
+                                                                                            <select name="inch-57032240" class="combobox1 combobox-full1 ng-pristine ng-untouched ng-valid ng-valid-required" tabindex="0" required="required">
+                                                                                                <option value="">Inch</option>
+                                                                                                <option value="1">
+                                                                                                    0 inch
+                                                                                                </option>
+                                                                                                <option value="2">
+                                                                                                    1 inch
+                                                                                                </option>
+                                                                                                <option value="3">
+                                                                                                    2 inch
+                                                                                                </option>
+                                                                                                <option value="4">
+                                                                                                    3 inch
+                                                                                                </option>
+                                                                                                <option value="5">
+                                                                                                    4 inch
+                                                                                                </option>
+                                                                                                <option value="6">
+                                                                                                    5 inch
+                                                                                                </option>
+                                                                                                <option value="7">
+                                                                                                    6 inch
+                                                                                                </option>
+                                                                                                <option value="8">
+                                                                                                    7 inch
+                                                                                                </option>
+                                                                                                <option value="9" selected="selected">
+                                                                                                    8 inch
+                                                                                                </option>
+                                                                                                <option value="10">
+                                                                                                    9 inch
+                                                                                                </option>
+                                                                                                <option value="11">
+                                                                                                    10 inch
+                                                                                                </option>
+                                                                                                <option value="12">
+                                                                                                    11 inch
+                                                                                                </option>
+                                                                                            </select>
+                                                                                            <div>
+
+                                                                                            </div>
+                                                                                        </md-input-container>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div layout="row" class="proposal_member_form">
+                                                        <div flex="">
+                                                            <div layout="row" layout-sm="column">
+                                                                <div class="nomine-flex">
+                                                                    <div class="par-input-contaner">
+                                                                        <div layout="row">
+                                                                            <div flex="10"><em><i class="icons weight" ></i></em></div>
+                                                                            <div flex="20"><span>Weight <b>(in KG)</b></span></div>
+                                                                            <div flex="auto">
+                                                                                <md-input-container class="md-default-theme md-input-has-value">
+                                                                                    <input name="weight-57032240" min-value="1" max-value="200" placeholder="KG" only-valid-number="" class="ng-pristine ng-untouched ng-valid md-input ng-valid-invalidrange ng-valid-required" aria-label="KG" id="input_3" tabindex="0" required="required">
+                                                                                    <div class="ng-hide ng-inactive">
+
+                                                                                    </div>
+                                                                                </md-input-container>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="nomine-flex ng-scope">
+                                                                    <div class="par-input-contaner">
+                                                                        <div layout="row">
+                                                                            <div flex="10"><em><i class="icons occupation" ></i></em></div>
+                                                                            <div flex="20"><span>Occupation</span></div>
+                                                                            <div flex="auto">
+                                                                                <md-input-container class="md-block md-default-theme">
+                                                                                    <select style="width: 96%;" name="occupationId-57032240" class="combobox1 combobox-full1 ng-pristine ng-untouched ng-valid ng-valid-required" tabindex="0" required="required">
+                                                                                        <option value="">Select</option>
+                                                                                        <option value="1">
+                                                                                            Salaried
+                                                                                        </option>
+                                                                                        <option value="2">
+                                                                                            Self Employed
+                                                                                        </option>
+                                                                                        <option value="3">
+                                                                                            Student
+                                                                                        </option>
+                                                                                        <option value="4" selected="selected">
+                                                                                            Retired
+                                                                                        </option>
+                                                                                        <option value="5">
+                                                                                            House wife
+                                                                                        </option>
+                                                                                    </select>
+                                                                                    <div>
+
+                                                                                    </div>
+                                                                                </md-input-container>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div layout="row" class="proposal_member_form">
+                                                        <div flex="">
+                                                            <div layout="row" layout-sm="column">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="proposal_member_wrapper ng-scope">
+                                                    <div layout="row" class="proposal_member_header" layout-align="cenrer center">
+
+                                                        <div flex="100" flex-sm="100">
+                                                            <h4 class="ng-binding">Spouse (49 <em>Years</em>)</h4></div>
+
+                                                    </div>
+                                                    <div layout="row" class="proposal_member_form">
+                                                        <div flex="">
+                                                            <duv layout="row" layout-sm="column">
+
+                                                                <div flex="">
+                                                                    <div class="par-input-contaner">
+                                                                        <div layout="row">
+                                                                            <div flex="10" flex-xs="20">
+                                                                                <em><i class="icons a_salutation" ></i></em>
+                                                                            </div>
+                                                                            <div flex="20" flex-xs="30"><span>Salutation</span></div>
+                                                                            <div flex="auto" class="proposal_select_box disable_inout">
+                                                                                <label>
+                                                                                    Mr.
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div flex="" class="pos-rel-last">
+                                                                    <div class="par-input-contaner">
+
+                                                                        <div layout="row">
+                                                                            <div flex="10">
+                                                                                <em><i class="full_name icons" ></i></em>
+                                                                            </div>
+                                                                            <div flex="20"><span>Full Name</span></div>
+
+                                                                            <div flex="auto">
+
+                                                                                <md-input-container class="md-default-theme md-input-has-value">
+
+                                                                                    <input name="membername-57032241" placeholder="Spouse Name" valid-char="" maximum-length="100" class="ng-pristine ng-untouched ng-valid md-input ng-valid-invalidchar ng-valid-required ng-valid-pattern" id="input_4" tabindex="0" required="required">
+
+                                                                                    <div>
+
+                                                                                    </div>
+                                                                                    <div class="singhle_line_space ng-hide ng-inactive">
+                                                                                        <div></div>
+                                                                                    </div>
+                                                                                </md-input-container>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </duv>
+                                                        </div>
+                                                    </div>
+                                                    <div layout="row" class="proposal_member_form">
+                                                        <div flex="">
+                                                            <div layout="row" layout-sm="column">
+                                                                <div flex="">
+                                                                    <div class="par-input-contaner" style="position: relative;">
+                                                                        <div layout="row">
+                                                                            <div flex="10"><em><i class="icons dbo" ></i></em></div>
+                                                                            <div flex="20"><span style="line-height: 15px; padding-top:5px; height: 88%;">Date of birth <br>DD-MM-YYYY</span></div>
+                                                                            <div flex="auto">
+                                                                                <md-input-container class="md-input-has-value md-default-theme">
+                                                                                    <input pikaday="DOB" name="dob-57032241" default-date="12/30/1969" min-date="12/28/1969" set-default-date="true" max-date="12/27/1970" format="DD-MM-YYYY" placeholder="DD-MM-YYYY" date-validator="" ng-readonly="true" title="You dob is" class="ng-untouched ng-valid ng-isolate-scope md-input ng-dirty ng-valid-parse ng-valid-required ng-valid-invaliddate" aria-label="DD-MM-YYYY" id="input_5" tabindex="0" required="required" readonly="readonly">
+                                                                                    <div class="ng-hide ng-inactive">
+
+                                                                                    </div>
+                                                                                </md-input-container>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div flex="">
+                                                                    <div class="par-input-contaner">
+                                                                        <div layout="row">
+                                                                            <div flex="10"><em><i class="icons height"></i></em></div>
+                                                                            <div flex="20"><span>Height</span></div>
+                                                                            <div flex="auto">
+                                                                                <div layout="row">
+                                                                                    <div flex="">
+                                                                                        <md-input-container class="md-default-theme">
+                                                                                            <select name="feet-57032241" class="combobox1 combobox-full1 ng-pristine ng-untouched ng-valid ng-valid-required" tabindex="0" required="required">
+                                                                                                <option value="">Feet</option>
+                                                                                                <option value="1">
+                                                                                                    1 feet
+                                                                                                </option>
+                                                                                                <option value="2">
+                                                                                                    2 feet
+                                                                                                </option>
+                                                                                                <option value="3">
+                                                                                                    3 feet
+                                                                                                </option>
+                                                                                                <option value="4" selected="selected">
+                                                                                                    4 feet
+                                                                                                </option>
+                                                                                                <option value="5">
+                                                                                                    5 feet
+                                                                                                </option>
+                                                                                                <option value="6">
+                                                                                                    6 feet
+                                                                                                </option>
+                                                                                                <option value="7">
+                                                                                                    7 feet
+                                                                                                </option>
+                                                                                                <option value="8">
+                                                                                                    8 feet
+                                                                                                </option>
+                                                                                            </select>
+                                                                                            <div class="error_select ng-hide ng-inactive">
+
+                                                                                            </div>
+                                                                                        </md-input-container>
+                                                                                    </div>
+                                                                                    <div flex="">
+                                                                                        <md-input-container class="md-default-theme">
+                                                                                            <select name="inch-57032241" class="combobox1 combobox-full1 ng-pristine ng-untouched ng-valid ng-valid-required" tabindex="0" required="required">
+                                                                                                <option value="">Inch</option>
+                                                                                                <option value="1">
+                                                                                                    0 inch
+                                                                                                </option>
+                                                                                                <option value="2">
+                                                                                                    1 inch
+                                                                                                </option>
+                                                                                                <option value="3" selected="selected">
+                                                                                                    2 inch
+                                                                                                </option>
+                                                                                                <option value="4">
+                                                                                                    3 inch
+                                                                                                </option>
+                                                                                                <option value="5">
+                                                                                                    4 inch
+                                                                                                </option>
+                                                                                                <option value="6">
+                                                                                                    5 inch
+                                                                                                </option>
+                                                                                                <option value="7">
+                                                                                                    6 inch
+                                                                                                </option>
+                                                                                                <option value="8">
+                                                                                                    7 inch
+                                                                                                </option>
+                                                                                                <option value="9">
+                                                                                                    8 inch
+                                                                                                </option>
+                                                                                                <option value="10">
+                                                                                                    9 inch
+                                                                                                </option>
+                                                                                                <option value="11">
+                                                                                                    10 inch
+                                                                                                </option>
+                                                                                                <option value="12">
+                                                                                                    11 inch
+                                                                                                </option>
+                                                                                            </select>
+                                                                                            <div>
+
+                                                                                            </div>
+                                                                                        </md-input-container>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div layout="row" class="proposal_member_form">
+                                                        <div flex="">
+                                                            <div layout="row" layout-sm="column">
+                                                                <div class="nomine-flex">
+                                                                    <div class="par-input-contaner">
+                                                                        <div layout="row">
+                                                                            <div flex="10"><em><i class="icons weight" ></i></em></div>
+                                                                            <div flex="20"><span>Weight <b>(in KG)</b></span></div>
+                                                                            <div flex="auto">
+                                                                                <md-input-container class="md-default-theme md-input-has-value">
+                                                                                    <input name="weight-57032241" min-value="1" max-value="200" placeholder="KG" only-valid-number="" class="ng-pristine ng-untouched ng-valid md-input ng-valid-invalidrange ng-valid-required" aria-label="KG" id="input_6" tabindex="0" required="required">
+                                                                                    <div class="ng-hide ng-inactive">
+
+                                                                                    </div>
+                                                                                </md-input-container>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="nomine-flex ng-scope">
+                                                                    <div class="par-input-contaner">
+                                                                        <div layout="row">
+                                                                            <div flex="10"><em><i class="icons occupation" ></i></em></div>
+                                                                            <div flex="20"><span>Occupation</span></div>
+                                                                            <div flex="auto">
+                                                                                <md-input-container class="md-block md-default-theme">
+                                                                                    <select style="width: 96%;" name="occupationId-57032241" class="combobox1 combobox-full1 ng-pristine ng-untouched ng-valid ng-valid-required" tabindex="0" required="required">
+                                                                                        <option value="">Select</option>
+                                                                                        <option value="1">
+                                                                                            Salaried
+                                                                                        </option>
+                                                                                        <option value="2">
+                                                                                            Self Employed
+                                                                                        </option>
+                                                                                        <option value="3" selected="selected">
+                                                                                            Student
+                                                                                        </option>
+                                                                                        <option value="4">
+                                                                                            Retired
+                                                                                        </option>
+                                                                                        <option value="5">
+                                                                                            House wife
+                                                                                        </option>
+                                                                                    </select>
+                                                                                    <div>
+
+                                                                                    </div>
+                                                                                </md-input-container>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div layout="row" class="proposal_member_form">
+                                                        <div flex="">
+                                                            <div layout="row" layout-sm="column">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div layout="row" class="proposal_member_form">
+                                                    <div flex="">
+                                                        <duv layout="row" layout-sm="column">
+
+                                                            <div flex="">
+                                                                <div class="par-input-contaner">
+                                                                    <div layout="row">
+                                                                        <div flex="10" flex-xs="20">
+                                                                            <em><i class="icons a_salutation" ></i></em>
+                                                                        </div>
+                                                                        <div flex="20" flex-xs="30"><span>Salutation</span></div>
+                                                                        <div flex="auto" class="proposal_select_box disable_inout">
+                                                                            <label>
+                                                                                Ms.
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div flex="" class="pos-rel-last">
+                                                                <div class="par-input-contaner">
+
+                                                                    <div layout="row">
+                                                                        <div flex="10">
+                                                                            <em><i class="full_name icons" ></i></em>
+                                                                        </div>
+                                                                        <div flex="20"><span>Full Name</span></div>
+
+                                                                        <div flex="auto">
+
+                                                                            <md-input-container class="md-default-theme md-input-has-value">
+
+                                                                                <input name="membername-57032242" placeholder="Daughter Name" valid-char="" maximum-length="100" class="ng-pristine ng-untouched ng-valid md-input ng-valid-invalidchar ng-valid-required ng-valid-pattern" id="input_7" tabindex="0" required="required">
+
+                                                                                <div>
+
+                                                                                </div>
+                                                                                <div class="singhle_line_space ng-hide ng-inactive">
+                                                                                    <div></div>
+                                                                                </div>
+                                                                            </md-input-container>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </duv>
+                                                    </div>
+                                                </div>
+                                                <div layout="row" class="proposal_member_form">
+                                                    <div flex="">
+                                                        <div layout="row" layout-sm="column">
+                                                            <div flex="">
+                                                                <div class="par-input-contaner" style="position: relative;">
+                                                                    <div layout="row">
+                                                                        <div flex="10"><em><i class="icons dbo" ></i></em></div>
+                                                                        <div flex="20"><span style="line-height: 15px; padding-top:5px; height: 88%;">Date of birth <br>DD-MM-YYYY</span></div>
+                                                                        <div flex="auto">
+                                                                            <md-input-container class="md-input-has-value md-default-theme">
+                                                                                <input pikaday="DOB" name="dob-57032242" default-date="12/30/2010" min-date="12/28/2010" set-default-date="true" max-date="12/27/2011" format="DD-MM-YYYY" placeholder="DD-MM-YYYY" date-validator="" ng-readonly="true" title="You dob is" class="ng-untouched ng-valid ng-isolate-scope md-input ng-dirty ng-valid-parse ng-valid-required ng-valid-invaliddate" aria-label="DD-MM-YYYY" id="input_8" tabindex="0" required="required" readonly="readonly">
+                                                                                <div class="ng-hide ng-inactive">
+
+                                                                                </div>
+                                                                            </md-input-container>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div flex="">
+                                                                <div class="par-input-contaner">
+                                                                    <div layout="row">
+                                                                        <div flex="10"><em><i class="icons height"></i></em></div>
+                                                                        <div flex="20"><span>Height</span></div>
+                                                                        <div flex="auto">
+                                                                            <div layout="row">
+                                                                                <div flex="">
+                                                                                    <md-input-container class="md-default-theme">
+                                                                                        <select name="feet-57032242" class="combobox1 combobox-full1 ng-pristine ng-untouched ng-valid ng-valid-required" tabindex="0" required="required">
+                                                                                            <option value="">Feet</option>
+                                                                                            <option value="1">
+                                                                                                1 feet
+                                                                                            </option>
+                                                                                            <option value="2">
+                                                                                                2 feet
+                                                                                            </option>
+                                                                                            <option value="3">
+                                                                                                3 feet
+                                                                                            </option>
+                                                                                            <option value="4">
+                                                                                                4 feet
+                                                                                            </option>
+                                                                                            <option value="5">
+                                                                                                5 feet
+                                                                                            </option>
+                                                                                            <option value="6" selected="selected">
+                                                                                                6 feet
+                                                                                            </option>
+                                                                                            <option value="7">
+                                                                                                7 feet
+                                                                                            </option>
+                                                                                            <option value="8">
+                                                                                                8 feet
+                                                                                            </option>
+                                                                                        </select>
+                                                                                        <div class="error_select ng-hide ng-inactive">
+
+                                                                                        </div>
+                                                                                    </md-input-container>
+                                                                                </div>
+                                                                                <div flex="">
+                                                                                    <md-input-container class="md-default-theme">
+                                                                                        <select name="inch-57032242" class="combobox1 combobox-full1 ng-pristine ng-untouched ng-valid ng-valid-required" tabindex="0" required="required">
+                                                                                            <option value="">Inch</option>
+                                                                                            <option value="1">
+                                                                                                0 inch
+                                                                                            </option>
+                                                                                            <option value="2">
+                                                                                                1 inch
+                                                                                            </option>
+                                                                                            <option value="3">
+                                                                                                2 inch
+                                                                                            </option>
+                                                                                            <option value="4">
+                                                                                                3 inch
+                                                                                            </option>
+                                                                                            <option value="5">
+                                                                                                4 inch
+                                                                                            </option>
+                                                                                            <option value="6">
+                                                                                                5 inch
+                                                                                            </option>
+                                                                                            <option value="7">
+                                                                                                6 inch
+                                                                                            </option>
+                                                                                            <option value="8" selected="selected">
+                                                                                                7 inch
+                                                                                            </option>
+                                                                                            <option value="9">
+                                                                                                8 inch
+                                                                                            </option>
+                                                                                            <option value="10">
+                                                                                                9 inch
+                                                                                            </option>
+                                                                                            <option value="11">
+                                                                                                10 inch
+                                                                                            </option>
+                                                                                            <option value="12">
+                                                                                                11 inch
+                                                                                            </option>
+                                                                                        </select>
+                                                                                        <div>
+
+                                                                                        </div>
+                                                                                    </md-input-container>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div layout="row" class="proposal_member_form">
+                                                    <div flex="">
+                                                        <div layout="row" layout-sm="column">
+                                                            <div class="nomine-flex">
+                                                                <div class="par-input-contaner">
+                                                                    <div layout="row">
+                                                                        <div flex="10"><em><i class="icons weight" ></i></em></div>
+                                                                        <div flex="20"><span>Weight <b>(in KG)</b></span></div>
+                                                                        <div flex="auto">
+                                                                            <md-input-container class="md-default-theme md-input-has-value">
+                                                                                <input name="weight-57032242" min-value="1" max-value="200" placeholder="KG" only-valid-number="" class="ng-pristine ng-untouched ng-valid md-input ng-valid-invalidrange ng-valid-required" aria-label="KG" id="input_9" tabindex="0" required="required">
+                                                                                <div class="ng-hide ng-inactive">
+
+                                                                                </div>
+                                                                            </md-input-container>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div layout="row" class="proposal_member_form">
+                                                    <div flex="">
+                                                        <div layout="row" layout-sm="column">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="proposal_member_wrapper ng-scope">
+                                                <div layout="row" class="proposal_member_header" layout-align="cenrer center">
+
+                                                    <div flex="100" flex-sm="100">
+                                                        <h4 class="ng-binding">Son (3 <em>Years</em>)</h4></div>
+
+                                                </div>
+                                                <div layout="row" class="proposal_member_form">
+                                                    <div flex="">
+                                                        <duv layout="row" layout-sm="column">
+
+                                                            <div flex="">
+                                                                <div class="par-input-contaner">
+                                                                    <div layout="row">
+                                                                        <div flex="10" flex-xs="20">
+                                                                            <em><i class="icons a_salutation" ></i></em>
+                                                                        </div>
+                                                                        <div flex="20" flex-xs="30"><span>Salutation</span></div>
+                                                                        <div flex="auto" class="proposal_select_box disable_inout">
+                                                                            <label>
+                                                                                Mr.
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div flex="" class="pos-rel-last">
+                                                                <div class="par-input-contaner">
+
+                                                                    <div layout="row">
+                                                                        <div flex="10">
+                                                                            <em><i class="full_name icons" ></i></em>
+                                                                        </div>
+                                                                        <div flex="20"><span>Full Name</span></div>
+
+                                                                        <div flex="auto">
+
+                                                                            <md-input-container class="md-default-theme md-input-has-value">
+
+                                                                                <input name="membername-57032243" placeholder="Son Name" valid-char="" maximum-length="100" class="ng-pristine ng-untouched ng-valid md-input ng-valid-invalidchar ng-valid-required ng-valid-pattern" id="input_10" tabindex="0" required="required">
+
+                                                                                <div>
+
+                                                                                </div>
+                                                                                <div class="singhle_line_space ng-hide ng-inactive">
+                                                                                    <div></div>
+                                                                                </div>
+                                                                            </md-input-container>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </duv>
+                                                    </div>
+                                                </div>
+                                                <div layout="row" class="proposal_member_form">
+                                                    <div flex="">
+                                                        <div layout="row" layout-sm="column">
+                                                            <div flex="">
+                                                                <div class="par-input-contaner" style="position: relative;">
+                                                                    <div layout="row">
+                                                                        <div flex="10"><em><i class="icons dbo" ></i></em></div>
+                                                                        <div flex="20"><span style="line-height: 15px; padding-top:5px; height: 88%;">Date of birth <br>DD-MM-YYYY</span></div>
+                                                                        <div flex="auto">
+                                                                            <md-input-container class="md-input-has-value md-default-theme">
+                                                                                <input pikaday="DOB" name="dob-57032243" default-date="12/29/2015" min-date="12/28/2015" set-default-date="true" max-date="12/27/2016" format="DD-MM-YYYY" placeholder="DD-MM-YYYY" date-validator="" ng-readonly="true" title="You dob is" class="ng-untouched ng-valid ng-isolate-scope md-input ng-dirty ng-valid-parse ng-valid-required ng-valid-invaliddate" aria-label="DD-MM-YYYY" id="input_11" tabindex="0" required="required" readonly="readonly">
+                                                                                <div class="ng-hide ng-inactive">
+
+                                                                                </div>
+                                                                            </md-input-container>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div flex="">
+                                                                <div class="par-input-contaner">
+                                                                    <div layout="row">
+                                                                        <div flex="10"><em><i class="icons height"></i></em></div>
+                                                                        <div flex="20"><span>Height</span></div>
+                                                                        <div flex="auto">
+                                                                            <div layout="row">
+                                                                                <div flex="">
+                                                                                    <md-input-container class="md-default-theme">
+                                                                                        <select name="feet-57032243" class="combobox1 combobox-full1 ng-pristine ng-untouched ng-valid ng-valid-required" tabindex="0" required="required">
+                                                                                            <option value="">Feet</option>
+                                                                                            <option value="1">
+                                                                                                1 feet
+                                                                                            </option>
+                                                                                            <option value="2">
+                                                                                                2 feet
+                                                                                            </option>
+                                                                                            <option value="3">
+                                                                                                3 feet
+                                                                                            </option>
+                                                                                            <option value="4" selected="selected">
+                                                                                                4 feet
+                                                                                            </option>
+                                                                                            <option value="5">
+                                                                                                5 feet
+                                                                                            </option>
+                                                                                            <option value="6">
+                                                                                                6 feet
+                                                                                            </option>
+                                                                                            <option value="7">
+                                                                                                7 feet
+                                                                                            </option>
+                                                                                            <option value="8">
+                                                                                                8 feet
+                                                                                            </option>
+                                                                                        </select>
+                                                                                        <div class="error_select ng-hide ng-inactive">
+
+                                                                                        </div>
+                                                                                    </md-input-container>
+                                                                                </div>
+                                                                                <div flex="">
+                                                                                    <md-input-container class="md-default-theme">
+                                                                                        <select name="inch-57032243" class="combobox1 combobox-full1 ng-pristine ng-untouched ng-valid ng-valid-required" tabindex="0" required="required">
+                                                                                            <option value="">Inch</option>
+                                                                                            <option value="1">
+                                                                                                0 inch
+                                                                                            </option>
+                                                                                            <option value="2">
+                                                                                                1 inch
+                                                                                            </option>
+                                                                                            <option value="3">
+                                                                                                2 inch
+                                                                                            </option>
+                                                                                            <option value="4">
+                                                                                                3 inch
+                                                                                            </option>
+                                                                                            <option value="5" selected="selected">
+                                                                                                4 inch
+                                                                                            </option>
+                                                                                            <option value="6">
+                                                                                                5 inch
+                                                                                            </option>
+                                                                                            <option value="7">
+                                                                                                6 inch
+                                                                                            </option>
+                                                                                            <option value="8">
+                                                                                                7 inch
+                                                                                            </option>
+                                                                                            <option value="9">
+                                                                                                8 inch
+                                                                                            </option>
+                                                                                            <option value="10">
+                                                                                                9 inch
+                                                                                            </option>
+                                                                                            <option value="11">
+                                                                                                10 inch
+                                                                                            </option>
+                                                                                            <option value="12">
+                                                                                                11 inch
+                                                                                            </option>
+                                                                                        </select>
+                                                                                        <div>
+
+                                                                                        </div>
+                                                                                    </md-input-container>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div layout="row" class="proposal_member_form">
+                                                    <div flex="">
+                                                        <div layout="row" layout-sm="column">
+                                                            <div class="nomine-flex">
+                                                                <div class="par-input-contaner">
+                                                                    <div layout="row">
+                                                                        <div flex="10"><em><i class="icons weight" ></i></em></div>
+                                                                        <div flex="20"><span>Weight <b>(in KG)</b></span></div>
+                                                                        <div flex="auto">
+                                                                            <md-input-container class="md-default-theme md-input-has-value md-input-invalid">
+                                                                                <input name="weight-57032243" min-value="1" max-value="200" placeholder="KG" only-valid-number="" class="md-input ng-dirty ng-valid-parse ng-valid-required ng-invalid ng-invalid-invalidrange ng-touched" aria-label="KG" id="input_12" tabindex="0" required="required" aria-required="false" aria-invalid="true">
+                                                                                <div style="">
+                                                                                </div>
+                                                                            </md-input-container>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div layout="row" class="proposal_member_form">
+                                                    <div flex="">
+                                                        <div layout="row" layout-sm="column">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                            </div>
+                                            <div class="row formFields cAlign" ngcloak="">
+                                                <button class="active_btn  md-button md-button" aria-label="Next Section" type="submit"><span>
+                  Next Section </span><i class="fa fa-arrow-right ng-scope"></i>
+                                                    <div loader-css="" class="ng-scope"></div>
+                                                </button>
+                                            </div>
+                                    </div>
+                                    </form>
+                                </div>
+                                <div class="ng-scope">
+                                    <style type="text/css" class="ng-scope">
+                                        .proposal_wummary_main p b {
+                                            float: left;
+                                            width: 65%;
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ng-scope">
+
+                            <div id="tabQuestion" class="AccordionPane2 ng-scope  AccordionPanelClosed" ng-if="isQuestionSectionVisiable">
+                                <div class="AccordionPanelTab">
+                                    <h3>Basic Medical History
+
+        </h3>
+                                </div>
+                                <div class="AccordionPanelContent AccordionContentHide">
+                                    <div class="row healthProfileWarper ng-scope supplierTopAreaBorder" ng-if="profileBookingMemberQuestionListRef.profileStatus &amp;&amp; profileBookingMemberQuestionListRef.isPaymentFirst">
+                                        <fieldset>
+                                            <legend>
+
+                                                <span>
+                  Self (48) ,                  
+               </span><span>
+                  Spouse (49) ,                  
+               </span><span>
+                  Daughter (8) ,                  
+               </span><span>
+                  Son (3)                  
+               </span>
+                                            </legend>
+                                            <form novalidate="" name="frmquestions" class="ng-pristine ng-scope ng-invalid ng-invalid-required">
+                                                <div class="cl"></div>
+
+                                                <div flex="" layout-sm="row" layout-align="end start" class="ng-scope">
+                                                    <div class="questionCol question_mobile question40"></div>
+                                                    <div class="medical_question medical_question_check" style="min-height:15px">
+                                                        <md-checkbox class="md-primary ng-pristine ng-untouched ng-valid md-default-theme" name="noToAll-42327364" aria-label="No for all members to all medical questions">
+                                                            <div class="md-container">
+                                                                <div class="md-icon"></div>
+                                                            </div>
+                                                            <div class="md-label">
+
+                                                            </div>
+                                                        </md-checkbox>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row questionRow ng-scope questionBottomBorder" style="min-height: 70px;">
+
+                                                    <div class="questionCol question40" ng-if="questions.question.QuestionID != 591 &amp;&amp; questions.question.QuestionID != 614 &amp;&amp; questions.question.QuestionID != 517 &amp;&amp; questions.question.QuestionID != 540 &amp;&amp; questions.question.QuestionID != 665 &amp;&amp; questions.question.QuestionID != 688">
+                                                        <strong>Q. </strong>Do you wish to port your existing policy?
+
+                                                    </div>
+
+                                                    <div aria-hidden="false">
+
+                                                        <div class="question_right_question ng-scope" ng-if="questions.question.QType == 1">
+                                                            <div class="checkboxCol normalCheck question_no">
+                                                                <md-checkbox class="md-primary ng-pristine ng-untouched md-default-theme ng-invalid ng-invalid-required" name="Question-1759" aria-label="No for all members">
+                                                                    <div class="md-container">
+                                                                        <div class="md-icon"></div>
+                                                                    </div>
+                                                                    <div class="md-label">
+                                                                        <span class="ng-scope">
+                                 No for all members
+                              </span>
+
+                                                                    </div>
+                                                                </md-checkbox>
+                                                            </div>
+                                                            <div class="ng-scope">
+                                                                <div class="checkboxCol normalCheck">
+                                                                    <md-checkbox class="md-primary ng-pristine ng-untouched md-default-theme ng-invalid ng-invalid-required" name="Question-1759">
+                                                                        <div class="md-container">
+                                                                            <div class="md-icon"></div>
+                                                                        </div>
+                                                                        <div class="md-label">
+                                                                            <span class="ng-scope">
+                                  Yes for all members
+                              </span>
+
+                                                                        </div>
+                                                                    </md-checkbox>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="ng-scope">
+                                                                <div class="checkboxCol normalCheck question_inner ng-scope">
+
+                                                                </div>
+                                                                <div class="checkboxCol normalCheck question_inner ng-scope">
+
+                                                                </div>
+                                                                <div class="checkboxCol normalCheck question_inner ng-scope">
+
+                                                                </div>
+                                                                <div class="checkboxCol normalCheck question_inner ng-scope">
+
+                                                                </div>
+                                                                <div class="cl"></div>
+                                                                <div class="chkError ng-hide ng-active">
+                                                                    <div ng-message="required" style="padding:3px 0 0 14px;" class="ng-scope">Required</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="ng-scope">
+                                    <style type="text/css" class="ng-scope">
+                                        .bajajMemberBox [disabled] {
+                                            color: #ccc;
+                                        }
+                                        
+                                        .sp-medical-box {
+                                            margin-left: 56px;
+                                        }
+                                        
+                                        @media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+                                            .sp-date-proposal {
+                                                width: 30%!Important;
+                                            }
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ng-scope">
+
+                        </div>
+                        <div class="ng-scope">
+
+                        </div>
+                        <div class="ng-scope">
+
+                            <div id="tabNominee" class="AccordionPane2 nobdr ng-scope AccordionPanelClosed">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ng-scope">
+                    <div class="cl"></div>
+                    <h4 style=" background: #fff;padding: 10px 20px; color: #2c3e50;   font-size: 14px; text-align: left;font-weight: 400; ">Declaration</h4>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div layout="row">
+        <div flex="">
+            <div class="ng-scope">
+                <div class="footer show ng-scope" id="footerBottom"><span>CIN: U74900HR2014PTC053454</span> | <a href="contact-us/" target="_blank">Contact Us</a> | <a href="legal-and-admin-policies/" target="_blank">Legal and Admin Policies</a> | <a href="legal-and-admin-policies/#license" target="_blank">IRDAI Web aggregator Registration No. 06 Registration Code No. IRDAI/WBA21/15 Valid till 13/07/2021</a>
+                    <p>Insurance is the subject matter of solicitation. Visitors are hereby informed that their information submitted on the website may be shared with insurers.</p>
+                    <p>Product information is authentic and solely based on the information received from the Insurer © Copyright 2008-2019 policybazaar.com. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="clear ng-scope"></div>
+    </div>
+    <div class="cl"></div>
+    <div class="seo_maincontaine" id="showSeoContant" style="display:none;">
+        <div class="seo_contaner">
+            <div class="seo_title" onclick="myFunction()">
+                <h1>Know More about Health Insurance</h1> </div>
+            <div class="seo_body" id="showSeo" style="display:none;">
+                <h2>Health Insurance</h2>
+                <ul>
+                    <li>Health insurance takes care of your medical expenses and ensures that out-of-pocket expenses are curtailed upto the Sum insured </li>
+                    <li>A health insurance policy ensures that you can avail cashless treatment at a network hospital without having to pay for them, typically covering 30 days and 60 days pre and post hospitalization, respectively, in most of the Health Insurance plans.</li>
+                    <li>One can add value to the Base Health Insurance Plan by complementing them with additional add-on products such as Personal Accident (PA) Cover, Critical Illness (CI) Cover and Top-Up. These products are available at a very nominal cost adding benefits which are not part of the Base Health Insurance plan. For Example, A PA plan helps by providing coverage for disability, which is typically not covered under Health Insurance. An individual need not go through any waiting period and medical checkups for a PA cover. </li>
+                    <li>One can also invest on one of the popular <a href="health-insurance/senior-citizen-health-insurance/" target="_blank">senior citizen health insurance</a> policies and ensure comprehensive security for their elderly parents or secure their old age that often brings along several ailments that require expensive medical treatment.</li>
+                </ul>
+                <h2>Benefits of Health Insurance</h2>
+                <ul>
+                    <li>Health Coverage: <a href="health-insurance/health-insurance-india/" target="_blank">Health Insurance</a> plans have enhanced offerings to cover a wide spectrum of requirements, like a <a href="health-insurance/family-health-insurance-plan/" target="_blank">family health plan</a> offers complete cover to all members of a family under a single umbrella.
+                        <ul class="child_sub">
+                            <li>Medical Bills: Coverage against medicinal expenses incurred, including pre and post hospitalization</li>
+                            <li>Pre-existing Diseases: Coverage for any pre-existing disease is provided to you after a certain waiting period.</li>
+                            <li>Claim Reimbursement: Coverage for expenses incurred for hospitalization due to a medical </li>
+                        </ul>
+                    </li>
+                    <li>Tax Rebate: Annual premium paid for health coverage are subject to tax exemption u/s 80D of ITA, 1961. Tax exemption ranges from Rs. 25,000 to Rs. 60,000.</li>
+                    <li>Other Benefits: As an innovative feature, OPD expenses are now covered under few Insurer plans and don’t require hospitalization for minimum 24 hrs to claim reimbursement. Stand alone OPD plans are also available in the market.</li>
+                </ul>
+                <h2>Key Points to Remember when Comparing Health Insurance</h2>
+                <ul>
+                    <li>Sum Insured by the policy </li>
+                    <li>Premium to be paid for the coverage</li>
+                    <li>List of network hospitals and Claim Settlement Ratio</li>
+                    <li>Sub-limits (if any) and Waiting Period (for PEDs)</li>
+                    <li>Co-pay </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PW5K" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <style type="text/css">
+        .footer {
+            text-align: center;
+            display: table;
+            padding: 0;
+            line-height: 10px;
+            width: 100%;
+            margin: 10px auto 15px;
+            color: #545454;
+            clear: both;
+            animation: fadein 2s;
+            font-size: 11px;
+            line-height: 17px;
+            padding-top: 10px;
+            -webkit-transition-delay: 2000s;
+            transition-delay: 2000s
+        }
+        
+        .quotes-list-header {
+            margin-bottom: 0
+        }
+        
+        .footer a {
+            color: #545454
+        }
+    </style>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=390787715141386&amp;ev=PageView&amp;noscript=1"></noscript>
+    <div class="pika-single is-hidden is-bound" style="position: static; left: auto; top: auto;"></div>
+    <div class="pika-single is-hidden is-bound" style="position: static; left: auto; top: auto;"></div>
+    <div class="pika-single is-hidden is-bound" style="position: static; left: auto; top: auto;"></div>
+    <div class="pika-single is-hidden is-bound" style="position: static; left: auto; top: auto;"></div>
+</body>
+
+</html>
