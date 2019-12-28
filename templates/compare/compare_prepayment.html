@@ -1,3 +1,4 @@
+{% load static %} 
 <!DOCTYPE html>
 
 <html>
@@ -15,7 +16,7 @@
     <title>PolicyBazaar Health Insurance: Cover Rs.5 Lac @Rs. 10/Day</title>
     <meta name="keywords" content="health insurance, online health policy, buy medical plans, low cost mediclaim, medical insurance India, medical policies, quotes, health covers, compare health insurance, health insurance comparison, claims, premium">
     <meta name="description" content="PolicyBazaar Health insurance takes care of your medical expenses and ensures that out-of-pocket expenses are curtailed upto the Sum insured.">
-    <link rel="stylesheet" href="../../static/prepayment/css/angular-rzslide-health.css">
+    <link rel="stylesheet" href=" {% static 'prepayment/css/angular-rzslide-health.css' %}">
     <!-- <link type="text/css" rel="stylesheet" href=".css/angular-rzslide-health.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -23,7 +24,7 @@
 
 <body id="scroll_remove" onclick="resetSession()">
     <div ng-view="" style="height:100%;" class="ng-scope">
-        <link rel="stylesheet" type="text/css" href="../../static/prepayment/css/health-proposal-new.css" class="ng-scope">
+        <link rel="stylesheet" type="text/css" href="{% static 'prepayment/css/health-proposal-new.css' %} " class="ng-scope">
         <div ng-controller="PaymentFirstProposalIndexController" id="popupContainer" class="proposalbody ng-scope">
             <div class="ng-scope">
             </div>
@@ -35,7 +36,7 @@
                         <div layout="row" class="prequote-header-padding animated bounceInDown ng-scope" show-gt-sm="" hide-gt-sm="">
                             <div hide="" show-gt-sm="" flex="">
                                 <a href="">
-                                    <img src="../../static/prepayment/images/pb-logo.png">
+                                    <img src="{% static 'prepayment/images/pb-logo.png' %}">
                                 </a>
                             </div>
 
@@ -65,7 +66,7 @@
                         <div layout="row" class="prequote-header-padding animated bounceInDown header-mob-fix ng-scope" hide-gt-sm="">
                             <div hide-gt-sm="" flex="15">
                                 <a href="https://policybazaar.com/">
-                                    <img src="../../static/prepayment/images/logo_icon@2x.png" width="35" height="35">
+                                    <img src="% static 'prepayment/images/logo_icon@2x.png' %" width="35" height="35">
                                 </a>
                             </div>
                             <div hide-gt-sm="" flex="60" style="text-align:left"><span class="text-header">Health Insurance</span> </div>
@@ -126,7 +127,7 @@
                                             <div flex="" flex-sm="100" class="perposal_profile_2 addons-right">
                                                 <div layout="row" layout-sm="row" class="proposal_row" layout-align="center center">
                                                     <div flex="30">
-                                                        <img ng-src="supplier-logo/Religare.png" src="../../static/prepayment/images/Religare.png">
+                                                        <img ng-src="supplier-logo/Religare.png" src="{% static 'prepayment/images/Religare.png' %}">
                                                     </div>
                                                     <div flex="60">
                                                         <p class="ng-binding">NCB Super Premium </p>
