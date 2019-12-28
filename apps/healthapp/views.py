@@ -17,3 +17,9 @@ class ComaprePrepayment(View):
     def get(self, request):
         return render(request,'compare/compare_prepayment.html')
     
+    
+class ComapreInsurance(View):
+
+    def get(self, request):
+        return render(request,'compare/compare_insurance.html')
+    
