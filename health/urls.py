@@ -19,5 +19,5 @@ from apps.healthapp import views as health_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('compare-health/', health_views.ComapreHealth.as_view()),
+    path('compare-health/', health_views.ComapreHealth.as_view(), name='compare_health_url'),
 ]
