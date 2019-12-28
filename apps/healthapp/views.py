@@ -10,3 +10,10 @@ class ComapreHealth(View):
     
     def post(self, request):
         pass
+
+
+class ComaprePrepayment(View):
+
+    def get(self, request):
+        return render(request,'compare/compare_prepayment.html')
+    
