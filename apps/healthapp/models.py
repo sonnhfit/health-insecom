@@ -9,3 +9,4 @@ class ProductCompareHealth(models.Model):
     cover = models.IntegerField(default=0)
     features = models.IntegerField(default=0)
     premium = models.IntegerField(default=0)
+
