@@ -26,7 +26,7 @@ class ParentPayment(models.Model):
     occupation = models.CharField(max_length=255)
 
 
-class childPayment(models.Model): 
+class ChildPayment(models.Model): 
     age = models.IntegerField(default=0)
     relationship = models.ForeignKey(ParentPayment, on_delete=models.CASCADE, null=True)
     name_user = models.CharField(max_length=255)
