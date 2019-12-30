@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('compare-health/', health_views.ComapreHealth.as_view(), name='compare_health_url', ),
     path('comapre-prepayment/', health_views.ComaprePrepayment.as_view()),
+
     path('health-insurance/', health_views.HealthInsurance.as_view()),
 ]

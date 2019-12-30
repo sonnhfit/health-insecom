@@ -1,0 +1,3653 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'compare/css/bulma.min.css' %}" as="style"/>
+    <link rel="stylesheet" href="{% static 'compare/css/bulma-tooltip.min.css' %}" as="style">
+    <link rel="stylesheet" href="{% static 'compare/css/css.css' %}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="user-scalable=no,initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>PolicyBazaar Health Insurance: Cover Rs.5 Lac @ Rs12.9/Day</title>
+    <script>
+      var a = `
+                                            <div class="div_members_container">
+                                                <label class="label_checkbox_member_cover">
+                                                    <input type="checkbox" class="checkbox_member_cover"
+                                                        checked=""><span class="span_member_type">Son</span></label>
+                                                <div class="select_members_age">
+                                                    <select>
+                                                        <option value="-1">Select age</option>
+                                                        <option value="0">3-12 months</option>
+                                                        <option value="1">1 yr</option>
+                                                        <option value="2">2 yr</option>
+                                                        <option value="3">3 yr</option>
+                                                        <option value="4">4 yr</option>
+                                                        <option value="5">5 yr</option>
+                                                        <option value="6">6 yr</option>
+                                                        <option value="7">7 yr</option>
+                                                        <option value="8">8 yr</option>
+                                                        <option value="9">9 yr</option>
+                                                        <option value="10">10 yr</option>
+                                                        <option value="11">11 yr</option>
+                                                        <option value="12">12 yr</option>
+                                                        <option value="13">13 yr</option>
+                                                        <option value="14">14 yr</option>
+                                                        <option value="15">15 yr</option>
+                                                        <option value="16">16 yr</option>
+                                                        <option value="17">17 yr</option>
+                                                        <option value="18">18 yr</option>
+                                                        <option value="19">19 yr</option>
+                                                        <option value="20">20 yr</option>
+                                                        <option value="21">21 yr</option>
+                                                        <option value="22">22 yr</option>
+                                                        <option value="23">23 yr</option>
+                                                        <option value="24">24 yr</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+ 
+        `;
+      var b = `
+        <div class="div_members_container">
+                                                <label class="label_checkbox_member_cover">
+                                                    <input type="checkbox" class="checkbox_member_cover"
+                                                        checked=""><span
+                                                        class="span_member_type">Daughter</span></label>
+                                                <div class="select_members_age">
+                                                    <select>
+                                                        <option value="-1">Select age</option>
+                                                        <option value="0">3-12 months</option>
+                                                        <option value="1">1 yr</option>
+                                                        <option value="2">2 yr</option>
+                                                        <option value="3">3 yr</option>
+                                                        <option value="4">4 yr</option>
+                                                        <option value="5">5 yr</option>
+                                                        <option value="6">6 yr</option>
+                                                        <option value="7">7 yr</option>
+                                                        <option value="8">8 yr</option>
+                                                        <option value="9">9 yr</option>
+                                                        <option value="10">10 yr</option>
+                                                        <option value="11">11 yr</option>
+                                                        <option value="12">12 yr</option>
+                                                        <option value="13">13 yr</option>
+                                                        <option value="14">14 yr</option>
+                                                        <option value="15">15 yr</option>
+                                                        <option value="16">16 yr</option>
+                                                        <option value="17">17 yr</option>
+                                                        <option value="18">18 yr</option>
+                                                        <option value="19">19 yr</option>
+                                                        <option value="20">20 yr</option>
+                                                        <option value="21">21 yr</option>
+                                                        <option value="22">22 yr</option>
+                                                        <option value="23">23 yr</option>
+                                                        <option value="24">24 yr</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+        `;
+
+      $(document).ready(function() {
+        var i = 0;
+        var y = 0;
+        $("#t1").click(function() {
+          i++;
+          if (i < 2) {
+            $("#the2").prepend(a);
+          }
+        });
+        $("#t2").click(function() {
+          y++;
+          if (y < 2) {
+            $("#the3").append(b);
+          }
+        });
+        // $("#t3").click(function () {
+        //     $("#the2,#the3").append(a,b);
+        // });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="quotes_main_container ">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a
+              class="navbar-item logo-box is-hidden-mobile is-hidden-tablet-only-custom"
+              href="https://www.policybazaar.com/"
+              >PolicyBazaar Health insurance takes care of your medical
+              expenses</a
+            >
+            <div class="arrow-back is-hidden-desktop-custom">Back 3</div>
+            <div class="fl content-h is-hidden-desktop-custom">
+              Health Insurance
+            </div>
+            <div class="custom-arrow">
+              <select
+                class="profile_group_mobile_select is-hidden-desktop-custom"
+              >
+                <option class="profile_option_group" value="base">Base</option>
+                <option class="profile_option_group" value="1Cr"
+                  >1Cr Cover</option
+                >
+                <option class="profile_option_group" value="topup"
+                  >Topup</option
+                >
+                <option class="profile_option_group" value="global"
+                  >Global</option
+                >
+              </select>
+            </div>
+          </div>
+          <div
+            class="navbar-end is-hidden-mobile is-hidden-tablet-only-custom is-hidden-custom"
+          >
+            <a
+              class="claim-link"
+              href="http://claim.policybazaar.com/health.html"
+              target="_blank"
+              rel="noreferrer"
+              >Claim Assistance</a
+            >
+            <div class="navbar-item has-dropdown is-hoverable is-right">
+              <a class="toll-link"> Toll Free</a>
+              <div class="navbar-dropdown toll-open">
+                <div class="inner-toll-box">
+                  Have Not Paid Yet (Sales)<a href="tel:18004197715"
+                    >1800-419-7715</a
+                  >
+                </div>
+                <div class="inner-toll-box">
+                  Have Already Paid (Service)<a href="tel:18002585970"
+                    >1800-258-5970</a
+                  >
+                  <span>(Use Registered Mobile Only)</span>
+                </div>
+                <div class="inner-toll-box">
+                  <a href="tel:911246656507">+91124-6656507</a
+                  ><span>(For NRI's Also)</span>
+                </div>
+                <div class="inner-toll-box bdr-none-toll">
+                  <a href="tel:18005723919">1800-572-3919</a
+                  ><span>(For Renewal Customers)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div
+          class="quotes_toolbar is-hidden-mobile is-hidden-tablet-only-custom"
+        >
+          <div class="insured_members_div">
+            <span class="span_insured_heading">Insured Members:</span
+            ><span class="span_insured_text"
+              >Self (48 Yrs), Spouse (49 Yrs) ...</span
+            >
+            <a
+              class="is-primary tooltip is-tooltip-multiline is-tooltip-bottom tip-box"
+              data-tooltip="Members: Self (48 Yrs), Spouse (49 Yrs), Daughter (8 Yrs), Son (3 Yrs)
+                    Location: Delhi(Delhi)"
+              ><img
+                alt="info"
+                src="{% static 'compare/images/info.svg' %}"
+                class="edit_info_svg"/></a
+
+            ><span
+              class="edit_insured_member"
+              data-toggle="modal"
+              data-target="#modalv"
+            >
+              Edit</span
+            >
+          </div>
+
+          <div class="modal" id="modalv" style="z-index: 9999;">
+            <div class="modal-dialog">
+              <div class="modal-content" id="modalco">
+                <div class="insurer_popup_heading">
+                  <span class="span_insurer_popup_heading"
+                    >Insured Members</span
+                  >
+                </div>
+                <div class="edit_profile_container">
+                  <div class="edit_profile_div">
+                    <div class="edit_profile_city">
+                      <span class="span_edit_profile_city">Your City</span>
+                      <label class="city-box-label">
+                        <input
+                          type="text"
+                          name="city"
+                          placeholder="Please enter your city"
+                          class="input is-medium is-primary box-city-in"
+                        />
+                        <div class="info-complete-edit-quote pointer">
+                          check
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="edit_profile_members">
+                    <span class="span_edit_profile_city">Members Covered</span>
+                    <div class="div_members_covered">
+                      <div class="div_members_row">
+                        <div class="div_members_container">
+                          <label class="label_checkbox_member_cover">
+                            <input
+                              type="checkbox"
+                              class="checkbox_member_cover"
+                              checked=""
+                            /><span class="span_member_type">Self</span></label
+                          >
+                          <div class="select_members_age">
+                            <select>
+                              <option value="-1">Select age</option>
+                              <option value="18">18 yr</option>
+                              <option value="19">19 yr</option>
+                              <option value="20">20 yr</option>
+                              <option value="21">21 yr</option>
+                              <option value="22">22 yr</option>
+                              <option value="23">23 yr</option>
+                              <option value="24">24 yr</option>
+                              <option value="25">25 yr</option>
+                              <option value="26">26 yr</option>
+                              <option value="27">27 yr</option>
+                              <option value="28">28 yr</option>
+                              <option value="29">29 yr</option>
+                              <option value="30">30 yr</option>
+                              <option value="31">31 yr</option>
+                              <option value="32">32 yr</option>
+                              <option value="33">33 yr</option>
+                              <option value="34">34 yr</option>
+                              <option value="35">35 yr</option>
+                              <option value="36">36 yr</option>
+                              <option value="37">37 yr</option>
+                              <option value="38">38 yr</option>
+                              <option value="39">39 yr</option>
+                              <option value="40">40 yr</option>
+                              <option value="41">41 yr</option>
+                              <option value="42">42 yr</option>
+                              <option value="43">43 yr</option>
+                              <option value="44">44 yr</option>
+                              <option value="45">45 yr</option>
+                              <option value="46">46 yr</option>
+                              <option value="47">47 yr</option>
+                              <option value="48">48 yr</option>
+                              <option value="49">49 yr</option>
+                              <option value="50">50 yr</option>
+                              <option value="51">51 yr</option>
+                              <option value="52">52 yr</option>
+                              <option value="53">53 yr</option>
+                              <option value="54">54 yr</option>
+                              <option value="55">55 yr</option>
+                              <option value="56">56 yr</option>
+                              <option value="57">57 yr</option>
+                              <option value="58">58 yr</option>
+                              <option value="59">59 yr</option>
+                              <option value="60">60 yr</option>
+                              <option value="61">61 yr</option>
+                              <option value="62">62 yr</option>
+                              <option value="63">63 yr</option>
+                              <option value="64">64 yr</option>
+                              <option value="65">65 yr</option>
+                              <option value="66">66 yr</option>
+                              <option value="67">67 yr</option>
+                              <option value="68">68 yr</option>
+                              <option value="69">69 yr</option>
+                              <option value="70">70 yr</option>
+                              <option value="71">71 yr</option>
+                              <option value="72">72 yr</option>
+                              <option value="73">73 yr</option>
+                              <option value="74">74 yr</option>
+                              <option value="75">75 yr</option>
+                              <option value="76">76 yr</option>
+                              <option value="77">77 yr</option>
+                              <option value="78">78 yr</option>
+                              <option value="79">79 yr</option>
+                              <option value="80">80 yr</option>
+                              <option value="81">81 yr</option>
+                              <option value="82">82 yr</option>
+                              <option value="83">83 yr</option>
+                              <option value="84">84 yr</option>
+                              <option value="85">85 yr</option>
+                              <option value="86">86 yr</option>
+                              <option value="87">87 yr</option>
+                              <option value="88">88 yr</option>
+                              <option value="89">89 yr</option>
+                              <option value="90">90 yr</option>
+                              <option value="91">91 yr</option>
+                              <option value="92">92 yr</option>
+                              <option value="93">93 yr</option>
+                              <option value="94">94 yr</option>
+                              <option value="95">95 yr</option>
+                              <option value="96">96 yr</option>
+                              <option value="97">97 yr</option>
+                              <option value="98">98 yr</option>
+                              <option value="99">99 yr</option>
+                              <option value="100">100 yr</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="div_members_container">
+                          <label class="label_checkbox_member_cover">
+                            <input
+                              type="checkbox"
+                              class="checkbox_member_cover"
+                              checked=""
+                            /><span class="span_member_type"
+                              >Spouse</span
+                            ></label
+                          >
+                          <div class="select_members_age">
+                            <select>
+                              <option value="-1">Select age</option>
+                              <option value="18">18 yr</option>
+                              <option value="19">19 yr</option>
+                              <option value="20">20 yr</option>
+                              <option value="21">21 yr</option>
+                              <option value="22">22 yr</option>
+                              <option value="23">23 yr</option>
+                              <option value="24">24 yr</option>
+                              <option value="25">25 yr</option>
+                              <option value="26">26 yr</option>
+                              <option value="27">27 yr</option>
+                              <option value="28">28 yr</option>
+                              <option value="29">29 yr</option>
+                              <option value="30">30 yr</option>
+                              <option value="31">31 yr</option>
+                              <option value="32">32 yr</option>
+                              <option value="33">33 yr</option>
+                              <option value="34">34 yr</option>
+                              <option value="35">35 yr</option>
+                              <option value="36">36 yr</option>
+                              <option value="37">37 yr</option>
+                              <option value="38">38 yr</option>
+                              <option value="39">39 yr</option>
+                              <option value="40">40 yr</option>
+                              <option value="41">41 yr</option>
+                              <option value="42">42 yr</option>
+                              <option value="43">43 yr</option>
+                              <option value="44">44 yr</option>
+                              <option value="45">45 yr</option>
+                              <option value="46">46 yr</option>
+                              <option value="47">47 yr</option>
+                              <option value="48">48 yr</option>
+                              <option value="49">49 yr</option>
+                              <option value="50">50 yr</option>
+                              <option value="51">51 yr</option>
+                              <option value="52">52 yr</option>
+                              <option value="53">53 yr</option>
+                              <option value="54">54 yr</option>
+                              <option value="55">55 yr</option>
+                              <option value="56">56 yr</option>
+                              <option value="57">57 yr</option>
+                              <option value="58">58 yr</option>
+                              <option value="59">59 yr</option>
+                              <option value="60">60 yr</option>
+                              <option value="61">61 yr</option>
+                              <option value="62">62 yr</option>
+                              <option value="63">63 yr</option>
+                              <option value="64">64 yr</option>
+                              <option value="65">65 yr</option>
+                              <option value="66">66 yr</option>
+                              <option value="67">67 yr</option>
+                              <option value="68">68 yr</option>
+                              <option value="69">69 yr</option>
+                              <option value="70">70 yr</option>
+                              <option value="71">71 yr</option>
+                              <option value="72">72 yr</option>
+                              <option value="73">73 yr</option>
+                              <option value="74">74 yr</option>
+                              <option value="75">75 yr</option>
+                              <option value="76">76 yr</option>
+                              <option value="77">77 yr</option>
+                              <option value="78">78 yr</option>
+                              <option value="79">79 yr</option>
+                              <option value="80">80 yr</option>
+                              <option value="81">81 yr</option>
+                              <option value="82">82 yr</option>
+                              <option value="83">83 yr</option>
+                              <option value="84">84 yr</option>
+                              <option value="85">85 yr</option>
+                              <option value="86">86 yr</option>
+                              <option value="87">87 yr</option>
+                              <option value="88">88 yr</option>
+                              <option value="89">89 yr</option>
+                              <option value="90">90 yr</option>
+                              <option value="91">91 yr</option>
+                              <option value="92">92 yr</option>
+                              <option value="93">93 yr</option>
+                              <option value="94">94 yr</option>
+                              <option value="95">95 yr</option>
+                              <option value="96">96 yr</option>
+                              <option value="97">97 yr</option>
+                              <option value="98">98 yr</option>
+                              <option value="99">99 yr</option>
+                              <option value="100">100 yr</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="div_members_row">
+                        <div class="div_members_container">
+                          <label class="label_checkbox_member_cover">
+                            <input
+                              type="checkbox"
+                              class="checkbox_member_cover"
+                            /><span class="span_member_type"
+                              >Father</span
+                            ></label
+                          >
+                          <div class="select_members_age">
+                            <select>
+                              <option value="-1">Select age</option>
+                              <option value="40">40 yr</option>
+                              <option value="41">41 yr</option>
+                              <option value="42">42 yr</option>
+                              <option value="43">43 yr</option>
+                              <option value="44">44 yr</option>
+                              <option value="45">45 yr</option>
+                              <option value="46">46 yr</option>
+                              <option value="47">47 yr</option>
+                              <option value="48">48 yr</option>
+                              <option value="49">49 yr</option>
+                              <option value="50">50 yr</option>
+                              <option value="51">51 yr</option>
+                              <option value="52">52 yr</option>
+                              <option value="53">53 yr</option>
+                              <option value="54">54 yr</option>
+                              <option value="55">55 yr</option>
+                              <option value="56">56 yr</option>
+                              <option value="57">57 yr</option>
+                              <option value="58">58 yr</option>
+                              <option value="59">59 yr</option>
+                              <option value="60">60 yr</option>
+                              <option value="61">61 yr</option>
+                              <option value="62">62 yr</option>
+                              <option value="63">63 yr</option>
+                              <option value="64">64 yr</option>
+                              <option value="65">65 yr</option>
+                              <option value="66">66 yr</option>
+                              <option value="67">67 yr</option>
+                              <option value="68">68 yr</option>
+                              <option value="69">69 yr</option>
+                              <option value="70">70 yr</option>
+                              <option value="71">71 yr</option>
+                              <option value="72">72 yr</option>
+                              <option value="73">73 yr</option>
+                              <option value="74">74 yr</option>
+                              <option value="75">75 yr</option>
+                              <option value="76">76 yr</option>
+                              <option value="77">77 yr</option>
+                              <option value="78">78 yr</option>
+                              <option value="79">79 yr</option>
+                              <option value="80">80 yr</option>
+                              <option value="81">81 yr</option>
+                              <option value="82">82 yr</option>
+                              <option value="83">83 yr</option>
+                              <option value="84">84 yr</option>
+                              <option value="85">85 yr</option>
+                              <option value="86">86 yr</option>
+                              <option value="87">87 yr</option>
+                              <option value="88">88 yr</option>
+                              <option value="89">89 yr</option>
+                              <option value="90">90 yr</option>
+                              <option value="91">91 yr</option>
+                              <option value="92">92 yr</option>
+                              <option value="93">93 yr</option>
+                              <option value="94">94 yr</option>
+                              <option value="95">95 yr</option>
+                              <option value="96">96 yr</option>
+                              <option value="97">97 yr</option>
+                              <option value="98">98 yr</option>
+                              <option value="99">99 yr</option>
+                              <option value="100">100 yr</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="div_members_container">
+                          <label class="label_checkbox_member_cover">
+                            <input
+                              type="checkbox"
+                              class="checkbox_member_cover"
+                            /><span class="span_member_type"
+                              >Mother</span
+                            ></label
+                          >
+                          <div class="select_members_age">
+                            <select>
+                              <option value="-1">Select age</option>
+                              <option value="40">40 yr</option>
+                              <option value="41">41 yr</option>
+                              <option value="42">42 yr</option>
+                              <option value="43">43 yr</option>
+                              <option value="44">44 yr</option>
+                              <option value="45">45 yr</option>
+                              <option value="46">46 yr</option>
+                              <option value="47">47 yr</option>
+                              <option value="48">48 yr</option>
+                              <option value="49">49 yr</option>
+                              <option value="50">50 yr</option>
+                              <option value="51">51 yr</option>
+                              <option value="52">52 yr</option>
+                              <option value="53">53 yr</option>
+                              <option value="54">54 yr</option>
+                              <option value="55">55 yr</option>
+                              <option value="56">56 yr</option>
+                              <option value="57">57 yr</option>
+                              <option value="58">58 yr</option>
+                              <option value="59">59 yr</option>
+                              <option value="60">60 yr</option>
+                              <option value="61">61 yr</option>
+                              <option value="62">62 yr</option>
+                              <option value="63">63 yr</option>
+                              <option value="64">64 yr</option>
+                              <option value="65">65 yr</option>
+                              <option value="66">66 yr</option>
+                              <option value="67">67 yr</option>
+                              <option value="68">68 yr</option>
+                              <option value="69">69 yr</option>
+                              <option value="70">70 yr</option>
+                              <option value="71">71 yr</option>
+                              <option value="72">72 yr</option>
+                              <option value="73">73 yr</option>
+                              <option value="74">74 yr</option>
+                              <option value="75">75 yr</option>
+                              <option value="76">76 yr</option>
+                              <option value="77">77 yr</option>
+                              <option value="78">78 yr</option>
+                              <option value="79">79 yr</option>
+                              <option value="80">80 yr</option>
+                              <option value="81">81 yr</option>
+                              <option value="82">82 yr</option>
+                              <option value="83">83 yr</option>
+                              <option value="84">84 yr</option>
+                              <option value="85">85 yr</option>
+                              <option value="86">86 yr</option>
+                              <option value="87">87 yr</option>
+                              <option value="88">88 yr</option>
+                              <option value="89">89 yr</option>
+                              <option value="90">90 yr</option>
+                              <option value="91">91 yr</option>
+                              <option value="92">92 yr</option>
+                              <option value="93">93 yr</option>
+                              <option value="94">94 yr</option>
+                              <option value="95">95 yr</option>
+                              <option value="96">96 yr</option>
+                              <option value="97">97 yr</option>
+                              <option value="98">98 yr</option>
+                              <option value="99">99 yr</option>
+                              <option value="100">100 yr</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="div_members_row">
+                        <div class="div_members_container">
+                          <label class="label_checkbox_member_cover">
+                            <input
+                              type="checkbox"
+                              class="checkbox_member_cover"
+                            /><span class="span_member_type"
+                              >Grand Father</span
+                            ></label
+                          >
+                          <div class="select_members_age">
+                            <select>
+                              <option value="-1">Select age</option>
+                              <option value="54">54 yr</option>
+                              <option value="55">55 yr</option>
+                              <option value="56">56 yr</option>
+                              <option value="57">57 yr</option>
+                              <option value="58">58 yr</option>
+                              <option value="59">59 yr</option>
+                              <option value="60">60 yr</option>
+                              <option value="61">61 yr</option>
+                              <option value="62">62 yr</option>
+                              <option value="63">63 yr</option>
+                              <option value="64">64 yr</option>
+                              <option value="65">65 yr</option>
+                              <option value="66">66 yr</option>
+                              <option value="67">67 yr</option>
+                              <option value="68">68 yr</option>
+                              <option value="69">69 yr</option>
+                              <option value="70">70 yr</option>
+                              <option value="71">71 yr</option>
+                              <option value="72">72 yr</option>
+                              <option value="73">73 yr</option>
+                              <option value="74">74 yr</option>
+                              <option value="75">75 yr</option>
+                              <option value="76">76 yr</option>
+                              <option value="77">77 yr</option>
+                              <option value="78">78 yr</option>
+                              <option value="79">79 yr</option>
+                              <option value="80">80 yr</option>
+                              <option value="81">81 yr</option>
+                              <option value="82">82 yr</option>
+                              <option value="83">83 yr</option>
+                              <option value="84">84 yr</option>
+                              <option value="85">85 yr</option>
+                              <option value="86">86 yr</option>
+                              <option value="87">87 yr</option>
+                              <option value="88">88 yr</option>
+                              <option value="89">89 yr</option>
+                              <option value="90">90 yr</option>
+                              <option value="91">91 yr</option>
+                              <option value="92">92 yr</option>
+                              <option value="93">93 yr</option>
+                              <option value="94">94 yr</option>
+                              <option value="95">95 yr</option>
+                              <option value="96">96 yr</option>
+                              <option value="97">97 yr</option>
+                              <option value="98">98 yr</option>
+                              <option value="99">99 yr</option>
+                              <option value="100">100 yr</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="div_members_container">
+                          <label class="label_checkbox_member_cover">
+                            <input
+                              type="checkbox"
+                              class="checkbox_member_cover"
+                            /><span class="span_member_type"
+                              >Grand Mother</span
+                            ></label
+                          >
+                          <div class="select_members_age">
+                            <select>
+                              <option value="-1">Select age</option>
+                              <option value="54">54 yr</option>
+                              <option value="55">55 yr</option>
+                              <option value="56">56 yr</option>
+                              <option value="57">57 yr</option>
+                              <option value="58">58 yr</option>
+                              <option value="59">59 yr</option>
+                              <option value="60">60 yr</option>
+                              <option value="61">61 yr</option>
+                              <option value="62">62 yr</option>
+                              <option value="63">63 yr</option>
+                              <option value="64">64 yr</option>
+                              <option value="65">65 yr</option>
+                              <option value="66">66 yr</option>
+                              <option value="67">67 yr</option>
+                              <option value="68">68 yr</option>
+                              <option value="69">69 yr</option>
+                              <option value="70">70 yr</option>
+                              <option value="71">71 yr</option>
+                              <option value="72">72 yr</option>
+                              <option value="73">73 yr</option>
+                              <option value="74">74 yr</option>
+                              <option value="75">75 yr</option>
+                              <option value="76">76 yr</option>
+                              <option value="77">77 yr</option>
+                              <option value="78">78 yr</option>
+                              <option value="79">79 yr</option>
+                              <option value="80">80 yr</option>
+                              <option value="81">81 yr</option>
+                              <option value="82">82 yr</option>
+                              <option value="83">83 yr</option>
+                              <option value="84">84 yr</option>
+                              <option value="85">85 yr</option>
+                              <option value="86">86 yr</option>
+                              <option value="87">87 yr</option>
+                              <option value="88">88 yr</option>
+                              <option value="89">89 yr</option>
+                              <option value="90">90 yr</option>
+                              <option value="91">91 yr</option>
+                              <option value="92">92 yr</option>
+                              <option value="93">93 yr</option>
+                              <option value="94">94 yr</option>
+                              <option value="95">95 yr</option>
+                              <option value="96">96 yr</option>
+                              <option value="97">97 yr</option>
+                              <option value="98">98 yr</option>
+                              <option value="99">99 yr</option>
+                              <option value="100">100 yr</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="div_members_row">
+                        <div class="div_members_container">
+                          <label class="label_checkbox_member_cover">
+                            <input
+                              type="checkbox"
+                              class="checkbox_member_cover"
+                              checked=""
+                            /><span class="span_member_type">Son</span></label
+                          >
+                          <div class="select_members_age">
+                            <select>
+                              <option value="-1">Select age</option>
+                              <option value="0">3-12 months</option>
+                              <option value="1">1 yr</option>
+                              <option value="2">2 yr</option>
+                              <option value="3">3 yr</option>
+                              <option value="4">4 yr</option>
+                              <option value="5">5 yr</option>
+                              <option value="6">6 yr</option>
+                              <option value="7">7 yr</option>
+                              <option value="8">8 yr</option>
+                              <option value="9">9 yr</option>
+                              <option value="10">10 yr</option>
+                              <option value="11">11 yr</option>
+                              <option value="12">12 yr</option>
+                              <option value="13">13 yr</option>
+                              <option value="14">14 yr</option>
+                              <option value="15">15 yr</option>
+                              <option value="16">16 yr</option>
+                              <option value="17">17 yr</option>
+                              <option value="18">18 yr</option>
+                              <option value="19">19 yr</option>
+                              <option value="20">20 yr</option>
+                              <option value="21">21 yr</option>
+                              <option value="22">22 yr</option>
+                              <option value="23">23 yr</option>
+                              <option value="24">24 yr</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="div_members_container">
+                          <label class="label_checkbox_member_cover">
+                            <input
+                              type="checkbox"
+                              class="checkbox_member_cover"
+                              checked=""
+                            /><span class="span_member_type"
+                              >Daughter</span
+                            ></label
+                          >
+                          <div class="select_members_age">
+                            <select>
+                              <option value="-1">Select age</option>
+                              <option value="0">3-12 months</option>
+                              <option value="1">1 yr</option>
+                              <option value="2">2 yr</option>
+                              <option value="3">3 yr</option>
+                              <option value="4">4 yr</option>
+                              <option value="5">5 yr</option>
+                              <option value="6">6 yr</option>
+                              <option value="7">7 yr</option>
+                              <option value="8">8 yr</option>
+                              <option value="9">9 yr</option>
+                              <option value="10">10 yr</option>
+                              <option value="11">11 yr</option>
+                              <option value="12">12 yr</option>
+                              <option value="13">13 yr</option>
+                              <option value="14">14 yr</option>
+                              <option value="15">15 yr</option>
+                              <option value="16">16 yr</option>
+                              <option value="17">17 yr</option>
+                              <option value="18">18 yr</option>
+                              <option value="19">19 yr</option>
+                              <option value="20">20 yr</option>
+                              <option value="21">21 yr</option>
+                              <option value="22">22 yr</option>
+                              <option value="23">23 yr</option>
+                              <option value="24">24 yr</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="div_members_row">
+                        <div
+                          id="the2"
+                          style="margin-bottom: 20px; float: left;"
+                        ></div>
+                        <div
+                          id="the3"
+                          style="margin-bottom: 20px; float: left;"
+                        ></div>
+                      </div>
+                      <div class="div_members_row">
+                        <div class="div_add_member_container">
+                          <div class="add_button_member">+</div>
+                          <span class="span_add_member" id="t1">Add Son</span>
+                        </div>
+                        <div class="div_add_member_container">
+                          <div class="add_button_member">+</div>
+                          <span class="span_add_member" id="t2"
+                            >Add Daughter</span
+                          >
+                        </div>
+                        <div class="div_add_member_container">
+                          <div class="add_button_member">+</div>
+                          <span class="span_add_member" id="t3"
+                            >Add Members</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="cover_buttons">
+                    <div class="close_button" data-dismiss="modal">Close</div>
+                    <div class="apply_button">Apply</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group_members_div"
+            data-toggle="modal"
+            data-target="#modalx"
+          >
+            <div class="group_container2">
+              <img
+                alt="edit"
+                src="{% static 'compare/images/edit_modify.svg' %}"
+                class="edit_modify"
+              /><span class="span_profile">Modify Group</span>
+            </div>
+          </div>
+
+          <div class="modal" id="modalx" style="z-index: 9999;">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="byop_popup_heading">
+                  <span class="span_insurer_popup_heading">Modify Group</span>
+                  <div class="div_add_group_container">
+                    <div class="add_button_member">+</div>
+                    <span class="span_add_member">Add Group</span>
+                  </div>
+                </div>
+                <div class="modify_group_div">
+                  <div class="modify_group_grid">
+                    <div class="modify_group_group_container">
+                      <div class="modify_group_group_content first">
+                        <span class="span_modify_group_group_content"
+                          >&nbsp;&nbsp;</span
+                        >
+                      </div>
+                      <div class="modify_group_group_content first">
+                        <span class="span_modify_group_group_content"
+                          >Self (48)</span
+                        >
+                      </div>
+                      <div class="modify_group_group_content first">
+                        <span class="span_modify_group_group_content"
+                          >Spouse (49)</span
+                        >
+                      </div>
+                      <div class="modify_group_group_content first">
+                        <span class="span_modify_group_group_content"
+                          >Daughter (8)</span
+                        >
+                      </div>
+                      <div class="modify_group_group_content first">
+                        <span class="span_modify_group_group_content"
+                          >Son (3)</span
+                        >
+                      </div>
+                    </div>
+                    <div class="modify_group_group_container">
+                      <div class="modify_group_group_content">
+                        <span class="span_modify_group_group_content"
+                          >Group 1</span
+                        >
+                      </div>
+                      <div class="modify_group_group_content">
+                        <label class="container-radio">
+                          <input
+                            type="radio"
+                            id="0"
+                            name="group 0"
+                            value="0"
+                            checked=""/><span class="checkmark-radio"></span
+                        ></label>
+                      </div>
+                      <div class="modify_group_group_content">
+                        <label class="container-radio">
+                          <input
+                            type="radio"
+                            id="1"
+                            name="group 1"
+                            value="0"
+                            checked=""/><span class="checkmark-radio"></span
+                        ></label>
+                      </div>
+                      <div class="modify_group_group_content">
+                        <label class="container-radio">
+                          <input
+                            type="radio"
+                            id="2"
+                            name="group 2"
+                            value="0"
+                            checked=""/><span class="checkmark-radio"></span
+                        ></label>
+                      </div>
+                      <div class="modify_group_group_content">
+                        <label class="container-radio">
+                          <input
+                            type="radio"
+                            id="3"
+                            name="group 3"
+                            value="0"
+                            checked=""/><span class="checkmark-radio"></span
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="cover_buttons">
+                    <div class="close_button" data-dismiss="modal">Close</div>
+                    <div class="apply_button">Apply</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="quotes_filterBar is-hidden-mobile is-hidden-tablet-only-custom"
+        >
+          <div class="quotes_sorting">
+            <div data-toggle="modal" data-target="#modale">
+              <img
+                alt="filter"
+                class="img_filter"
+                src="{% static 'compare/images/quotes_filter.svg' %}"
+              />
+            </div>
+
+            <div class="modal" id="modale" style="z-index: 9999;">
+              <div class="modal-dialog">
+                <div class="modal-content" id="modal1">
+                  <div class="sort_popup_heading">
+                    <span class="span_insurer_popup_heading">Sort By</span
+                    ><img
+                      alt="filter"
+                      class="img_filter_popup"
+                      src="{% static 'compare/images//quotes_filter.svg' %}"
+                    />
+                  </div>
+                  <div class="cover_div">
+                    <div class="filter_sort_type">
+                      <div class="filter_sort_relevance selected">
+                        <span class="span_filter_sort selected"
+                          >Relevance</span
+                        >
+                      </div>
+                      <div class="filter_sort_relevance ">
+                       <span class="span_filter_sort ">Low Premium</span>
+                      </div>
+                    </div>
+                    <div class="cover_buttons">
+                      <div class="close_button" data-dismiss="modal">Close</div>
+                      <div class="apply_button">Apply</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="quotes_filter_insurer1">
+            <li data-toggle="modal" data-target="#myModal">
+              <span class="span_quotes_filter_insurer">Insurers</span>
+              <div class="img_arrow"></div>
+            </li>
+
+            <div class="modal" id="myModal" style="z-index: 9999;">
+              <div class="modal-dialog">
+                <div class="modal-content" id="modal2">
+                  <div class="insurer_popup_heading">
+                    <span class="span_insurer_popup_heading">Insurers</span>
+                  </div>
+                  <div class="cover_div">
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon Aditya_Birla_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name">Aditya Birla</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon Apollo_Munich_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name"
+                              >Apollo Munich</span
+                            >
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon Bajaj_Allianz_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name"
+                              >Bajaj Allianz</span
+                            >
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon DIGIT_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name">DIGIT</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon Edelweiss_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name">Edelweiss</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon Future_Generali_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name"
+                              >Future Generali</span
+                            >
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon HDFC_ERGO_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name">HDFC ERGO</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon Iffco_Tokio_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name">Iffco Tokio</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div
+                            class="supplier_icon Kotak_General_Insurance_icon"
+                          ></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name"
+                              >Kotak General Insurance</span
+                            >
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div
+                            class="supplier_icon Liberty_General_Insurance_icon"
+                          ></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name"
+                              >Liberty General Insurance</span
+                            >
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon ManipalCigna_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name">ManipalCigna</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon Max_Bupa_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name">Max Bupa</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div
+                            class="supplier_icon New_India_Assurance_icon"
+                          ></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name"
+                              >New India Assurance</span
+                            >
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon Oriental_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name">Oriental</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon Raheja_QBE_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name">Raheja QBE</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon Religare_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name">Religare</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon Royal_Sundaram_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name"
+                              >Royal Sundaram</span
+                            >
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon SBI_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name">SBI</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon Star_Health_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name">Star Health</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="insurer_div">
+                      <div class="insurer_checkbox_container">
+                        <label class="insurer_checkbox_label">
+                          <input type="checkbox" class="checkbox_quotes" />
+                          <div class="supplier_icon Universal_Sompo_icon"></div>
+                          <div class="supplier_name">
+                            <span class="span_supplier_name"
+                              >Universal Sompo</span
+                            >
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="cover_buttons">
+                      <div class="close_button" data-dismiss="modal">Close</div>
+                      <div class="apply_button">Apply</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quotes_filter_insurer2 ">
+            <li data-toggle="modal" data-target="#modala">
+              <span class="span_quotes_filter_insurer ">Cover : </span
+              ><span class="span_insured_text ">₹ 5 L - ₹ 10 L</span>
+              <div class="img_arrow"></div>
+            </li>
+
+            <div class="modal" id="modala" style="z-index: 9999;">
+              <div class="modal-dialog">
+                <div class="modal-content" id="modal3">
+                  <div class="insurer_popup_heading">
+                    <span class="span_insurer_popup_heading"
+                      >Cover (in Lacs)</span
+                    >
+                  </div>
+                  <div class="cover_div">
+                    <div class="filter_mobile_drop">
+                      <span class="span_filter_cover_min ">₹ 3 - ₹ 5 Lacs</span
+                      ><span class="span_filter_cover_min selected"
+                        >₹ 5 - ₹ 6 Lacs</span
+                      ><span class="span_filter_cover_min "
+                        >₹ 5 - ₹ 10 Lacs</span
+                      >
+                    </div>
+                    <div class="filter_mobile_drop1">
+                      <span class="span_filter_cover_min "
+                        >₹ 10 - ₹ 15 Lacs</span
+                      ><span class="span_filter_cover_min "
+                        >₹ 15 - ₹ 25 Lacs</span
+                      ><span class="span_filter_cover_min ">₹ 25 Lacs +</span>
+                    </div>
+                    <div class="cover_range_show">
+                      <div class="filter_mobile_input_div">
+                        <input
+                          class="input_cover_range"
+                          type="number"
+                          value="5"
+                        /><span class="span_min_cover_mobile">Min(₹ 1L)</span>
+                      </div>
+                      <span class="span_cover_range">To</span>
+                      <div class="filter_mobile_input_div">
+                        <input
+                          class="input_cover_range"
+                          type="number"
+                          value="6"
+                        /><span class="span_min_cover_mobile">Max(₹ 600L)</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <div class="cover_buttons">
+                      <div class="close_button" data-dismiss="modal">Close</div>
+                      <div class="apply_button">Apply</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quotes_filter_insurer3 ">
+            <li data-toggle="modal" data-target="#modalb">
+              <span class="span_quotes_filter_insurer ">Features</span>
+              <div class="img_arrow"></div>
+            </li>
+
+            <div class="modal" id="modalb" style="z-index: 9999;">
+              <div class="modal-dialog">
+                <div class="modal-content" id="modal4">
+                  <div class="insurer_popup_heading">
+                    <span class="span_insurer_popup_heading">Features</span>
+                  </div>
+                  <div class="cover_div">
+                    <div class="filter_pre_existing">
+                      <span class="span_filter_pre_existing"
+                        >Pre Existing Conditions</span
+                      >
+                      <div
+                        class="filteo={this.closeFilterMobile}r_pre_existing_container"
+                      >
+                        <div class="checkbox_container_special">
+                          <label class="container-radio">
+                            <input
+                              type="radio"
+                              name="pre_existing"
+                              class="radio_filter"
+                              value="ped2years"
+                            /><span class="checkmark-radio"></span
+                            ><span class="special_filter"
+                              >Covered after 2 years</span
+                            ></label
+                          >
+                        </div>
+                        <div class="checkbox_container_special">
+                          <label class="container-radio">
+                            <input
+                              type="radio"
+                              name="pre_existing"
+                              class="radio_filter"
+                              value="ped3years"
+                            /><span class="checkmark-radio"></span
+                            ><span class="special_filter"
+                              >Covered after 3 years</span
+                            ></label
+                          >
+                        </div>
+                        <div class="checkbox_container_special">
+                          <label class="container-radio">
+                            <input
+                              type="radio"
+                              name="pre_existing"
+                              class="radio_filter"
+                              value="ped4years"
+                            /><span class="checkmark-radio"></span
+                            ><span class="special_filter">
+                              Covered after 4 years</span
+                            ></label
+                          >
+                        </div>
+                      </div>
+                      <span class="span_filter_pre_existing"
+                        >Hospital Room Eligibility</span
+                      >
+                      <div class="filter_pre_existing_container">
+                        <div class="checkbox_container_special">
+                          <label class="container-radio">
+                            <input
+                              type="radio"
+                              name="hospital"
+                              class="radio_filter"
+                              value="roomrent2000"
+                            /><span class="checkmark-radio"></span
+                            ><span class="special_filter">
+                              Atleast 2000/day or more</span
+                            ></label
+                          >
+                        </div>
+                        <div class="checkbox_container_special">
+                          <label class="container-radio">
+                            <input
+                              type="radio"
+                              name="hospital"
+                              class="radio_filter"
+                              value="roomrent3000"
+                            /><span class="checkmark-radio"></span
+                            ><span class="special_filter">
+                              Atleast 3000/day or more</span
+                            ></label
+                          >
+                        </div>
+                        <div class="checkbox_container_special">
+                          <label class="container-radio">
+                            <input
+                              type="radio"
+                              name="hospital"
+                              class="radio_filter"
+                              value="roomrent4000"
+                            /><span class="checkmark-radio"></span
+                            ><span class="special_filter"
+                              >Atleast 4000/day or more</span
+                            ></label
+                          >
+                        </div>
+                        <div class="checkbox_container_special">
+                          <label class="container-radio">
+                            <input
+                              type="radio"
+                              name="hospital"
+                              class="radio_filter"
+                              value="roomrent5000"
+                            /><span class="checkmark-radio"></span
+                            ><span class="special_filter"
+                              >Atleast 5000/day or more</span
+                            ></label
+                          >
+                        </div>
+                        <div class="checkbox_container_special">
+                          <label class="container-radio">
+                            <input
+                              type="radio"
+                              name="hospital"
+                              class="radio_filter"
+                              value="roomrent6000"
+                            /><span class="checkmark-radio"></span
+                            ><span class="special_filter"
+                              >Atleast 6000/day or more</span
+                            ></label
+                          >
+                        </div>
+                        <div class="checkbox_container_special">
+                          <label class="container-radio">
+                            <input
+                              type="radio"
+                              name="hospital"
+                              class="radio_filter"
+                              value="roomrent7000"
+                            /><span class="checkmark-radio"></span
+                            ><span class="special_filter"
+                              >Atleast 7000/day or more</span
+                            ></label
+                          >
+                        </div>
+                        <div class="checkbox_container_special">
+                          <label class="container-radio">
+                            <input
+                              type="radio"
+                              name="hospital"
+                              class="radio_filter"
+                              value="roomrent10000"
+                            /><span class="checkmark-radio"></span
+                            ><span class="special_filter">
+                              Atleast 10000/day or more</span
+                            ></label
+                          >
+                        </div>
+                        <div class="checkbox_container_special">
+                          <label class="container-radio">
+                            <input
+                              type="radio"
+                              name="hospital"
+                              class="radio_filter"
+                              value="roomrentshared"
+                            /><span class="checkmark-radio"></span
+                            ><span class="special_filter"
+                              >Shared Room</span
+                            ></label
+                          >
+                        </div>
+                        <div class="checkbox_container_special">
+                          <label class="container-radio">
+                            <input
+                              type="radio"
+                              name="hospital"
+                              class="radio_filter"
+                              value="roomrentprivate"
+                            /><span class="checkmark-radio"></span
+                            ><span class="special_filter">
+                              Private Room</span
+                            ></label
+                          >
+                        </div>
+                        <div class="checkbox_container_special">
+                          <label class="container-radio">
+                            <input
+                              type="radio"
+                              name="hospital"
+                              class="radio_filter"
+                              value="roomrentnolimit"
+                            /><span class="checkmark-radio"></span
+                            ><span class="special_filter">
+                              No Limits</span
+                            ></label
+                          >
+                        </div>
+                      </div>
+                      <span class="span_filter_pre_existing"
+                        >Special Features</span
+                      >
+                      <div class="checkbox_container_special">
+                        <label class="label_special_feature">
+                          <input type="checkbox" class="checkbox_filter" /><span
+                            class="span_special_feature"
+                          >
+                            Maternity cover</span
+                          ></label
+                        >
+                      </div>
+                      <div class="checkbox_container_special">
+                        <label class="label_special_feature">
+                          <input type="checkbox" class="checkbox_filter" /><span
+                            class="span_special_feature"
+                            >Restoration Benefits</span
+                          ></label
+                        >
+                      </div>
+                      <div class="checkbox_container_special">
+                        <label class="label_special_feature">
+                          <input type="checkbox" class="checkbox_filter" /><span
+                            class="span_special_feature"
+                            >No-CoPayments</span
+                          ></label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <div class="cover_buttons">
+                      <div class="close_button" data-dismiss="modal">Close</div>
+                      <div class="apply_button">Apply</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quotes_filter_insurer4 ">
+            <li data-toggle="modal" data-target="#modalc">
+              <span class="span_quotes_filter_insurer ">Premium : </span
+              ><span class="span_insured_text ">₹ 200 - ₹ 12,000</span>
+              <div class="img_arrow"></div>
+            </li>
+
+            <div class="modal" id="modalc" style="z-index: 9999;">
+              <div class="modal-dialog">
+                <div class="modal-content" id="modal5">
+                  <div class="insurer_popup_heading">
+                    <span class="span_insurer_popup_heading"
+                      >Premium (Monthly)</span
+                    >
+                  </div>
+                  <div class="cover_div">
+                    <div class="filter_mobile_drop">
+                      <span class="span_filter_cover_min ">₹ 300 - ₹ 500</span
+                      ><span class="span_filter_cover_min ">₹ 500 - ₹ 600</span
+                      ><span class="span_filter_cover_min "
+                        >₹ 500 - ₹ 1,000</span
+                      >
+                    </div>
+                    <div class="filter_mobile_drop1">
+                      <span class="span_filter_cover_min "
+                        >₹ 1,000 - ₹ 1,500</span
+                      ><span class="span_filter_cover_min "
+                        >₹ 1,500 - ₹ 2,500</span
+                      ><span class="span_filter_cover_min ">₹ 2,500 +</span>
+                    </div>
+                    <div class="cover_range_show">
+                      <div class="filter_mobile_input_div">
+                        <input
+                          class="input_cover_range"
+                          type="number"
+                          value="1247"
+                        /><span class="span_min_cover_mobile">Min(₹ 50)</span>
+                      </div>
+                      <span class="span_cover_range">To</span>
+                      <div class="filter_mobile_input_div">
+                        <input
+                          class="input_cover_range"
+                          type="number"
+                          value="3491"
+                        /><span class="span_min_cover_mobile"
+                          >Max(₹ 50,000)</span
+                        >
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="cover_buttons">
+                        <div class="close_button" data-dismiss="modal">
+                          Close
+                        </div>
+                        <div class="apply_button">Apply</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quotes_filter_insurer5 ">
+            <div data-toggle="modal" data-target="#modald">
+              <span class="span_quotes_filter_insurer ">Plan Type : </span
+              ><span class="span_insured_text ">Base</span>
+              <div class="img_arrow"></div>
+            </div>
+
+            <div class="modal" id="modald" style="z-index: 9999;">
+              <div class="modal-dialog">
+                <div class="modal-content" id="modal6">
+                  <div class="insurer_popup_heading">
+                    <span class="span_insurer_popup_heading">Plan Type</span>
+                  </div>
+                  <div class="insurer_div">
+                    <div class="filter_plan_name">
+                      <span class="span_filter_plan_name ">Base</span>
+                    </div>
+                  </div>
+                  <div class="insurer_div">
+                    <div class="filter_plan_name">
+                      <span class="span_filter_plan_name ">1Cr Cover</span>
+                    </div>
+                  </div>
+                  <div class="insurer_div">
+                    <div class="filter_plan_name">
+                      <span class="span_filter_plan_name ">Topup</span>
+                    </div>
+                  </div>
+                  <div class="insurer_div">
+                    <div class="filter_plan_name">
+                      <span class="span_filter_plan_name ">Global</span>
+                    </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <div class="cover_buttons">
+                      <div class="close_button" data-dismiss="modal">Close</div>
+                      <div class="apply_button">Apply</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="main_quotes_div is-hidden-mobile is-hidden-tablet-only-custom"
+        >
+          <div class="main_quotes_container">
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                        <img
+                          alt="Religare"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Religare.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name">NCB Super Premium </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span>
+                      <select class="quotes_select">
+                        <option
+                          value='{"SumInsured":600000,"FinalPremium":32640,"PlanUSPDetails":[{"PlanId":302,"SumInsured":600000,"USPID":1,"USPOrder":1,"USPShortText":"Claims Guarantee","USPText":"Guaranteed Approval by Insurer on all legitimate claims for policybazaar customers"},{"PlanId":302,"SumInsured":600000,"USPID":57,"USPOrder":3,"USPShortText":"Upto 150% No Claim Bonus","USPText":"Upto 150% No Claim Bonus"}]}'
+                        >
+                          ₹ 6 L</option
+                        >
+                        <option
+                          value='{"SumInsured":550000,"FinalPremium":30869,"PlanUSPDetails":[{"PlanId":302,"SumInsured":550000,"USPID":1,"USPOrder":1,"USPShortText":"Claims Guarantee","USPText":"Guaranteed Approval by Insurer on all legitimate claims for policybazaar customers"},{"PlanId":302,"SumInsured":550000,"USPID":57,"USPOrder":3,"USPShortText":"Upto 150% No Claim Bonus","USPText":"Upto 150% No Claim Bonus"}]}'
+                        >
+                          ₹ 5.5 L</option
+                        >
+                        <option
+                          value='{"SumInsured":500000,"FinalPremium":29098,"PlanUSPDetails":[{"PlanId":302,"SumInsured":500000,"USPID":1,"USPOrder":1,"USPShortText":"Claims Guarantee","USPText":"Guaranteed Approval by Insurer on all legitimate claims for policybazaar customers"},{"PlanId":302,"SumInsured":500000,"USPID":57,"USPOrder":3,"USPShortText":"Upto 150% No Claim Bonus","USPText":"Upto 150% No Claim Bonus"}]}'
+                        >
+                          ₹ 5 L</option
+                        >
+                      </select>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">203</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 2,573 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container">
+                    <span class="quotes_more_plans">+5 More Plans</span>
+                  </div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover">
+                      <div class="div_usp">
+                        <img
+                          alt="usp"
+                          src="{% static 'compare/images/claim.svg' %}"
+                          class="usp_svg"
+                        /><a
+                          class="is-primary tooltip is-tooltip-multiline is-tooltip-bottom tip-box"
+                          data-tooltip="Guaranteed Approval by Insurer on all legitimate claims for policybazaar customers"
+                          ><span class="span_usp">Claims Guarantee </span></a
+                        >
+                      </div>
+                    </div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 30,869 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1">
+                    Guaranteed Approval by Insurer on all legitimate claims for
+                    policybazaar customers<sup>#</sup><sup></sup
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                        
+                        <img
+                          alt="Max Bupa"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Max_Bupa.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name"
+                      >Health Companion with Recharge (Money Saver)
+                    </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 30 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">221</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 2,597 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container">
+                    <span class="quotes_more_plans">+3 More Plans</span>
+                  </div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover">
+                      <div class="div_usp">
+                        <img
+                          alt="usp"
+                          src="{% static 'compare/images/claim.svg' %}"
+                          class="usp_svg"
+                        /><a
+                          class="is-primary tooltip is-tooltip-multiline is-tooltip-bottom tip-box"
+                          data-tooltip="Guaranteed Approval by Insurer on all legitimate claims for policybazaar customers"
+                          ><span class="span_usp">Claims Guarantee </span></a
+                        >
+                      </div>
+                    </div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 31,162 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1">
+                    Guaranteed Approval by Insurer on all legitimate claims for
+                    policybazaar customers<sup>#</sup><sup></sup
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                       
+                        <img
+                          alt="Star Health"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Star_Health.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name">Health Optima </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 5 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">235</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 2,062 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container">
+                    <span class="quotes_more_plans">+1 More Plans</span>
+                  </div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover"></div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 24,733 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1"> <sup>#</sup><sup></sup></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                        
+                        <img
+                          alt="Apollo Munich"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Apollo_Munich.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name">Optima Restore </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 5 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">196</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 2,136 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container">
+                    <span class="quotes_more_plans">+4 More Plans</span>
+                  </div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover">
+                      <div class="div_usp">
+                        <img
+                          alt="usp"
+                          src="{% static 'compare/images/claim.svg' %}"
+                          class="usp_svg"
+                        /><a
+                          class="is-primary tooltip is-tooltip-multiline is-tooltip-bottom tip-box"
+                          data-tooltip="Guaranteed Approval by Insurer on all legitimate claims for policybazaar customers"
+                          ><span class="span_usp">Claims Guarantee </span></a
+                        >
+                      </div>
+                    </div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 25,632 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1">
+                    Guaranteed Approval by Insurer on all legitimate claims for
+                    policybazaar customers<sup>#</sup><sup></sup
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                        
+                        <img
+                          alt="HDFC ERGO"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/HDFC_ERGO.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name"
+                      >My:health Suraksha Silver Smart
+                    </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 5 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">351</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 2,756 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container"></div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover">
+                      <div class="div_usp">
+                        <img
+                          alt="usp"
+                          src="{% static 'compare/images/claim.svg' %}"
+                          class="usp_svg"
+                        /><a
+                          class="is-primary tooltip is-tooltip-multiline is-tooltip-bottom tip-box"
+                          data-tooltip="Guaranteed Approval by Insurer on all legitimate claims for policybazaar customers"
+                          ><span class="span_usp">Claims Guarantee </span></a
+                        >
+                      </div>
+                    </div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 33,062 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1">
+                    Guaranteed Approval by Insurer on all legitimate claims for
+                    policybazaar customers<sup>#</sup><sup></sup
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                        
+                        <img
+                          alt="Aditya Birla"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Aditya_Birla.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name"
+                      >Activ Assure - Diamond
+                    </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 5 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">251</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 2,036 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container">
+                    <span class="quotes_more_plans">+4 More Plans</span>
+                  </div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover">
+                      <div class="div_usp">
+                        <img
+                          alt="usp"
+                          src="{% static 'compare/images/claim.svg' %}"
+                          class="usp_svg"
+                        /><a
+                          class="is-primary tooltip is-tooltip-multiline is-tooltip-bottom tip-box"
+                          data-tooltip="Guaranteed Approval by Insurer on all legitimate claims for policybazaar customers"
+                          ><span class="span_usp">Claims Guarantee </span></a
+                        >
+                      </div>
+                    </div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 24,431 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1">
+                    Guaranteed Approval by Insurer on all legitimate claims for
+                    policybazaar customers<sup>#</sup><sup></sup
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                       
+                        <img
+                          alt="Royal Sundaram"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Royal_Sundaram.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name">Lifeline Supreme </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 5 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">206</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 1,693 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container"></div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover"></div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 20,310 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1"> <sup>#</sup><sup></sup></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                       
+                        <img
+                          alt="ManipalCigna"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/ManipalCigna.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name">ProHealth - Protect </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 5.5 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">298</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 1,990 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container">
+                    <span class="quotes_more_plans">+1 More Plans</span>
+                  </div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover">
+                      <div class="div_usp">
+                        <img
+                          alt="usp"
+                          src="{% static 'compare/images/claim.svg' %}"
+                          class="usp_svg"
+                        /><a
+                          class="is-primary tooltip is-tooltip-multiline is-tooltip-bottom tip-box"
+                          data-tooltip="Guaranteed Approval by Insurer on all legitimate claims for policybazaar customers"
+                          ><span class="span_usp">Claims Guarantee </span></a
+                        >
+                      </div>
+                    </div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 23,872 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1">
+                    Guaranteed Approval by Insurer on all legitimate claims for
+                    policybazaar customers<sup>#</sup><sup></sup
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                       
+                        <img
+                          alt="DIGIT"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/DIGIT.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name"
+                      >Option 1 - Maxima Restore Super
+                    </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span>
+                      <select class="quotes_select">
+                        <option
+                          value='{"SumInsured":600000,"FinalPremium":27958,"PlanUSPDetails":[]}'
+                        >
+                          ₹ 6 L</option
+                        >
+                        <option
+                          value='{"SumInsured":550000,"FinalPremium":27048,"PlanUSPDetails":[]}'
+                        >
+                          ₹ 5.5 L</option
+                        >
+                        <option
+                          value='{"SumInsured":500000,"FinalPremium":26066,"PlanUSPDetails":[]}'
+                        >
+                          ₹ 5 L</option
+                        >
+                      </select>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">279</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 2,173 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container">
+                    <span class="quotes_more_plans">+2 More Plans</span>
+                  </div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover"></div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 26,066 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1"> <sup>#</sup><sup></sup></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                        
+                        <img
+                          alt="Liberty General Insurance"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Liberty_General_Insurance.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name">Supreme </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span>
+                      <select class="quotes_select">
+                        <option
+                          value='{"SumInsured":600000,"FinalPremium":32246,"PlanUSPDetails":[]}'
+                        >
+                          ₹ 6 L</option
+                        >
+                        <option
+                          value='{"SumInsured":500000,"FinalPremium":29848,"PlanUSPDetails":[]}'
+                        >
+                          ₹ 5 L</option
+                        >
+                      </select>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">362</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 2,488 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container">
+                    <span class="quotes_more_plans">+3 More Plans</span>
+                  </div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover"></div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 29,848 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1"> <sup>#</sup><sup></sup></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                        
+                        <img
+                          alt="Bajaj Allianz"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Bajaj_Allianz.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name"
+                      >Health Guard Family Floater
+                    </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 5 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">278</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 2,103 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container">
+                    <span class="quotes_more_plans">+1 More Plans</span>
+                  </div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover"></div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 25,225 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1"> <sup>#</sup><sup></sup></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                        
+                        <img
+                          alt="Universal Sompo"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Universal_Sompo.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name"
+                      >Complete Healthcare Insurance Essential
+                    </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 5 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">186</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 1,779 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container">
+                    <span class="quotes_more_plans">+1 More Plans</span>
+                  </div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover"></div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 21,348 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1"> <sup>#</sup><sup></sup></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                       
+                        <img
+                          alt="Raheja QBE"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Raheja_QBE.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name"
+                      >Health QuBE Comprehensive
+                    </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span>
+                      <select class="quotes_select">
+                        <option
+                          value='{"SumInsured":600000,"FinalPremium":25320,"PlanUSPDetails":[{"PlanId":570,"SumInsured":600000,"USPID":60,"USPOrder":1,"USPShortText":"Non-Medical Expenses","USPText":"Non-Medical expenses (like Cotton gauze,syringes,needles,bandages etc.)also covered. Coverage amount starts with Rs 1000/day, maximum up to Rs 5000/day."},{"PlanId":570,"SumInsured":600000,"USPID":60,"USPOrder":3,"USPShortText":"Non-Medical Expenses","USPText":"Non-Medical expenses (like Cotton gauze,syringes,needles,bandages etc.)also covered. Coverage amount starts with Rs 1000/day, maximum up to Rs 5000/day."}]}'
+                        >
+                          ₹ 6 L</option
+                        >
+                        <option
+                          value='{"SumInsured":500000,"FinalPremium":23683,"PlanUSPDetails":[{"PlanId":570,"SumInsured":500000,"USPID":60,"USPOrder":1,"USPShortText":"Non-Medical Expenses","USPText":"Non-Medical expenses (like Cotton gauze,syringes,needles,bandages etc.)also covered. Coverage amount starts with Rs 1000/day, maximum up to Rs 5000/day."},{"PlanId":570,"SumInsured":500000,"USPID":60,"USPOrder":3,"USPShortText":"Non-Medical Expenses","USPText":"Non-Medical expenses (like Cotton gauze,syringes,needles,bandages etc.)also covered. Coverage amount starts with Rs 1000/day, maximum up to Rs 5000/day."}]}'
+                        >
+                          ₹ 5 L</option
+                        >
+                      </select>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">259</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 2,110 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container">
+                    <span class="quotes_more_plans">+2 More Plans</span>
+                  </div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover">
+                      <div class="div_usp">
+                        <img
+                          alt="usp"
+                          src="{% static 'compare/images/claim.svg' %}"
+                          class="usp_svg"
+                        /><a
+                          class="is-primary tooltip is-tooltip-multiline is-tooltip-bottom tip-box"
+                          data-tooltip="Non-Medical expenses (like Cotton gauze,syringes,needles,bandages etc.)also covered. Coverage amount starts with Rs 1000/day, maximum up to Rs 5000/day."
+                          ><span class="span_usp"
+                            >Non-Medical Expenses
+                          </span></a
+                        >
+                      </div>
+                    </div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 25,320 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1">
+                    Non-Medical expenses (like Cotton
+                    gauze,syringes,needles,bandages etc.)also covered. Coverage
+                    amount starts with Rs 1000/day, maximum up to Rs
+                    5000/day.<sup>#</sup><sup></sup
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                        
+                        <img
+                          alt="Edelweiss"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Edelweiss.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name"
+                      >Edelweiss Health Insurance- Silver (Health 241 Add-on)
+                    </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 5 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">246</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="div_effective">
+                      <span class="span_effective_price">₹ 2,360 monthly </span
+                      ><a
+                        class="is-primary tooltip is-tooltip-right effective_tooltip is-tooltip-multiline"
+                        data-tooltip="Assuming no claim in first year"
+                        ><span>Plan Info</span></a
+                      >
+                    </div>
+                    <div class="premium_button">
+                      ₹ 1,180 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container">
+                    <span class="quotes_more_plans">+3 More Plans</span>
+                  </div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover">
+                      <div class="div_usp">
+                        <img
+                          alt="usp"
+                          src="{% static 'compare/images/claim.svg' %}"
+                          class="usp_svg"
+                        /><a
+                          class="is-primary tooltip is-tooltip-multiline is-tooltip-bottom tip-box"
+                          data-tooltip="Assuming no claim in first year"
+                          ><span class="span_usp"
+                            >No premium for next Year
+                          </span></a
+                        >
+                      </div>
+                    </div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 28,319 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1">
+                    Assuming no claim in first year<sup>#</sup><sup></sup
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                      
+                        <img
+                          alt="New India Assurance"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/New_India_Assurance.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name">Floater Mediclaim </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 5 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">166</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 1,982 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container"></div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover"></div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 23,775 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1"> <sup>#</sup><sup></sup></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                       
+                        <img
+                          alt="Oriental"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Oriental.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name"
+                      >Happy Family Floater Gold
+                    </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 6 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">186</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 2,503 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container">
+                    <span class="quotes_more_plans">+1 More Plans</span>
+                  </div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover"></div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 30,036 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1"> <sup>#</sup><sup></sup></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                        
+                        <img
+                          alt="Future Generali"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Future_Generali.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name">Health Total Vital </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 5 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">312</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 1,977 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container"></div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover"></div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 23,721 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1"> <sup>#</sup><sup></sup></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                       
+                        <img
+                          alt="Iffco Tokio"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Iffco_Tokio.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name"
+                      >Family Health Protector
+                    </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span>
+                      <select class="quotes_select">
+                        <option
+                          value='{"SumInsured":600000,"FinalPremium":27517,"PlanUSPDetails":[]}'
+                        >
+                          ₹ 6 L</option
+                        >
+                        <option
+                          value='{"SumInsured":500000,"FinalPremium":23081,"PlanUSPDetails":[]}'
+                        >
+                          ₹ 5 L</option
+                        >
+                      </select>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">239</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 2,294 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container"></div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover"></div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 27,517 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1"> <sup>#</sup><sup></sup></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                        
+                        <img
+                          alt="Kotak General Insurance"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Kotak_General_Insurance.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name"
+                      >Kotak Health Care – Premium (Including Optional Pack 1)
+                    </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 5 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">193</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 2,823 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container"></div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover"></div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 33,866 annually</span>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content1 ">
+                  <img
+                    alt="usp"
+                    src="{% static 'compare/images/claim.svg' %}"
+                    class="usp_svg1"
+                  /><span class="max_condition1"> <sup>#</sup><sup></sup></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="dynamic_offer is-hidden-mobile is-hidden-tablet-only-custom"
+          >
+            <div class="small_chat_container">
+              <div class="promise-box">
+                <div class="right-box-banner">
+                  <h2>We promise to be with you</h2>
+                  <p>When you need us the most</p>
+                </div>
+                <ul class="right-box-bottom">
+                  <li>Policybazaar advantage</li>
+                  <li>24x7 Free support</li>
+                  <li>100% Claims Assistance</li>
+                  <li>Claims Guarantee from top insurers</li>
+                </ul>
+              </div>
+            </div>
+            <div class="small_chat_container">
+              <div class="small_chat_name_container">
+                <img
+                  alt="advisor"
+                  src="{% static 'compare/images/support.svg' %}"
+                  class="advisor_svg"
+                /><span class="span_chat_name">Jaspreet Kaur</span>
+                <div class="small_chat_rating">
+                  <div
+                    class="star-ratings"
+                    title="5 Stars"
+                    style="position: relative; box-sizing: border-box; display: inline-block;"
+                  >
+                    <svg
+                      class="star-grad"
+                      style="position: absolute; z-index: 0; width: 0px; height: 0px; visibility: hidden;"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="starGrad807827315779471"
+                          x1="0%"
+                          y1="0%"
+                          x2="100%"
+                          y2="0%"
+                        >
+                          <stop
+                            offset="0%"
+                            class="stop-color-first"
+                            style="stop-color: rgb(251, 181, 71); stop-opacity: 1;"
+                          ></stop>
+                          <stop
+                            offset="0%"
+                            class="stop-color-first"
+                            style="stop-color: rgb(251, 181, 71); stop-opacity: 1;"
+                          ></stop>
+                          <stop
+                            offset="0%"
+                            class="stop-color-final"
+                            style="stop-color: rgb(203, 211, 227); stop-opacity: 1;"
+                          ></stop>
+                          <stop
+                            offset="100%"
+                            class="stop-color-final"
+                            style="stop-color: rgb(203, 211, 227); stop-opacity: 1;"
+                          ></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <div
+                      class="star-container"
+                      style="position: relative; display: inline-block; vertical-align: middle; padding-right: 2px;"
+                    >
+                      <svg
+                        viewBox="0 0 51 48"
+                        class="widget-svg"
+                        style="width: 16px; height: 16px; transition: transform 0.2s ease-in-out 0s;"
+                      >
+                        <path
+                          class="star"
+                          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+                          style="fill: rgb(251, 181, 71); transition: fill 0.2s ease-in-out 0s;"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div
+                      class="star-container"
+                      style="position: relative; display: inline-block; vertical-align: middle; padding-left: 2px; padding-right: 2px;"
+                    >
+                      <svg
+                        viewBox="0 0 51 48"
+                        class="widget-svg"
+                        style="width: 16px; height: 16px; transition: transform 0.2s ease-in-out 0s;"
+                      >
+                        <path
+                          class="star"
+                          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+                          style="fill: rgb(251, 181, 71); transition: fill 0.2s ease-in-out 0s;"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div
+                      class="star-container"
+                      style="position: relative; display: inline-block; vertical-align: middle; padding-left: 2px; padding-right: 2px;"
+                    >
+                      <svg
+                        viewBox="0 0 51 48"
+                        class="widget-svg"
+                        style="width: 16px; height: 16px; transition: transform 0.2s ease-in-out 0s;"
+                      >
+                        <path
+                          class="star"
+                          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+                          style="fill: rgb(251, 181, 71); transition: fill 0.2s ease-in-out 0s;"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div
+                      class="star-container"
+                      style="position: relative; display: inline-block; vertical-align: middle; padding-left: 2px; padding-right: 2px;"
+                    >
+                      <svg
+                        viewBox="0 0 51 48"
+                        class="widget-svg"
+                        style="width: 16px; height: 16px; transition: transform 0.2s ease-in-out 0s;"
+                      >
+                        <path
+                          class="star"
+                          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+                          style="fill: rgb(251, 181, 71); transition: fill 0.2s ease-in-out 0s;"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div
+                      class="star-container"
+                      style="position: relative; display: inline-block; vertical-align: middle; padding-left: 2px;"
+                    >
+                      <svg
+                        viewBox="0 0 51 48"
+                        class="widget-svg"
+                        style="width: 16px; height: 16px; transition: transform 0.2s ease-in-out 0s;"
+                      >
+                        <path
+                          class="star"
+                          d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+                          style="fill: rgb(251, 181, 71); transition: fill 0.2s ease-in-out 0s;"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <span class="span_chat_sub_name agent_sub_name"
+                  >Health Insurance Assistant</span
+                >
+              </div>
+              <div class="small_chat_buttons">
+                <div class="small_chat_ask_query_button ">
+                  <img
+                    alt="chat"
+                    src="{% static 'compare/images//Chat.svg' %}"
+                    class="small_chat_svg"
+                  /><span class="span_ask_query">Ask a Question</span>
+                </div>
+                <div class="small_chat_request_call">
+                  <img
+                    alt="phone"
+                    src="{% static 'compare/images//phone.svg' %}"
+                    class="small_chat_svg"
+                  /><span class="span_request_call">Request a Call</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="call-me-fixed-quote  md-whiteframe-z1"
+              role="button"
+              tabindex="0"
+            >
+              <button type="button">
+                <em class="callback-icon"></em
+                ><span>Call Me <em class="now">Now</em></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-desk">
+          <p class="footer-desk-algin"># Terms and Conditions Apply</p>
+          <p class="footer-desk-algin">
+            * Guaranteed approval by Insurer on all legitimate claims for
+            Policybazaar customers
+          </p>
+          <p>
+            CIN: U74900HR2014PTC053454 |
+            <a
+              href="https://www.policybazaar.com/contact-us/"
+              target="_blank"
+              rel="noopener"
+              >Contact Us</a
+            >
+            |<a
+              href="https://www.policybazaar.com/legal-and-admin-policies/"
+              target="_blank"
+              rel="noopener"
+              >Legal and Admin Policies</a
+            >
+            |<a
+              href="https://www.policybazaar.com/legal-and-admin-policies/#license"
+              target="_blank"
+              rel="noopener"
+              >IRDAI Web aggregator Registration No. 06 Registration Code No.
+              IRDAI/WBA21/15 Valid till 13/07/2021</a
+            ><span class="blk-footer">
+              Insurance is the subject matter of solicitation. Visitors are
+              hereby informed that their information submitted on the website
+              may be shared with insurers.</span
+            >
+          </p>
+          <p class="footer-desk-gap">
+            Product information is authentic and solely based on the information
+            received from the Insurer © Copyright 2008-2019 policybazaar.com.
+            All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="quotes_compare_container is-hidden-mobile is-hidden-tablet-only-custom"
+      style="display: none;"
+    >
+      <div class="quotes_compare_div">
+        <div class="quotes_compare_plan_name">
+          <div class="quotes_compare_image">
+            <img
+              alt="Tôn giáo"
+              class="quotes_img_compare"
+              layout="fill"
+              src="https://health.policybazaar.com/insurer-logo/Religare.png"
+            />
+          </div>
+          <div class="quotes_compare_span_plan_name">
+            <span class="compare_plan_name2"
+              ><font style="vertical-align: inherit;"
+                ><font style="vertical-align: inherit;"
+                  >Siêu cao cấp NCB</font
+                ></font
+              ></span
+            >
+            <div class="cover_compare">
+              <span
+                ><font style="vertical-align: inherit;"
+                  ><font style="vertical-align: inherit;">Bao</font></font
+                ></span
+              ><font style="vertical-align: inherit;"
+                ><font style="vertical-align: inherit;"> $ </font></font
+              ><font style="vertical-align: inherit;"
+                ><font style="vertical-align: inherit;">5,5 L</font></font
+              >
+            </div>
+          </div>
+          <div class="div_remove_compare">
+            <span class="span_cross"
+              ><font style="vertical-align: inherit;"
+                ><font style="vertical-align: inherit;">x</font></font
+              ></span
+            >
+          </div>
+        </div>
+        <div class="quotes_compare_plan_add">
+          <div class="div_quote_add_compare">
+            <font style="vertical-align: inherit;"
+              ><font style="vertical-align: inherit;">+</font></font
+            >
+          </div>
+          <span class="quotes_compare_span_add_plan"
+            ><font style="vertical-align: inherit;"
+              ><font style="vertical-align: inherit;"
+                >Thêm kế hoạch để so sánh</font
+              ></font
+            ></span
+          >
+        </div>
+        <div class="quotes_compare_plan_add">
+          <div class="div_quote_add_compare">
+            <font style="vertical-align: inherit;"
+              ><font style="vertical-align: inherit;">+</font></font
+            >
+          </div>
+          <span class="quotes_compare_span_add_plan"
+            ><font style="vertical-align: inherit;"
+              ><font style="vertical-align: inherit;"
+                >Thêm kế hoạch để so sánh</font
+              ></font
+            ></span
+          >
+        </div>
+      </div>
+      <div class="quotes_compare_buttons_div">
+        <div class="quotes_compare_button">
+          <font style="vertical-align: inherit;"
+            ><font style="vertical-align: inherit;">So sánh ngay</font></font
+          >
+        </div>
+        <div class="quotes_compare_remove_button">
+          <font style="vertical-align: inherit;"
+            ><font style="vertical-align: inherit;">Đóng</font></font
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
