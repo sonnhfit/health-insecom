@@ -9,3 +9,29 @@ class ProductCompareHealth(models.Model):
     cover = models.IntegerField(default=0)
     features = models.IntegerField(default=0)
     premium = models.IntegerField(default=0)
+
+    
+class ParentPayment(models.Model): 
+    age = models.IntegerField(default=0)
+    id_products = models.ForeignKey(ProductCompareHealth)
+    email = models.CharField(max_length=255)
+    name_user = models.CharField(max_length=255)
+    full_name = models.CharField(max_length=255)
+    phone = models.CharField(max_length=255)
+    sex = models.BooleanField()
+    city = models.CharField(max_length=255)
+    birth_day = models.DateField(auto_now=True)
+    weight = models.IntegerField(default=0)
+    height = models.IntegerField(default=0)
+    occupation = models.CharField(max_length=255)
+
+
+class childPayment(models.Model): 
+    age = models.IntegerField(default=0)
+    id_parent_payment = models.ForeignKey(ParentPayment)
+    name_user = models.CharField(max_length=255)
+    full_name = models.CharField(max_length=255)
+    birth_day = models.DateField(auto_now=True)
+    weight = models.IntegerField(default=0)
+    height = models.IntegerField(default=0)
+    occupation = models.CharField(max_length=255,blank=True)
