@@ -197,22 +197,20 @@ ul.slot-details {
 ul.slot-details li {
 	list-style-type: none;
 	padding: 0 0 0 25px;
-	background: url(../../images/bu/health/call_schedule/call-sprite.svg) no-repeat -4px 0px;
+	background: url(/.staic/images/bu/health/call_schedule/call-sprite.svg) no-repeat -4px 0px;
 	width: auto;
 	display: inline-block;
 	margin-right: 65px;
 	line-height: 22px;
-        font-size: 14px;
+    font-size: 14px;
 }
 .contentStyles ul li::before{display: none}
 ul.slot-details li:last-child {
 	margin-right: 0px;
 }
-
 .hide-web {
 	display: none;
 }
-
 .call-box-wrap {
 	width: 100%;
 }
