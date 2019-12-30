@@ -10,8 +10,6 @@
 .no-webp #healthStepCJ .healthCj_form.family_floater:before{
 	 background-image: url(../../images/bu/health/health_one.png);
 }
-
-
 .no-webp #healthStepCJ .healthCj_form::after,
 .no-webp #healthStepCJ .healthCj_form.family_floater::after {
 	background-image: url("../../images/bu/health/slider-shape.png");
