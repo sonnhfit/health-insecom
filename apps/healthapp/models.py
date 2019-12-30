@@ -10,10 +10,10 @@ class ProductCompareHealth(models.Model):
     features = models.IntegerField(default=0)
     premium = models.IntegerField(default=0)
 
-    
+
 class ParentPayment(models.Model): 
     age = models.IntegerField(default=0)
-    id_products = models.ForeignKey(ProductCompareHealth)
+    id_products = models.ForeignKey(ProductCompareHealth, on_delete=models.CASCADE, null=True)
     email = models.CharField(max_length=255)
     name_user = models.CharField(max_length=255)
     full_name = models.CharField(max_length=255)
@@ -28,7 +28,7 @@ class ParentPayment(models.Model):
 
 class childPayment(models.Model): 
     age = models.IntegerField(default=0)
-    id_parent_payment = models.ForeignKey(ParentPayment)
+    relationship = models.ForeignKey(ParentPayment, on_delete=models.CASCADE, null=True)
     name_user = models.CharField(max_length=255)
     full_name = models.CharField(max_length=255)
     birth_day = models.DateField(auto_now=True)
