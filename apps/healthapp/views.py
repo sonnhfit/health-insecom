@@ -18,8 +18,8 @@ class ComaprePrepayment(View):
         return render(request,'compare/compare_prepayment.html')
     
     
-class ComapreInsurance(View):
+class HealthInsurance(View):
 
     def get(self, request):
-        return render(request,'compare/compare_insurance.html')
+        return render(request,'health/HealthInsurance.html')
     
