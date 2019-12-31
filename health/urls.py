@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from apps.healthapp import views as health_views
-
+from apps.apis import views as apis_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +25,5 @@ urlpatterns = [
     path('compare-health/', health_views.ComapreHealth.as_view(), name='compare_health_url'),
     path('health-oder/', health_views.HealthOder.as_view(), name='health-oder_url'),
     path('', health_views.HealthInsurance.as_view()),
+    path('health-add/', apis_views.GetAllCustomerParent.as_view()),
 ]
