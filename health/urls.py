@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from apps.healthapp import views as health_views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('compare-health/', health_views.ComapreHealth.as_view()),
-    path('comapre-prepayment/', health_views.ComaprePrepayment.as_view(), name='comapre-prepayment-url'),
-
-
+    path('comapre-prepayment/', health_views.ComaprePrepayment.as_view()),
     path('health-insurance/', health_views.HealthInsurance.as_view()),
+    path('compare-health/', health_views.ComapreHealth.as_view(), name='compare_health_url'),
+    path('health-oder/', health_views.HealthOder.as_view(), name='health-oder_url'),
+    path('', health_views.HealthInsurance.as_view()),
 ]

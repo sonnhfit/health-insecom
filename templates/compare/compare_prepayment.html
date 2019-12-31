@@ -104,13 +104,16 @@
                                                     </div>
                                                     <div class="nomine-flex nominee-pan">
 
-                                                        <div class="par-input-contaner rel ng-scope" ng-if="isEditEmail">
+                                                        <div class="par-input-contaner">
                                                             <div layout="row">
-                                                                <div flex="10"><em><i class="fa fa-envelope-o" ></i></em></div>
+                                                                <div flex="10"><em><i class="fa fa-envelope-o"></i></em></div>
                                                                 <div flex="20"><span>Email Address</span></div>
                                                                 <div flex="auto">
-                                                                    <div class="box-email ng-binding">###s@gmail.com</div>
-                                                                    <div class="info-complete-edit" tabindex="0"> Edit </div>
+                                                                    <md-input-container class="md-default-theme md-input-has-value">
+                                                                        <input  min-value="1" max-value="200" placeholder="Email" only-valid-number="" class="ng-pristine ng-untouched ng-valid md-input ng-valid-invalidrange ng-valid-required" aria-label="KG" id="input_6" tabindex="0" required="required">
+                                                                        <div class="ng-hide ng-inactive">
+                                                                        </div>
+                                                                    </md-input-container>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -183,12 +186,7 @@
                                                                             <div flex="10"><em><i class="icons dbo" ></i></em></div>
                                                                             <div flex="20"><span style="line-height: 15px; padding-top:5px; height: 88%;">Date of birth <br>DD-MM-YYYY</span></div>
                                                                             <div flex="auto">
-                                                                                <md-input-container class="md-input-has-value md-default-theme">
-                                                                                    <input pikaday="DOB" name="dob-57032240" default-date="12/31/1970" min-date="12/28/1970" set-default-date="" max-date="12/27/1971" format="DD-MM-YYYY" placeholder="DD-MM-YYYY" date-validator="" ng-readonly="true" title="You dob is" class="ng-pristine ng-untouched ng-valid ng-isolate-scope md-input ng-valid-required ng-valid-invaliddate" aria-label="DD-MM-YYYY" id="input_2" tabindex="0" required="required" readonly="readonly">
-                                                                                    <div class="ng-hide ng-inactive">
-
-                                                                                    </div>
-                                                                                </md-input-container>
+                                                                                <input type="date"  style="border: none; width: 100%; height: 100%; padding-left: 10px;">
                                                                             </div>
                                                                         </div>
 
@@ -419,12 +417,7 @@
                                                                             <div flex="10"><em><i class="icons dbo" ></i></em></div>
                                                                             <div flex="20"><span style="line-height: 15px; padding-top:5px; height: 88%;">Date of birth <br>DD-MM-YYYY</span></div>
                                                                             <div flex="auto">
-                                                                                <md-input-container class="md-input-has-value md-default-theme">
-                                                                                    <input pikaday="DOB" name="dob-57032241" default-date="12/30/1969" min-date="12/28/1969" set-default-date="true" max-date="12/27/1970" format="DD-MM-YYYY" placeholder="DD-MM-YYYY" date-validator="" ng-readonly="true" title="You dob is" class="ng-untouched ng-valid ng-isolate-scope md-input ng-dirty ng-valid-parse ng-valid-required ng-valid-invaliddate" aria-label="DD-MM-YYYY" id="input_5" tabindex="0" required="required" readonly="readonly">
-                                                                                    <div class="ng-hide ng-inactive">
-
-                                                                                    </div>
-                                                                                </md-input-container>
+                                                                                <input type="date"  style="border: none; width: 100%; height: 100%; padding-left: 10px;">
                                                                             </div>
                                                                         </div>
 
@@ -589,201 +582,6 @@
                                                     </div>
 
                                                 </div>
-                                                <div layout="row" class="proposal_member_form">
-                                                    <div flex="">
-                                                        <duv layout="row" layout-sm="column">
-
-                                                            <div flex="">
-                                                                <div class="par-input-contaner">
-                                                                    <div layout="row">
-                                                                        <div flex="10" flex-xs="20">
-                                                                            <em><i class="icons a_salutation" ></i></em>
-                                                                        </div>
-                                                                        <div flex="20" flex-xs="30"><span>Salutation</span></div>
-                                                                        <div flex="auto" class="proposal_select_box disable_inout">
-                                                                            <label>
-                                                                                Ms.
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div flex="" class="pos-rel-last">
-                                                                <div class="par-input-contaner">
-
-                                                                    <div layout="row">
-                                                                        <div flex="10">
-                                                                            <em><i class="full_name icons" ></i></em>
-                                                                        </div>
-                                                                        <div flex="20"><span>Full Name</span></div>
-
-                                                                        <div flex="auto">
-
-                                                                            <md-input-container class="md-default-theme md-input-has-value">
-
-                                                                                <input name="membername-57032242" placeholder="Daughter Name" valid-char="" maximum-length="100" class="ng-pristine ng-untouched ng-valid md-input ng-valid-invalidchar ng-valid-required ng-valid-pattern" id="input_7" tabindex="0" required="required">
-
-                                                                                <div>
-
-                                                                                </div>
-                                                                                <div class="singhle_line_space ng-hide ng-inactive">
-                                                                                    <div></div>
-                                                                                </div>
-                                                                            </md-input-container>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </duv>
-                                                    </div>
-                                                </div>
-                                                <div layout="row" class="proposal_member_form">
-                                                    <div flex="">
-                                                        <div layout="row" layout-sm="column">
-                                                            <div flex="">
-                                                                <div class="par-input-contaner" style="position: relative;">
-                                                                    <div layout="row">
-                                                                        <div flex="10"><em><i class="icons dbo" ></i></em></div>
-                                                                        <div flex="20"><span style="line-height: 15px; padding-top:5px; height: 88%;">Date of birth <br>DD-MM-YYYY</span></div>
-                                                                        <div flex="auto">
-                                                                            <md-input-container class="md-input-has-value md-default-theme">
-                                                                                <input pikaday="DOB" name="dob-57032242" default-date="12/30/2010" min-date="12/28/2010" set-default-date="true" max-date="12/27/2011" format="DD-MM-YYYY" placeholder="DD-MM-YYYY" date-validator="" ng-readonly="true" title="You dob is" class="ng-untouched ng-valid ng-isolate-scope md-input ng-dirty ng-valid-parse ng-valid-required ng-valid-invaliddate" aria-label="DD-MM-YYYY" id="input_8" tabindex="0" required="required" readonly="readonly">
-                                                                                <div class="ng-hide ng-inactive">
-
-                                                                                </div>
-                                                                            </md-input-container>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                            <div flex="">
-                                                                <div class="par-input-contaner">
-                                                                    <div layout="row">
-                                                                        <div flex="10"><em><i class="icons height"></i></em></div>
-                                                                        <div flex="20"><span>Height</span></div>
-                                                                        <div flex="auto">
-                                                                            <div layout="row">
-                                                                                <div flex="">
-                                                                                    <md-input-container class="md-default-theme">
-                                                                                        <select name="feet-57032242" class="combobox1 combobox-full1 ng-pristine ng-untouched ng-valid ng-valid-required" tabindex="0" required="required">
-                                                                                            <option value="">Feet</option>
-                                                                                            <option value="1">
-                                                                                                1 feet
-                                                                                            </option>
-                                                                                            <option value="2">
-                                                                                                2 feet
-                                                                                            </option>
-                                                                                            <option value="3">
-                                                                                                3 feet
-                                                                                            </option>
-                                                                                            <option value="4">
-                                                                                                4 feet
-                                                                                            </option>
-                                                                                            <option value="5">
-                                                                                                5 feet
-                                                                                            </option>
-                                                                                            <option value="6" selected="selected">
-                                                                                                6 feet
-                                                                                            </option>
-                                                                                            <option value="7">
-                                                                                                7 feet
-                                                                                            </option>
-                                                                                            <option value="8">
-                                                                                                8 feet
-                                                                                            </option>
-                                                                                        </select>
-                                                                                        <div class="error_select ng-hide ng-inactive">
-
-                                                                                        </div>
-                                                                                    </md-input-container>
-                                                                                </div>
-                                                                                <div flex="">
-                                                                                    <md-input-container class="md-default-theme">
-                                                                                        <select name="inch-57032242" class="combobox1 combobox-full1 ng-pristine ng-untouched ng-valid ng-valid-required" tabindex="0" required="required">
-                                                                                            <option value="">Inch</option>
-                                                                                            <option value="1">
-                                                                                                0 inch
-                                                                                            </option>
-                                                                                            <option value="2">
-                                                                                                1 inch
-                                                                                            </option>
-                                                                                            <option value="3">
-                                                                                                2 inch
-                                                                                            </option>
-                                                                                            <option value="4">
-                                                                                                3 inch
-                                                                                            </option>
-                                                                                            <option value="5">
-                                                                                                4 inch
-                                                                                            </option>
-                                                                                            <option value="6">
-                                                                                                5 inch
-                                                                                            </option>
-                                                                                            <option value="7">
-                                                                                                6 inch
-                                                                                            </option>
-                                                                                            <option value="8" selected="selected">
-                                                                                                7 inch
-                                                                                            </option>
-                                                                                            <option value="9">
-                                                                                                8 inch
-                                                                                            </option>
-                                                                                            <option value="10">
-                                                                                                9 inch
-                                                                                            </option>
-                                                                                            <option value="11">
-                                                                                                10 inch
-                                                                                            </option>
-                                                                                            <option value="12">
-                                                                                                11 inch
-                                                                                            </option>
-                                                                                        </select>
-                                                                                        <div>
-
-                                                                                        </div>
-                                                                                    </md-input-container>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div layout="row" class="proposal_member_form">
-                                                    <div flex="">
-                                                        <div layout="row" layout-sm="column">
-                                                            <div class="nomine-flex">
-                                                                <div class="par-input-contaner">
-                                                                    <div layout="row">
-                                                                        <div flex="10"><em><i class="icons weight" ></i></em></div>
-                                                                        <div flex="20"><span>Weight <b>(in KG)</b></span></div>
-                                                                        <div flex="auto">
-                                                                            <md-input-container class="md-default-theme md-input-has-value">
-                                                                                <input name="weight-57032242" min-value="1" max-value="200" placeholder="KG" only-valid-number="" class="ng-pristine ng-untouched ng-valid md-input ng-valid-invalidrange ng-valid-required" aria-label="KG" id="input_9" tabindex="0" required="required">
-                                                                                <div class="ng-hide ng-inactive">
-
-                                                                                </div>
-                                                                            </md-input-container>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div layout="row" class="proposal_member_form">
-                                                    <div flex="">
-                                                        <div layout="row" layout-sm="column">
-
-                                                        </div>
-                                                    </div>
-                                                </div>
 
                                             </div>
                                             <div class="proposal_member_wrapper ng-scope">
@@ -852,12 +650,7 @@
                                                                         <div flex="10"><em><i class="icons dbo" ></i></em></div>
                                                                         <div flex="20"><span style="line-height: 15px; padding-top:5px; height: 88%;">Date of birth <br>DD-MM-YYYY</span></div>
                                                                         <div flex="auto">
-                                                                            <md-input-container class="md-input-has-value md-default-theme">
-                                                                                <input pikaday="DOB" name="dob-57032243" default-date="12/29/2015" min-date="12/28/2015" set-default-date="true" max-date="12/27/2016" format="DD-MM-YYYY" placeholder="DD-MM-YYYY" date-validator="" ng-readonly="true" title="You dob is" class="ng-untouched ng-valid ng-isolate-scope md-input ng-dirty ng-valid-parse ng-valid-required ng-valid-invaliddate" aria-label="DD-MM-YYYY" id="input_11" tabindex="0" required="required" readonly="readonly">
-                                                                                <div class="ng-hide ng-inactive">
-
-                                                                                </div>
-                                                                            </md-input-container>
+                                                                            <input type="date"  style="border: none; width: 100%; height: 100%; padding-left: 10px;">
                                                                         </div>
                                                                     </div>
 
