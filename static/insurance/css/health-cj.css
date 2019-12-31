@@ -10,8 +10,6 @@
 .no-webp #healthStepCJ .healthCj_form.family_floater:before{
 	 background-image: url(../../images/bu/health/health_one.png);
 }
-
-
 .no-webp #healthStepCJ .healthCj_form::after,
 .no-webp #healthStepCJ .healthCj_form.family_floater::after {
 	background-image: url("../../images/bu/health/slider-shape.png");
@@ -54,29 +52,29 @@
 .webp #healthStepCJ #productPartner .slider .itemBlock>span,
 .webp #healthStepCJ .logosprite:before
 {
-	background-image: url("../../images/webp/landingpage_partner.webp");
+	background-image: url(../../images/landingpage_partner.webp);
 }
 .webp .articleWrapper #healthStepCJ .disForm.article_page:before,
 .webp #healthStepCJ .healthCj_form.family_floater:before{
-	 background-image: url(../../images/webp/health_one.webp);
+	 background-image: url(../images/health_one.webp);
 }
 .webp #healthStepCJ .healthCj_form::after,
 .webp #healthStepCJ .healthCj_form.family_floater::after {
-	background-image: url("../../images/webp/slider-shape.webp");
+	background-image: url(../images/slider-shape.webp);
 }
 
 .webp #healthStepCJ .details_left #step_4 .details_field .dropdown_list select.change_font_color,
 .webp #healthStepCJ .details_left #step_4 .details_field .dropdown_list select:disabled{
-	background-image:url(../../images/webp/dropdown-arrow.webp)
+	background-image:url(../images/dropdown-arrow.webp);
 }
 
 .webp #healthStepCJ .details_left #step_4 .details_field .dropdown_list select,
 .webp #healthStepCJ .details_left #step_4 .details_field .dropdown_list select option {
-	background-image:url(../../images/webp/dropdown-arrow_dark.webp);
+	background-image:url(../images/dropdown-arrow_dark.webp);
 }
 
 .webp #healthStepCJ .details_right .family_image::after {
-	background-image: url("../../images/webp/family.webp");
+	background-image: url(../images/family.webp);
     background-position: 20px 0px;
     width: 80%;
 }
@@ -85,7 +83,7 @@
 .webp #healthStepCJ .healthCj_form .details_right .plans_list ul li.customers .pointers::before,
 .webp #healthStepCJ .healthCj_form .details_right .plans_list ul li.coverage .pointers::before,
 .webp #healthStepCJ .healthCj_form .details_right .plans_list ul li.companies .pointers::before{
-	background-image:url("../../images/webp/icons-sprite.webp");
+	background-image:url(../images/icons-sprite.webp);
 }
 
 .webp .faqsWrapper.hindi li h2 a[flag='down']:after,
@@ -97,7 +95,7 @@
 .webp #healthStepCJ .details_left #step_4 .form_field.add_more .check_btn .checkmark::after,
 .webp #healthStepCJ .pbTestimonials .slick-slider .slick-prev,
 .webp #healthStepCJ .pbTestimonials .slick-slider .slick-next {
-	background-image:url("../../images/webp/form-sprite.webp");
+	background-image:url(../images/webp/form-sprite.webp);
 }
 
 body{

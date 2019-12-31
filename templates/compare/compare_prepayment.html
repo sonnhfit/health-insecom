@@ -1,98 +1,20 @@
+{% extends '../base.html' %} 
+
 {% load static %} 
-<!DOCTYPE html>
+{% block cssblock %}
+<link rel="stylesheet" href=" {% static 'prepayment/css/angular-rzslide-health.css' %}">
+<!-- <link type="text/css" rel="stylesheet" href=".css/angular-rzslide-health.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<html>
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <link rel="manifest" href="https://health.policybazaar.com/manifest.json">
-    <meta name="theme-color" content="#43ceb3">
-    <!-- <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap.js?v=543" src="../../static/prepayment/js/bootstrap.js"></script> -->
-    <base href=".">
-    <meta name="google-site-verification" content="R0LOTJf4ISWcLl_2PlGOJo_TRpysOeoNUllkRz9nK3U">
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>PolicyBazaar Health Insurance: Cover Rs.5 Lac @Rs. 10/Day</title>
-    <meta name="keywords" content="health insurance, online health policy, buy medical plans, low cost mediclaim, medical insurance India, medical policies, quotes, health covers, compare health insurance, health insurance comparison, claims, premium">
-    <meta name="description" content="PolicyBazaar Health insurance takes care of your medical expenses and ensures that out-of-pocket expenses are curtailed upto the Sum insured.">
-    <link rel="stylesheet" href=" {% static 'prepayment/css/angular-rzslide-health.css' %}">
-    <!-- <link type="text/css" rel="stylesheet" href=".css/angular-rzslide-health.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-
+{% endblock %}
 <body id="scroll_remove" onclick="resetSession()">
     <div ng-view="" style="height:100%;" class="ng-scope">
         <link rel="stylesheet" type="text/css" href="{% static 'prepayment/css/health-proposal-new.css' %} " class="ng-scope">
         <div ng-controller="PaymentFirstProposalIndexController" id="popupContainer" class="proposalbody ng-scope">
             <div class="ng-scope">
             </div>
-
             <div class="proposerFormContainer">
-                <div class="row cAlign pTop">
-                    <div class="ng-scope">
-                        <!-- <link type="text/css" rel="stylesheet" href="./css/health-header.css" class="ng-scope"> -->
-                        <div layout="row" class="prequote-header-padding animated bounceInDown ng-scope" show-gt-sm="" hide-gt-sm="">
-                            <div hide="" show-gt-sm="" flex="">
-                                <a href="">
-                                    <img src="{% static 'prepayment/images/pb-logo.png' %}">
-                                </a>
-                            </div>
-
-                            <div hide="" show-gt-sm="" flex="" class="text-right">
-                                <div class="toll-box-new">
-                                    <div class="toll-text-new">Toll Free</div>
-                                    <div class="toll-box-open">
-                                        <div class="inner-toll-box">Have Not Paid Yet (Sales)
-                                            <br> <a href="tel:18004197715">1800-419-7715</a> </div>
-                                        <div class="inner-toll-box">Have Already Paid (Service)
-                                            <br> <a href="tel:18002585970">1800-258-5970</a> <span>(Use Registered Mobile Only)</span></div>
-                                        <div class="inner-toll-box"><a href="tel:911246656507">+91124-6656507</a>
-                                            <br><span>(For NRI's Also)</span></div>
-                                        <div class="inner-toll-box bdr-none-toll"><a href="tel:18005723919">1800-572-3919</a>
-                                            <br><span>(For Renewal Customers only)</span></div>
-                                    </div>
-                                </div>
-
-                                <div flex="" class="email-content2">
-                                    <a class="claim-link" href="http://claim.policybazaar.com/health.html" target="_blank"><i class="fa fa-umbrella"></i> Claim Assistance</a>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div layout="row" class="prequote-header-padding animated bounceInDown header-mob-fix ng-scope" hide-gt-sm="">
-                            <div hide-gt-sm="" flex="15">
-                                <a href="https://policybazaar.com/">
-                                    <img src="% static 'prepayment/images/logo_icon@2x.png' %" width="35" height="35">
-                                </a>
-                            </div>
-                            <div hide-gt-sm="" flex="60" style="text-align:left"><span class="text-header">Health Insurance</span> </div>
-
-                            <div hide-gt-sm="" flex="15" style="text-align:right">
-
-                            </div>
-
-                            <div hide-gt-sm="" flex="10" style="text-align:right">
-
-                                <div class="toll-box-new"> <i class="fa fa-phone top-header-icon" tabindex="0"></i>
-                                    <div class="toll-box-open">
-                                        <div class="inner-toll-box">Have Not Paid Yet (Sales)
-                                            <br> <a href="tel:18004197715">1800-419-7715</a></div>
-                                        <div class="inner-toll-box">Have Already Paid (Service)
-                                            <br> <a href="tel:18002585970">1800-258-5970</a> <span>(Use Registered Mobile Only)</span></div>
-                                        <div class="inner-toll-box"><a href="tel:911246656507">+91124-6656507</a>
-                                            <br><span>(For NRI's Also)</span></div>
-                                        <div class="inner-toll-box bdr-none-toll"><a href="tel:18005723919">1800-572-3919</a>
-                                            <br><span>(For Renewal Customers only)</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{% block content %}
                 <div leyout="row">
                     <div flex="" class="proposal_back proposal_noChat">
                         <span>
@@ -1232,92 +1154,4 @@
                     <div class="cl"></div>
                     <h4 style=" background: #fff;padding: 10px 20px; color: #2c3e50;   font-size: 14px; text-align: left;font-weight: 400; ">Declaration</h4>
                 </div>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </div>
-    <div class="clear"></div>
-    <div layout="row">
-        <div flex="">
-            <div class="ng-scope">
-                <div class="footer show ng-scope" id="footerBottom"><span>CIN: U74900HR2014PTC053454</span> | <a href="contact-us/" target="_blank">Contact Us</a> | <a href="legal-and-admin-policies/" target="_blank">Legal and Admin Policies</a> | <a href="legal-and-admin-policies/#license" target="_blank">IRDAI Web aggregator Registration No. 06 Registration Code No. IRDAI/WBA21/15 Valid till 13/07/2021</a>
-                    <p>Insurance is the subject matter of solicitation. Visitors are hereby informed that their information submitted on the website may be shared with insurers.</p>
-                    <p>Product information is authentic and solely based on the information received from the Insurer © Copyright 2008-2019 policybazaar.com. All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="clear ng-scope"></div>
-    </div>
-    <div class="cl"></div>
-    <div class="seo_maincontaine" id="showSeoContant" style="display:none;">
-        <div class="seo_contaner">
-            <div class="seo_title" onclick="myFunction()">
-                <h1>Know More about Health Insurance</h1> </div>
-            <div class="seo_body" id="showSeo" style="display:none;">
-                <h2>Health Insurance</h2>
-                <ul>
-                    <li>Health insurance takes care of your medical expenses and ensures that out-of-pocket expenses are curtailed upto the Sum insured </li>
-                    <li>A health insurance policy ensures that you can avail cashless treatment at a network hospital without having to pay for them, typically covering 30 days and 60 days pre and post hospitalization, respectively, in most of the Health Insurance plans.</li>
-                    <li>One can add value to the Base Health Insurance Plan by complementing them with additional add-on products such as Personal Accident (PA) Cover, Critical Illness (CI) Cover and Top-Up. These products are available at a very nominal cost adding benefits which are not part of the Base Health Insurance plan. For Example, A PA plan helps by providing coverage for disability, which is typically not covered under Health Insurance. An individual need not go through any waiting period and medical checkups for a PA cover. </li>
-                    <li>One can also invest on one of the popular <a href="health-insurance/senior-citizen-health-insurance/" target="_blank">senior citizen health insurance</a> policies and ensure comprehensive security for their elderly parents or secure their old age that often brings along several ailments that require expensive medical treatment.</li>
-                </ul>
-                <h2>Benefits of Health Insurance</h2>
-                <ul>
-                    <li>Health Coverage: <a href="health-insurance/health-insurance-india/" target="_blank">Health Insurance</a> plans have enhanced offerings to cover a wide spectrum of requirements, like a <a href="health-insurance/family-health-insurance-plan/" target="_blank">family health plan</a> offers complete cover to all members of a family under a single umbrella.
-                        <ul class="child_sub">
-                            <li>Medical Bills: Coverage against medicinal expenses incurred, including pre and post hospitalization</li>
-                            <li>Pre-existing Diseases: Coverage for any pre-existing disease is provided to you after a certain waiting period.</li>
-                            <li>Claim Reimbursement: Coverage for expenses incurred for hospitalization due to a medical </li>
-                        </ul>
-                    </li>
-                    <li>Tax Rebate: Annual premium paid for health coverage are subject to tax exemption u/s 80D of ITA, 1961. Tax exemption ranges from Rs. 25,000 to Rs. 60,000.</li>
-                    <li>Other Benefits: As an innovative feature, OPD expenses are now covered under few Insurer plans and don’t require hospitalization for minimum 24 hrs to claim reimbursement. Stand alone OPD plans are also available in the market.</li>
-                </ul>
-                <h2>Key Points to Remember when Comparing Health Insurance</h2>
-                <ul>
-                    <li>Sum Insured by the policy </li>
-                    <li>Premium to be paid for the coverage</li>
-                    <li>List of network hospitals and Claim Settlement Ratio</li>
-                    <li>Sub-limits (if any) and Waiting Period (for PEDs)</li>
-                    <li>Co-pay </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-    <style type="text/css">
-        .footer {
-            text-align: center;
-            display: table;
-            padding: 0;
-            line-height: 10px;
-            width: 100%;
-            margin: 10px auto 15px;
-            color: #545454;
-            clear: both;
-            animation: fadein 2s;
-            font-size: 11px;
-            line-height: 17px;
-            padding-top: 10px;
-            -webkit-transition-delay: 2000s;
-            transition-delay: 2000s
-        }
-        
-        .quotes-list-header {
-            margin-bottom: 0
-        }
-        
-        .footer a {
-            color: #545454
-        }
-    </style>
-    <div class="pika-single is-hidden is-bound" style="position: static; left: auto; top: auto;"></div>
-    <div class="pika-single is-hidden is-bound" style="position: static; left: auto; top: auto;"></div>
-    <div class="pika-single is-hidden is-bound" style="position: static; left: auto; top: auto;"></div>
-    <div class="pika-single is-hidden is-bound" style="position: static; left: auto; top: auto;"></div>
-</body>
-
-</html> 
+{% endblock content %}
