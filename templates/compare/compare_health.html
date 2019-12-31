@@ -9,6 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{% static 'compare/css/bulma.min.css' %}" as="style"/>
     <link rel="stylesheet" href="{% static 'compare/css/bulma-tooltip.min.css' %}" as="style">
+    <script src="{% static 'compare/js/appen.js' %}"></script>
     <link rel="stylesheet" href="{% static 'compare/css/css.css' %}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -18,6 +19,92 @@
     <meta name="theme-color" content="#ffffff" />
 
     <title>PolicyBazaar Health Insurance: Cover Rs.5 Lac @ Rs12.9/Day</title>
+    <script>
+    var g = `
+    <div
+              class="quotes_stack_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+            >
+              <div
+                class="quotes_content_container is-hidden-mobile is-hidden-tablet-only-custom"
+              >
+                <span class="click_to_compare_tooltip  ">Click to Compare</span>
+                <div class="top_quotes_content ">
+                  <div class="checkbox_container">
+                    <label>
+                      <input type="checkbox" class="checkbox_quotes" />
+                    </label>
+                  </div>
+                  <div class="planContent_container">
+                    <div class="quotes_logo_container1">
+                      <picture>
+                       
+                        <img
+                          alt="Oriental"
+                          class="img_contain"
+                          layout="fill"
+                          src="{% static 'compare/images/Oriental.png' %}"
+                        />
+                      </picture>
+                    </div>
+                    <span class="quotes_plan_name"
+                      >
+                    </span>
+                  </div>
+                  <div class="cover_container">
+                    <div class="div_cover">
+                      <span class="span_cover">Cover</span
+                      ><span class="span_cover_content">₹ 6 L</span>
+                    </div>
+                    <div class="div_network">
+                      <span class="span_network">Cashless Hospitals</span
+                      ><span class="span_network_content">186</span>
+                    </div>
+                  </div>
+                  <div class="premium_container">
+                    <div class="premium_button">
+                      ₹ 2,503 monthly
+                      <img
+                        alt="arrow"
+                        class="arrow_right"
+                        src="{% static 'compare/images/arrow-right.svg' %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_quotes_content">
+                  <div class="bottom_checkbox_container"></div>
+                  <div class="features_container">
+                    <span class="quotes_more_plans">+1 More Plans</span>
+                  </div>
+                  <div class="bottom_cover_container">
+                    <div class="div_cover"></div>
+                    <div class="div_features">
+                      <span class="quotes_features">Features</span
+                      ><img
+                        alt="features"
+                        src="{% static 'compare/images/features.svg' %}"
+                        class="features_svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="bottom_premium_container">
+                    <span class="annually_premium">₹ 30,036 annually</span>
+                  </div>
+                </div>
+              </div>
+           
+    `;var o = 0;
+        $(document).ready(function() {
+          
+            $("#search_name").click(function() {
+              o++;
+            console.log(o);
+                $(".main_quotes_container").append(g);
+             
+            });
+        });
+
+    </script>
     <script>
       var a = `
                                             <div class="div_members_container">
@@ -1255,7 +1342,7 @@
                   <div class="modal-footer">
                     <div class="cover_buttons">
                       <div class="close_button" data-dismiss="modal">Close</div>
-                      <div class="apply_button">Apply</div>
+                      <div class="apply_button" id="search_name">Apply</div>
                     </div>
                   </div>
                 </div>
@@ -1714,14 +1801,16 @@
                     </div>
                   </div>
                   <div class="premium_container">
-                    <div class="premium_button">
-                      ₹ 2,503 monthly
-                      <img
-                        alt="arrow"
-                        class="arrow_right"
-                        src="{% static 'compare/images/arrow-right.svg' %}"
-                      />
-                    </div>
+                    <a href="{% url 'comapre-prepayment-url' %}">
+                      <div class="premium_button">
+                        ₹ 2,503 monthly
+                        <img
+                          alt="arrow"
+                          class="arrow_right"
+                          src="{% static 'compare/images/arrow-right.svg' %}"
+                        />
+                      </div>
+                    </a>
                   </div>
                 </div>
                 <div class="bottom_quotes_content">
