@@ -22,11 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('compare-health/', health_views.ComapreHealth.as_view(), name='compare_health_url', ),
     path('comapre-prepayment/', health_views.ComaprePrepayment.as_view()),
-<<<<<<< HEAD
     path('health-insurance/', health_views.HealthInsurance.as_view()),
     path('health-oder/', health_views.HealthOder.as_view()),
-=======
-
     path('', health_views.HealthInsurance.as_view()),
->>>>>>> 93d9b8300d898370eed3d54a260af6fa8f47bcb5
 ]
