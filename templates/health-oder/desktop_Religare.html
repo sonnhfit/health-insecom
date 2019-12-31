@@ -3464,13 +3464,15 @@
 
                                     <div layout="row" ng-if="profileList.length == 1" class="ng-scope">
                                        <div flex="" class="button">
-                                          <button class="md-raised md-primary product-buy md-button md-default-theme"
-                                              aria-label="bynowbutton"tabindex="1">
-                     
-                                             <span class="ng-scope">
-                                                Proceed </span><i class="fas fa-arrow-right ng-scope"
-                                                aria-hidden="true"></i>
-                                          </button>
+                                          <a href="{% url 'comapre_prepayment_url' %}"> 
+                                             <button class="md-raised md-primary product-buy md-button md-default-theme"
+                                             aria-label="bynowbutton"tabindex="1">
+                    
+                                            <span class="ng-scope">
+                                               Proceed </span><i class="fas fa-arrow-right ng-scope"
+                                               aria-hidden="true"></i>
+                                         </button></a>
+                                         
                                        </div>
                                     </div>
 
