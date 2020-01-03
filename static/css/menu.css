@@ -345,7 +345,7 @@ a {
     font-size: 30px;
 }
 } */
-.owl-carousel .item {
+.owl-carousel>.item {
     height: 22rem;
     background: #FFF;
     padding: 1rem;
