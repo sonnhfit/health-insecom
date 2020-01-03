@@ -26,4 +26,6 @@ urlpatterns = [
     path('health-oder/', health_views.HealthOder.as_view(), name='health-oder_url'),
     path('', health_views.HealthInsurance.as_view()),
     path('health-add/', apis_views.GetAllCustomerParent.as_view()),
+
+    path('company/', health_views.CompanyInsurance.as_view(), name='company'),
 ]

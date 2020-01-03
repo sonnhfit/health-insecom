@@ -32,5 +32,11 @@ class HealthOder(View):
 
     def get(self, request):
         return render(request,'health-oder/desktop_Religare.html')
+
+
+class CompanyInsurance(View):
+
+    def get(self, request):
+        return render(request,'company.html')
         
     
