@@ -276,7 +276,6 @@ nav.fixedh .mob{display: block}
 	box-sizing: border-box;
 	display: table;
 	width: 100%;
-	min-height: 50px;
 	
 }
 .policywarp nav::after{
