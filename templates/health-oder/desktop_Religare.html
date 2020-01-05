@@ -2679,6 +2679,7 @@
                                         <!-- ngIf: profileList.length == 1 -->
                                         <div layout="row" ng-if="profileList.length == 1" class="ng-scope">
                                             <div flex="" class="button">
+                                                <a href="{% url 'comapre_prepayment_url' %}">
                                                 <button class="md-raised md-primary product-buy md-button md-default-theme" ng-transclude="" aria-label="bynowbutton" ng-click="updateBooking(frmprequote.$invalid, false)" tabindex="1">
                                                     <div class="prequote-loading ng-scope">
                                                         <md-progress-circular md-mode="indeterminate" class="md-warn md-hue-3 md-default-theme ng-hide" md-diameter="30" ng-show="prequoteLoading" aria-valuemin="0" aria-valuemax="100" role="progressbar" aria-hidden="true" style="transform: scale(0.625);">
@@ -2697,6 +2698,7 @@
                                                     </div><span class="ng-scope">
                                     Proceed </span><i class="fa fa-arrow-right ng-scope" aria-hidden="true"></i>
                                                 </button>
+                                            </a>
                                             </div>
                                         </div>
                                         <!-- end ngIf: profileList.length == 1 -->
