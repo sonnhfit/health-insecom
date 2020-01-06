@@ -35,3 +35,4 @@ class ChildPayment(models.Model):
     weight = models.IntegerField(default=0)
     height = models.IntegerField(default=0)
     occupation = models.CharField(max_length=255,blank=True)
+    

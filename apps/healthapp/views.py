@@ -33,4 +33,16 @@ class HealthOder(View):
     def get(self, request):
         return render(request,'health-oder/desktop_Religare.html')
         
-    
+
+class Home(View):
+
+    def get(self, request):
+        return render(request,'home_insuarance/home-insuarance.html')
+
+
+class PreQuote(View):
+
+    def get(self, request):
+        return render(request,'home_insuarance/PreQuote.html')
+
+     
