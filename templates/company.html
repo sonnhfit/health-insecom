@@ -21,44 +21,6 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-        var addClass = function(currentItem) {
-            currentItem.classList.add('active');
-            currentItem.parentElement.children[1].classList.add('slidedown');
-        };
-        var removeClass = function() {
-            for (var i = 0; i < submenuopen.length; i++) {
-                submenuopen[i].classList.remove('active');
-                submenuopen[i].parentElement.children[1].classList.remove('slidedown');
-            }
-            addClass(this);
-        };
-
-        function openNav() {
-            var mobNav = document.getElementById("mobNav");
-            mobNav.style.width = "250px";
-            //document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
-        }
-        /* Set the width of the side navigation to 0 */
-        function closeNav() {
-            var mobNav = document.getElementById("mobNav");
-            mobNav.style.width = "0px";
-            document.body.style.backgroundColor = "white";
-        }
-        var submenuopen = document.getElementsByClassName("submenu");
-        for (var i = 0; i < submenuopen.length; i++) {
-            submenuopen[i].addEventListener('click', removeClass, false);
-        }
-        var fixed = document.getElementById('mobNav');
-        if (fixed) {
-            try {
-                fixed.addEventListener('touchmove', function(e) {
-                    e.preventDefault();
-                    e.preventDefault();
-                }, false);
-            } catch (e) {}
-        }
-    </script>
     <link href="company/css/style.min_common.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="company/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="company/css/style-uncompress_error.css">
@@ -66,7 +28,7 @@
     <link rel="stylesheet" href="company/css/jquery.fancybox.css" type="text/css" media="screen">
     <link rel="stylesheet" href="company/css/slick_bu.css">
     <link href="company/css/review-slide.css" rel="stylesheet" type="text/css">
-    <script src="company/js/jquery-2.2.4.min.js"></script>
+    <!-- <script src="company/js/jquery-2.2.4.min.js"></script> -->
     <section class="pbcategoryPages center_hd" itemscope="" itemtype="http://schema.org/FinancialProduct">
         <meta itemprop="category" content="Insurance">
         <meta itemprop="url" content="company/images/office-package-policy/">
