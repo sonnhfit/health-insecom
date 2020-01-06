@@ -26,6 +26,9 @@ urlpatterns = [
     path('health-oder/', health_views.HealthOder.as_view(), name='health-oder_url'),
     path('', health_views.HealthInsurance.as_view()),
     path('health-add/', apis_views.GetAllCustomerParent.as_view()),
-
-    path('company/', health_views.CompanyInsurance.as_view(), name='company'),
+    path('group-company/', health_views.GroupCompany.as_view(), name='group-company_url'),
+    path('group-question-company/', health_views.GroupQuestionCompany.as_view(), name='group-question-company_url'),
+    path('group-payment-company/', health_views.GroupPaymentCompany.as_view(), name='group-payment-company_url'),
+     path('info-payment/', health_views.InfoPayment.as_view(), name='info-payment_url'),
+    path('company/', health_views.CompanyInsurance.as_view(), name='company_url'),
 ]
