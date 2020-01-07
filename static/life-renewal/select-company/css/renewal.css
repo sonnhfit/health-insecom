@@ -311,4 +311,10 @@ width: 40% ;}
 .main-wrap .wrap-left .left-content h3{ margin-top:32px;}
 .main-wrap .wrap-left .left-content.left-content-2 h3{ text-align:left;}
 .renewal-head h2{ font-size:18px;}
+.pblogo {
+    float: left;
+    padding: 10px 0 0 0;
+    text-align: right;
+    width: 30%;
+}
 }
