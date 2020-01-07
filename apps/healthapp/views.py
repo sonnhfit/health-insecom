@@ -109,3 +109,9 @@ class Renewals(View):
 
     def get(self, request):
         return render(request,'renewals/renewals.html')
+
+
+class HealthQuote(View):
+
+    def get(self, request):
+        return render(request,'health-quote-compare/health-quote.html')
