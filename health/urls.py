@@ -39,6 +39,7 @@ urlpatterns = [
     path('info-payment/', health_views.InfoPayment.as_view(), name='info-payment_url'),
     path('company/', health_views.CompanyInsurance.as_view(), name='company_url'),
     path('select-company/', health_views.SelectCompany.as_view(), name='select-company_url'),
-    path('pay-renewal/', health_views.PayRenewal.as_view(), name='pay-renewal_url')
+    path('pay-renewal/', health_views.PayRenewal.as_view(), name='pay-renewal_url'),
+    path('health-quote/', health_views.HealthQuote.as_view(), name='health-quote_url')
     
 ]
