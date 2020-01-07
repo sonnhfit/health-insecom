@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type"
+            content="text/html; charset=UTF-8"><title>
+        </title><meta name="viewport"
+            content="width=device-width,initial-scale=1.0,maximum-scale=1.0,
+            user-scalable=no">
+            <base href="{% static '' %}">
+            <link
+            href="life-renewal/select-company/css/renewal.css"
+            rel="stylesheet" type="text/css">
+        <body>
+            <div class="header-new">
+                <div class="pblogo">
+                    <img
+                        src="life-renewal/select-company/images/logo.png"
+                        alt="policy bazaar">
+                </div>
+                <div class="pb-call-num no-mobile" data-ng-show="!isMobile"
+                    aria-hidden="false">
+                    <!-- <span class="call-num">1800-208-8787</span> <span class="toll-free">[Toll Free]</span>-->
+                    <div class="common-toofree"
+                        ng-mouseenter="showPhoneNumbers=true"
+                        ng-mouseleave="showPhoneNumbers=false">
+                        <span class="toll-icon"><img
+                                src="life-renewal/select-company/images/call.png"
+                                alt=""></span><em>Toll Free <span
+                                class="call_right_renew"><img
+                                    src="life-renewal/select-company/images/arrow.png"
+                                    alt=""></span></em>
+                        <div class="number-info"
+                            data-ng-class="{&#39;show-phone-dropdown&#39;:showPhoneNumbers}">
+                            <span>Toll Free <i class="fa fa-caret-up"
+                                    aria-hidden="true"></i></span>
+                            <p class="bg-1">Have Not Paid Yet <small>(Sales)</small>
+                                <em>1800-208-8787</em></p>
+                            <p class="bg-2">Have Already Paid <small>(Service)</small>
+                                <em>1800-258-5970</em> <i>(Use Registered Mobile
+                                    Only)</i></p>
+                            <p class="bg-3"><em>+1124-6656507</em> <i>(For
+                                    NRI's)</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form method="post"
+                action="" id="form1">
+                <div class="aspNetHidden">
+                    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                        value="JDPMQ8iMWEzONZaBteVGZAxBTF3Hnau1OIpnNBHNgrdulbHeAeNiV6vEeaO3cSoszVH98Fn7Av/QFOSoVx7NaexsJNc=">
+                </div>
+
+                <div class="aspNetHidden">
+
+                    <input type="hidden" name="__VIEWSTATEGENERATOR"
+                        id="__VIEWSTATEGENERATOR" value="000A85D3">
+                </div>
+                <div class="main-wrap main_wrap_dup">
+                    <div class="wrap-right">
+                        <div id="divToAppend"></div>
+
+                        <h3>Select your Insurance Company</h3>
+                        <input type="hidden" id="hdnInsurerID">
+                        <ul id="rdbinsurer">
+                            <li onclick="selectInsurer(1)" id="liInsurer_1"><em><img
+                                        src="life-renewal/select-company/images/Aegon.png"></em><span><input
+                                        class="insurerRadio" id="radio_1"
+                                        type="radio" name="insurergrp"></span></li><li
+                                onclick="selectInsurer(20)" id="liInsurer_20"><em><img
+                                        src="life-renewal/select-company/images/Baxa.png"></em><span><input
+                                        class="insurerRadio" id="radio_20"
+                                        type="radio" name="insurergrp"></span></li><li
+                                onclick="selectInsurer(24)" id="liInsurer_24"><em><img
+                                        src="life-renewal/select-company/images/ET.png"></em><span><input
+                                        class="insurerRadio" id="radio_24"
+                                        type="radio" name="insurergrp"></span></li><li
+                                onclick="selectInsurer(6)" id="liInsurer_6"><em><img
+                                        src="life-renewal/select-company/images/HDFC.png"></em><span><input
+                                        class="insurerRadio" id="radio_6"
+                                        type="radio" name="insurergrp"></span></li><li
+                                onclick="selectInsurer(85)" id="liInsurer_85"><em><img
+                                        src="life-renewal/select-company/images/Kotak.png"></em><span><input
+                                        class="insurerRadio" id="radio_85"
+                                        type="radio" name="insurergrp"></span></li><li
+                                onclick="selectInsurer(11)" id="liInsurer_11"><em><img
+                                        src="life-renewal/select-company/images/MaxLife.png"></em><span><input
+                                        class="insurerRadio" id="radio_11"
+                                        type="radio" name="insurergrp"></span></li><li
+                                onclick="selectInsurer(12)" id="liInsurer_12"><em><img
+                                        src="life-renewal/select-company/images/PNB.png"></em><span><input
+                                        class="insurerRadio" id="radio_12"
+                                        type="radio" name="insurergrp"></span></li><li
+                                onclick="selectInsurer(15)" id="liInsurer_15"><em><img
+                                        src="life-renewal/select-company/images/TATA.png"></em><span><input
+                                        class="insurerRadio" id="radio_15"
+                                        type="radio" name="insurergrp"></span></li></ul>
+                        <div id="divProceed" class="wrap_right_btn">
+                            <!-- <button> Proceed  </button> -->
+                            <a class="link" href="{% url 'pay-renewal_url' %}"> Proceed</a> 
+                        </div>
+                        <style>
+                       
+                            .link{
+                                display: inline-block;
+                                    width: 100%;
+                                    border: none;
+                                    height: 40px;
+                                    border-radius: 5px;
+                                    background: #fa774d;
+                                    color: #fff;
+                                    line-height: 24px;
+                                    font-size: 19px;
+                                    font-family: "Lato",sans-serif;
+                                    margin: 0;
+                                    cursor: pointer;
+                                    text-align: center;
+                                    line-height: 40px;
+                                    text-decoration: none;
+                                }
+                        
+                        </style>
+                    </div>
+                    <div class="wrap-left">
+                        <div class="left-content left-content-2">
+                            <h3>Renew Life Insurance Policy <small>Pay renewal
+                                    premium and get security &amp; peace of
+                                    mind.</small></h3>
+                        </div>
+                        <ul class="content content-2">
+                            <li>Pay your premium at a click</li>
+                            <li>Secure and hassle-free payment option</li>
+                            <li>Avoid life insurance policy lapses</li>
+                            <li>Continue the benefits offered under your policy</li>
+                        </ul>
+                    </div>
+                </form>
+
+
+            </body></html>

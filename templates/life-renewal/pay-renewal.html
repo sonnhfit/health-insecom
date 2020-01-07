@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+
+        </title>
+        <meta name="viewport"
+            content="width=device-width,initial-scale=1.0,maximum-scale=1.0,
+            user-scalable=no">
+            <base href="{% static '' %}">
+        <link href="life-renewal/pay-renewal/css/renewal.css" rel="stylesheet"
+            type="text/css">
+        <link rel="stylesheet" href="life-renewal/pay-renewal/css/jquery-ui.css">
+        <script src="life-renewal/pay-renewal/js/jquery.js"></script>
+        <script src="life-renewal/pay-renewal/js/jqueryUI.js"></script>
+        <script src="life-renewal/pay-renewal/js/renewal.js"></script>
+    </head>
+
+    <body>
+        <form method="post"
+            action="https://insurancerenewal.policybazaar.com/Renewal.aspx?insurerID=6"
+            id="form1">
+            <div class="aspNetHidden">
+                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                    value="Bi2CccfSDiIT8GpyjxxR7yEqlpi+k4AaVGOXRIwrszBbi69m1tGH+ptA9S6ZVBDAnoY3a3lvO6HhEREfT6ymWxtSnYA=">
+            </div>
+
+            <div class="aspNetHidden">
+
+                <input type="hidden" name="__VIEWSTATEGENERATOR"
+                    id="__VIEWSTATEGENERATOR" value="CF159554">
+                <input type="hidden" name="__EVENTVALIDATION"
+                    id="__EVENTVALIDATION"
+                    value="xBGuMP7AlsEYDF+PWEU6X0P9Wo2A2I6wfzQFXnA5pJU8gEvKCnhPi9+87hvAgn2rWFffLL0ory/fJvND3loWT7i2p6zMd1D3vKnVQ6QV+pHa3YhPIJDTonxAIEdOHSqjM5b+bK2GwlMw2U0G92zlSS+3uGWj2VEoW9DRQbi/8NvljdXC">
+            </div>
+            <div class="renewal-head">
+                <h2>Pay Your Life Insurance Renewal Premium</h2>
+            </div>
+            <div class="main-wrap">
+                <div class="wrap-left wrap-left-2">
+                    <ul class="field-info">
+                        <li>
+                            <label>
+                                <img id="imgInsurer"
+                                    src="life-renewal/pay-renewal/images/HDFC.png"></label>
+                            <input id="txtInsurer" type="text" value="HDFC Life Insurance" disabled="disabled">
+                            <input type="hidden" name="hdnInsurerID"
+                                id="hdnInsurerID" value="6">
+                        </li>
+                        <li>
+                            <i class="icon icon-no"></i>
+                            <label>Policy No.</label>
+                            <input name="txtPolicyNumber" type="text"
+                                id="txtPolicyNumber" class="required"
+                                placeholder="Type your Policy No.">
+                        </li>
+                        <li>
+                            <i class="icon icon-dob"></i>
+                            <label>DOB</label>
+                            <input name="txtDOB" type="date" id="txtDOB"
+                                class="datepicker required hasDatepicker"
+                                placeholder="DD/MM/YYYY">
+
+                        </li>
+                        <li>
+                            <input type="submit" name="btnSubmit" value="Get Premium" onclick="return ValidData();"
+                                id="btnSubmit">
+                            <span id="lblError" class="ErrorTip ErrorTip-2"
+                                style="display:none;">Please Enter Valid Details</span>
+                        </li>
+                    </ul>
+
+                    <div class="left-content left-content-2">
+                        <h3>Renew Life Insurance Policy <small>Pay renewal
+                                premium and get security &amp; peace of mind.</small></h3>
+                    </div>
+                </div>
+                <ul class="content content-2">
+                    <li>Pay your premium at a click</li>
+                    <li>Secure and hassle-free payment option</li>
+                    <li>Avoid life insurance policy lapses</li>
+                    <li>Continue the benefits offered under your policy</li>
+                </ul>
+            </div>
+        </form>
+
+        <div id="ui-datepicker-div" class="ui-datepicker ui-widget
+            ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+    </body>
+
+</html>

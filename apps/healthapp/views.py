@@ -61,6 +61,18 @@ class GroupQuestionCompany(View):
 class GroupPaymentCompany(View):
 
     def get(self, request):
-        return render(request,'group-mediclaim/group-payment-company.html')                
+        return render(request,'group-mediclaim/group-payment-company.html')  
+
+
+class SelectCompany(View):
+
+    def get(self, request):
+        return render(request,'life-renewal/select-company.html') 
+
+
+class PayRenewal(View):
+
+    def get(self, request):
+        return render(request,'life-renewal/pay-renewal.html')                                
         
     
