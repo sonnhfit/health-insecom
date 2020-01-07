@@ -1,0 +1,131 @@
+{% extends './base.html' %} 
+{% load static %}
+
+{% block cssblock %}
+<script type="text/javascript" src="./home-insurance/css-m2/a47654126d"></script>
+<script src="./home-insurance/css-m2/bootstrapautocomplete"></script>
+<script src="./home-insurance/css-m2/jquery"></script>
+<script src="./home-insurance/css-m2/jqueryval"></script>
+<script src="./home-insurance/css-m2/prequote2"></script>
+{% endblock %}
+
+{% block content %}
+<form action="/PreQuote/PreQuote" method="post" novalidate="novalidate">    
+<div class="container mt_5">
+        <div class="row">
+            <div class="col-md-6 left_side d-sm-none d-md-block d-none">
+                <h2 class="text-center">Home Insurance</h2>
+                <div class="pq2_contaner">
+                    <ul>
+                        <li>
+                            <div class="pq2_img">
+                                <div class="pq2_img_contaner">
+                                    <img src="./home-insurance/images-m2/hdfc_ergo.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pq2_img">
+                                <div class="pq2_img_contaner">
+                                    <img src="./home-insurance/images-m2/nia.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pq2_img">
+                                <div class="pq2_img_contaner">
+                                    <img src="./home-insurance/images-m2/bajaj.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pq2_img">
+                                <div class="pq2_img_contaner">
+                                    <img src="./home-insurance/images-m2/futuregenerali.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pq2_img">
+                                <div class="pq2_img_contaner">
+                                    <img src="./home-insurance/images-m2/royal_sundaram.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pq2_img">
+                                <div class="pq2_img_contaner">
+                                    <img src="./home-insurance/images-m2/shriram.png">
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <input id="EnquiryEncrypted" name="EnquiryEncrypted" type="hidden" value="">
+            <div class="col-md-6 col-sm-12 position-relative right_side">
+                <div class="round_arrow d-sm-none d-md-block d-none">
+                </div>
+                <div class="row pre_wrapper">
+                    <div class="col-2 p-0">
+                        <em><i class="icon ic5"></i></em>
+                    </div>
+                    <div class="col-3 p-0"><span class="ic_lead">Name</span></div>
+                    <div class="col-2 p-0">
+                        <select data-val="true" data-val-number="The field Salutation must be a number." data-val-required="*Required" id="Salutation" name="Salutation"><option value="">Title</option>
+                    <option value="1">Mr</option>
+                    <option value="2">Mrs</option>
+                <option value="3">Ms</option>
+                </select>
+                        <span class="field-validation-valid" data-valmsg-for="Salutation" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="col-5 p-0">
+                        <input data-val="true" data-val-regex="Enter only alphabets" data-val-regex-pattern="^[a-zA-Z\s]+$" data-val-required="*Required" id="FullName" maxlength="100" name="FullName" placeholder="Full Name" type="text" value="">
+                    </div>
+                    <span class="field-validation-valid" data-valmsg-for="FullName" data-valmsg-replace="true"></span>
+                </div>
+                <div class="row pre_wrapper mt-4">
+                    <div class="col-2 p-0">
+                        <em><i class="icon ic6"></i></em>
+                    </div>
+                    <div class="col-3 p-0"><span class="ic_lead">Email</span></div>
+                    <div class="col-7 p-0">
+                        <input data-val="true" data-val-regex="Email is not valid" data-val-regex-pattern="^[a-zA-Z0-9_\.-.*]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,6}$" data-val-required="*Required" id="EmailID" maxlength="100" name="EmailID" onfocus="this.value=&#39;&#39;" placeholder="Enter Email id" type="text" value="">
+                    </div>
+                    <span class="field-validation-valid" data-valmsg-for="EmailID" data-valmsg-replace="true"></span>
+                </div>
+           <div class="row pre_wrapper mt-4">
+                    <div class="col-2 p-0">
+                        <em><i class="icon ic7"></i></em>
+                    </div>
+                    <div class="col-3 p-0"><span class="ic_lead">Mobile</span></div>
+                    <div class="col-7 p-0">
+                        <input class="onlynumbers" data-val="true" data-val-regex="Mobile No must start with 7,8,9" data-val-regex-pattern="^[6789]\d{9}$" data-val-required="*Required" id="MobileNo" maxlength="10" minlength="10" name="MobileNo" onfocus="this.value=&#39;&#39;" placeholder="Enter Mobile no." type="text" value="">
+                    </div>
+                    <span class="field-validation-valid" data-valmsg-for="MobileNo" data-valmsg-replace="true"></span>
+                </div>
+                <div class="row pre_wrapper mt-4">
+                    <div class="col-2 p-0">
+                        <em><i class="icon ic8"></i></em>
+                    </div>
+                    <div class="col-3 p-0"><span class="ic_lead">City</span></div>
+                    <div class="col-7 p-0 citylist">
+                        <input autocomplete="off" class="typeahead" data-provide="typeahead" data-url="/Common/AutoCompleteCityStateList" data-val="true" data-val-remote="Please select city from list" data-val-remote-additionalfields="*.TempCity" data-val-remote-url="/PreQuote/GetCityStateByCityName" data-val-required="Please select city from list" id="citylist" name="TempCity" placeholder="Select City" type="text" value="">
+                        <input data-val="true" data-val-number="The field City must be a number." data-val-required="Please select city from list" id="CityID" name="CityID" type="hidden" value="0">
+                        <input data-val="true" data-val-number="The field StateID must be a number." data-val-required="The StateID field is required." id="StateID" name="StateID" type="hidden" value="0">
+                    </div>
+                    <span class="field-validation-valid" data-valmsg-for="TempCity" data-valmsg-replace="true"></span>
+                    <span class="field-validation-valid" data-valmsg-for="CityID" data-valmsg-replace="true"></span>
+                </div>
+                <div class="row mt-4 pre_button">
+                    <div class="col-12 col-sm-12 haha">
+                        <!-- <button id="pq1submitbutton" type="submit"></button> -->
+                        <a href="{% url 'quotes_url' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TIẾN TRÌNH </font></font><i class="button_arrow" style="display: none;"></i><span class="pq1loadingbtn hide"><div class="lds-ripple"><div></div><div></div></div></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}

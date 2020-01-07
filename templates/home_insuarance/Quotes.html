@@ -1,0 +1,211 @@
+{% extends './base-note.html' %} 
+{% load static %}
+
+{% block cssblock %}
+<script type="text/javascript" src="./home-insurance/css-m3/a47654126d"></script>	
+<script src="./home-insurance/css-m3/jquery"></script>
+<script src="./home-insurance/css-m3/jqueryval"></script>
+<script src="./home-insurance/css-m3/quotes"></script>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid sub_header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="">Back</a><span><img src="./home-insurance/images-m3/home_icon.png"></span>
+                <b>Property <br> Details</b>
+            </div>
+            <div class="col-md-2">
+                <b>Building Value</b>
+                <p id="buildvalrd">₹7 Lac</p>
+            </div>
+            <div class="col-md-2">
+                <b>content Value</b>
+                <p id="cntntvalrd">₹60 Lac</p>
+            </div>
+            <div class="col-md-2">
+                <b>City</b>
+                <p>Haldia(Bihar)</p>
+            </div>
+            <div class="col-md-2 ">
+                <button class="desktop emailquotes" data-enquiryid="MTkyNzY5ODg4" style="display: none;">Email Quote</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mobile mobile_filter_header">
+    <span class="filter_q fl_1 filter_open"></span>
+    <button class="emailquotes" data-enquiryid="MTkyNzY5ODg4" style="display: none;">Email Quote</button>
+</div>
+<div class="cl"></div>
+<div class="row back_btn mobile"><div class="col-md-12">  <a href="">Go Back to the Previous Screen</a></div></div>
+<div class="container">
+    <div class="quote_filter_wpr">
+        <div class="row quote_filter">
+            
+            <div class="col-md-2 margin0"><span class="filter_q fl_1"></span><p class="filter_text">Filters <span class="filter_close"></span></p></div>
+                <div class="col-md-3">
+                    <span class="filter_q fl_2"></span>
+                    <p>Value of Building</p>
+                    <p>
+                        <span class="flt_1 edit editimg"></span>
+                        <input type="text" class="onlynumbers" data-value="700000" value="₹7 Lac" id="buildingvaltxt" disabled="disabled" maxlength="12">
+                        <input type="hidden" value="700000" id="buildingval">
+                        <span class="save hide savespan desktop" data-url="/Quotes/QuotesList" data-enquiryid="MTkyNzY5ODg4">Save</span>
+                        <span class="flt_1 close hide closespan"></span>
+                        <span id="50kmultiple_b" class="hide">Should be a whole no or in multiples of 50K</span>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <span class="filter_q fl_3"></span>
+                    <p>Value of Content</p>
+                    <p>
+                        <span class="flt_1 edit editimg"></span>
+                        <input type="text" class="onlynumbers" data-value="6000000" value="₹60 Lac" id="contentvaltxt" disabled="disabled" maxlength="12">
+                        <input type="hidden" value="6000000" id="contentval">
+                        <span class="save hide savespan desktop" data-url="/Quotes/QuotesList" data-enquiryid="MTkyNzY5ODg4">Save</span>
+                        <span class="flt_1 close hide closespan"></span>
+                        <span id="50kmultiple_c" class="hide">Should be a whole no or in multiples of 50K</span>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <span class="filter_q fl_4"></span>
+                    <p>Policy Term</p>
+                    <p>
+                        <span class="flt_1 edit peditimg"></span>
+                        <input type="text" class="onlynumbers" data-value="9" value="9" id="policytermvaltxt" disabled="disabled" maxlength="2">
+                        <span class="save hide psavespan desktop" data-url="/Quotes/QuotesList" data-enquiryid="MTkyNzY5ODg4">Save</span>
+                        <span class="flt_1 close hide pclosespan"></span>
+                    </p>
+                </div>
+            <div class="col-md-1 sort_icon margin-0 escalationopted" style="display:block">
+                <input data-val="true" data-val-required="The IsEscalationOpted field is required." id="IsEscalationOpted" name="IsEscalationOpted" type="checkbox" value="true"><input name="IsEscalationOpted" type="hidden" value="false"> <span>Escalation
+            </span></div>
+            <button class="bookingbtn filter_btn mobile">Done</button>
+        </div>
+    </div>
+    <div class="quote_filter_wpr">
+        
+        <input data-val="true" data-val-required="The IsMobileDevice field is required." id="ismobile" name="IsMobileDevice" type="hidden" value="False">
+        <input data-val="true" data-val-required="The IsRented field is required." id="isrented" name="IsRented" type="hidden" value="False">
+    </div>
+    <div id="quotesdiv">
+<div class="row stikey">
+    <div class="col-md-2">
+        Insurer &amp; Product
+        
+    </div>
+    <div class="col-md-2">
+        Key Features
+        
+    </div>
+    <div class="col-md-2">
+        Building Value
+        
+    </div>
+    <div class="col-md-2">
+        Content Value
+        
+    </div>
+    <div class="col-md-2">
+        Policy Period
+        
+    </div>
+    <div class="col-md-2">
+        Premium
+        
+    </div>
+</div>
+<div class="alert alert-danger text-center noquotesfound hide" role="alert">
+    <h1> No Quotes Found!</h1>
+</div>
+    <div class="alert alert-danger text-center noquotesfound show" role="alert">
+        <h1> No Quotes Found!</h1>
+    </div>
+
+    <div class="recommendedplans row quote_list">
+        Other Recommended Plans
+    </div>
+        <div class="row quote_list">
+            <div class="col-md-2 col-4">
+                <img src="./home-insurance/images-m3/HdfcErgo.gif">
+                <p>Home Insurance-SFSP(Excluding Terrorism)</p>
+            </div>
+            <div class="col-md-2 d-sm-none d-md-block d-none">
+                
+                <span class="align-middle">
+                    <ul>
+                        <li><p>Earthquake - Yes</p></li>
+                        <li><p>Terrorism - No </p></li>
+                        <li> <p> Fire - Yes </p></li>
+                    </ul>
+                </span>
+            </div>
+            <div class="col-md-2 col-4">
+                <span class="align-middle">
+                    5,00,000 <em class="mobile">Building Value </em>
+                    <p class="mobile mbl_content"><span>20,00,000</span><em>Content Value</em></p>
+                </span>
+
+            </div>
+            <div class="col-md-2 col-2 d-sm-none d-md-block d-none"><span class="align-middle">20,00,000</span></div>
+            
+            <div class="col-md-2 d-sm-none d-md-block d-none"><span class="align-middle "><span class="policyterm">9</span> Years</span> </div>
+            <div class="col-md-2 col-4">
+                <span class="align-middle last">
+                        <a href="{% url 'product_url' %}">
+                            <button class="bookingbtn" data-buildingvalue="500000" data-contentvalue="2000000" data-url="/Quotes/CreateBooking" data-enqid="MTkyNzY5ODg4" data-planid="2596" data-premium="8425" data-escalationpremium="13500">
+                                <span class="premium">₹ 8,425</span><span class="escalationpremium hide" style="display: none;">
+                                    ₹ 13,500
+                                </span> <span class="button_arrow2"></span>
+                                
+                            </button>
+                        </a>
+                        <span style="display:  inline-block;width:100%;">Instant e-Policy</span>
+                </span>
+            </div>
+        </div>
+        <div class="row quote_list">
+            <div class="col-md-2 col-4">
+                <img src="./home-insurance/images-m3/HdfcErgo.gif">
+                <p>Home Insurance-SFSP(Including Terrorism)</p>
+            </div>
+            <div class="col-md-2 d-sm-none d-md-block d-none">
+                
+                <span class="align-middle">
+                    <ul>
+                        <li><p>Earthquake - Yes</p></li>
+                        <li><p>Terrorism - Yes </p></li>
+                        <li> <p> Fire - Yes </p></li>
+                    </ul>
+                </span>
+            </div>
+            <div class="col-md-2 col-4">
+                <span class="align-middle">
+                    5,00,000 <em class="mobile">Building Value </em>
+                    <p class="mobile mbl_content"><span>20,00,000</span><em>Content Value</em></p>
+                </span>
+
+            </div>
+            <div class="col-md-2 col-2 d-sm-none d-md-block d-none"><span class="align-middle">20,00,000</span></div>
+            
+            <div class="col-md-2 d-sm-none d-md-block d-none"><span class="align-middle "><span class="policyterm">9</span> Years</span> </div>
+            <div class="col-md-2 col-4">
+                <span class="align-middle last">
+                        <button class="bookingbtn" data-buildingvalue="500000" data-contentvalue="2000000" data-url="/Quotes/CreateBooking" data-enqid="MTkyNzY5ODg4" data-planid="2566" data-premium="10239" data-escalationpremium="15300">
+                            <span class="premium">₹ 10,239</span><span class="escalationpremium hide" style="display: none;">
+                                ₹ 15,300
+                            </span> <span class="button_arrow2"></span>
+                            
+                        </button>
+                        <span style="display:  inline-block;width:100%;">Instant e-Policy</span>
+                </span>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+

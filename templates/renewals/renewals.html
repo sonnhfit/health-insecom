@@ -1,0 +1,267 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://health.policybazaar.com/renewals/ -->
+<html class="" style="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>InstaRenew - Enter your Details</title>
+    <base href="{% static '' %}">
+    <link rel="stylesheet" href="./renewals/css/angular-material.css">
+    <link rel="stylesheet" href="./renewals/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./renewals/css/pikaday.css">
+    <link rel="stylesheet" href="./renewals/css/font-awesome.css">
+    <link rel="stylesheet" href="./renewals/css/renewal-style.css">
+    <link rel="stylesheet" href="./renewals/css/renewal-responsive.css">
+    <link rel="stylesheet" href="./renewals/css/css.css">
+    <style>
+    body{
+        background: url(./renewals/images/prequote-bg.jpg) no-repeat fixed center center / cover;
+        padding-top: 55px;
+    }
+    </style>
+</head>
+<body style="" class="">
+    <!--  <pbheader ng-Pbbaseurl="qa"></pbheader>  -->
+    <!-- <div ng-view  ng-class="quote-bg-1" style="min-height:650px;"></div> -->
+    <!-- ngView:  -->
+    <div ng-view="" class="ng-scope" aria-hidden="false">
+
+        <div ng-controller="indexController" class="ng-scope">
+            <!-- ngInclude: 'templates/_header.html' -->
+            <div ng-include="&#39;templates/_header.html&#39;" class="ng-scope">
+                <nav class="navbar navbar-pb navbar-fixed-top ng-scope">
+                    <div class="container-fluid mobile-center">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href=""><img src="./renewals/images/pb-logo.png" width="198" alt="" class="mob-logo">
+                                <img src="./renewals/images/logo_icon@2x.png" width="35" height="35" alt="" class="mob-logo1">
+                            </a>
+                        </div>
+
+                        <div class="navbar-form navbar-right">
+                            <div class="number-top">
+                                <span class="desk_top1"> <span class="desktop"><img src="./renewals/images/phone_icons.png">[ Toll Free ] <i class="fa fa-angle-down" aria-hidden="true"></i> </span>
+                                <span class="mobile"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+
+                                <ul class="dropdown-menu" style="display: block;">
+                                    <li class="number" style="padding:4px 40px 4px 10px">Toll Free</li>
+                                    <div class="type4">
+                                        <li class="number"><small>For Renewals</small></li>
+                                        <li class="number">1800-572-3919</li>
+                                    </div>
+                                    <div class="type1">
+                                        <li class="number"><small>Have Not Paid Yet (Sales)</small></li>
+                                        <li class="number">1800-208-8787</li>
+                                    </div>
+                                    <!--<li class="number" style="padding:4px 40px 4px 10px">Service Queries</li>-->
+                                    <div class="type2">
+                                        <li class="number"><small>Have Already Paid (Service)</small></li>
+                                        <li class="number">1800 258 5970</li>
+                                        <li class="number"><small style="text-transform:none ;font-size: 11px;">(Use Registered Mobile Only)</small></li>
+                                    </div>
+                                    <div class="type3">
+                                        <li class="number">+91124-6656507</li>
+                                        <li class="number"><small style="text-transform:none ;font-size: 11px;">(For NRI's Also)</small></li>
+                                    </div>
+
+                                </ul>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <!--<nav class="navbar navbar-pb navbar-fixed-top hidden-lg hidden-md hidden-sm">
+  <div class="container-fluid mobile-center">
+    <a href="index.html"><img src="images/pb-logo.png" width="160" height="" alt=""></a>
+    <div class="navbar-form navbar-right">
+      <div class="number-top"> 1800-208-8787</div>
+    </div>
+  </div>
+</nav>-->
+            </div>
+            <div class="form-renewal-box">
+                <!-- ngInclude: 'templates/_leftBox.html' -->
+                <div ng-include="&#39;templates/_leftBox.html&#39;" class="ng-scope">
+                    <div class="left-box-login ng-scope">
+                        <div class="row" align="center">
+                            <div class="col-sm-12">
+                                <h1 class="for-large-device">InstaRenew   <span>Renew your health insurance policy <br> <span>in just 3 steps</span></span> </h1>
+                                <h1 class="for-small-device">InstaRenew <span>Renew your health insurance policy  <br>instantly online</span></h1>
+                            </div>
+                        </div>
+                        <ul class="boxes-listing-1">
+                            <li><span>1.</span> Enter your Details</li>
+                            <li><span>2.</span> Choose the policies to renew</li>
+                            <li><span>3.</span> One-click pay and renewal is done!</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ngIf: !baseObj.forgotDOB -->
+                <div class="ng-scope" ng-if="!baseObj.forgotDOB">
+                    <div class="right-box-login">
+                        <form name="prequoteform" novalidate="" ng-submit="prequoteform.$valid &amp;&amp; submitDetails()" class="ng-dirty ng-valid-parse ng-valid-invalid-max-mobile ng-valid-invalid-min-mobile ng-valid ng-valid-required ng-submitted">
+                            <div class="form-group">
+                                <div class="proposal-flex proposal-flex-home proposal-flex-home-dob">
+                                    <div class="proposal-input-container proposal-input-container-login">
+                                        <div layout="row">
+                                            <div flex="15">
+                                                <div class="small-dev-3"><em><i class="fa icons icons-home-dob" aria-hidden="true"></i></em></div>
+                                            </div>
+                                            <div flex="20"><span>Date of Birth</span></div>
+                                            <!-- <div flex="auto">
+                    <md-input-container md-no-float="">
+                      <input name="dateOfBirth" type="text" class="form-control" placeholder="DD-MM-YYYY" autocomplete="off"
+                        ng-model = "baseObj.dateOfBirth" 
+                        pikaday = "dobObj.dateOfBirth" 
+                        default-date = "{{dateOfBirth.selectedDate}}" 
+                        min-date = "{{dateOfBirth.minDate}}" 
+                        max-date = "{{dateOfBirth.maxDate}}" 
+                        year-range = "{{dateOfBirth.yearRange}}" 
+                        set-default-date = '{{dateOfBirth.flag}}'   
+                        aria-label = "false"
+                        ng-required = true
+                        readonly />
+                    </md-input-container>
+                  </div> -->
+
+                                            <div layout="row">
+                                                <md-input-container class="md-default-theme md-input-has-value">
+                                                    <md-select name="dobDate" ng-model="baseObj.ddid" ng-required="true" ng-change="checkDate(baseObj)" class="md-default-theme ng-touched ng-dirty ng-valid-parse ng-valid ng-valid-required" aria-label="DD" tabindex="0" aria-disabled="false" role="combobox" aria-expanded="false" id="select_4" required="required" aria-required="false" aria-invalid="false">
+                                                        <md-select-value class="md-select-value" id="select_value_label_0"><span>05</span><span class="md-select-icon" aria-hidden="true"></span></md-select-value>
+                                                    </md-select>
+                                                    <select class="md-visually-hidden ng-pristine ng-untouched ng-valid" name=".dobDate" ng-model="baseObj.ddid" aria-hidden="true" tabindex="-1" aria-invalid="false">
+                                                        <option value="? number:5 ?"></option>
+                                                        <option ng-value="" class="ng-binding" value=""></option>
+                                                    </select>
+                                                </md-input-container>
+                                                <md-input-container class="md-default-theme md-input-has-value">
+                                                    <md-select name="dobMonth" ng-model="baseObj.mmid" ng-required="true" ng-change="checkDate(baseObj)" class="md-default-theme ng-touched ng-dirty ng-valid-parse ng-valid ng-valid-required" aria-label="MMM" tabindex="0" aria-disabled="false" role="combobox" aria-expanded="false" id="select_6" required="required" aria-required="false" aria-invalid="false">
+                                                        <md-select-value class="md-select-value" id="select_value_label_1"><span>Apr</span><span class="md-select-icon" aria-hidden="true"></span></md-select-value>
+                                                    </md-select>
+                                                    <select class="md-visually-hidden ng-pristine ng-untouched ng-valid" name=".dobMonth" ng-model="baseObj.mmid" aria-hidden="true" tabindex="-1" aria-invalid="false">
+                                                        <option value="? number:4 ?"></option>
+                                                        <option ng-value="" class="ng-binding" value=""></option>
+                                                    </select>
+                                                </md-input-container>
+                                                <md-input-container class="md-default-theme md-input-has-value">
+                                                    <md-select name="dobYear" ng-model="baseObj.yyid" ng-required="true" ng-change="checkDate(baseObj)" class="md-default-theme ng-touched ng-dirty ng-valid-parse ng-valid ng-valid-required" aria-label="YYYY" tabindex="0" aria-disabled="false" role="combobox" aria-expanded="false" id="select_8" required="required" aria-required="false" aria-invalid="false">
+                                                        <md-select-value class="md-select-value" id="select_value_label_2"><span>1926</span><span class="md-select-icon" aria-hidden="true"></span></md-select-value>
+                                                    </md-select>
+                                                    <select class="md-visually-hidden ng-pristine ng-untouched ng-valid" name=".dobYear" ng-model="baseObj.yyid" aria-hidden="true" tabindex="-1" aria-invalid="false">
+                                                        <option value="? number:1926 ?"></option>
+                                                        <option ng-value="" class="ng-binding" value=""></option>
+                                                    </select>
+                                                </md-input-container>
+                                                <input type="hidden" ng-model="baseObj.dateOfBirth" ng-required="true" name="dateOfBirth" aria-label="dob" class="ng-pristine ng-untouched ng-valid ng-valid-required" tabindex="0" required="required" aria-required="false" aria-invalid="false">
+                                            </div>
+                                        </div>
+                                        <div class="error-login1">
+                                            <ng-messages for="prequoteform.dateOfBirth.$error" ng-show="(prequoteform.$submitted || prequoteform.dateOfBirth.$touched) &amp;&amp; prequoteform.dateOfBirth.$invalid" aria-hidden="true" class="ng-hide ng-inactive">
+                                                <!-- ngMessage: undefined -->
+                                            </ng-messages>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br clear="all">
+
+                                <div align="right">
+                                    <a ng-click="forgotDOB()" class="forgot-link" tabindex="0">Forgot Date of Birth?</a>
+                                </div>
+
+                                <div layout="row">
+                                    <div class="options-select">
+                                        <md-radio-group ng-model="baseObj.option" ng-required="true" name="option" ng-click="clearOption(baseObj.option,prequoteform)" class="ng-pristine ng-untouched ng-valid md-default-theme ng-valid-required" role="radiogroup" tabindex="0" aria-activedescendant="radio_9" required="required" aria-required="false" aria-invalid="false">
+                                            <md-radio-button value="1" class="md-default-theme md-checked" id="radio_9" role="radio" aria-checked="true" aria-label="Mobile Number">
+                                                <div class="md-container" md-ink-ripple="" md-ink-ripple-checkbox="">
+                                                    <div class="md-off"></div>
+                                                    <div class="md-on"></div>
+                                                </div>
+                                                <div ng-transclude="" class="md-label"><span class="ng-scope">Mobile Number</span></div>
+                                            </md-radio-button>
+                                            <md-radio-button value="2" class="md-default-theme" id="radio_10" role="radio" aria-checked="false" aria-label="Policy Number">
+                                                <div class="md-container" md-ink-ripple="" md-ink-ripple-checkbox="">
+                                                    <div class="md-off"></div>
+                                                    <div class="md-on"></div>
+                                                </div>
+                                                <div ng-transclude="" class="md-label"><span class="ng-scope">Policy Number</span></div>
+                                            </md-radio-button>
+                                        </md-radio-group>
+                                    </div>
+                                </div>
+
+                                <div class="error-login1">
+                                    <ng-messages for="prequoteform.option.$error" ng-show="(prequoteform.$submitted || prequoteform.option.$touched) &amp;&amp; prequoteform.option.$invalid" aria-hidden="true" class="ng-hide ng-inactive">
+                                        <!-- ngMessage: undefined -->
+                                    </ng-messages>
+                                </div>
+
+                                <!-- ngIf: baseObj.option == '1' -->
+                                <div class="proposal-flex proposal-flex-home ng-scope" ng-if="baseObj.option == &#39;1&#39;">
+                                    <div class="proposal-input-container proposal-input-container-login">
+                                        <div layout="row">
+                                            <div flex="15"><em><i class="fa fa-mobile-phone phone-size" aria-hidden="true"></i></em></div>
+                                            <div flex="20"><span>Mobile No.</span></div>
+                                            <div flex="auto">
+                                                <md-input-container md-no-float="" class="md-default-theme md-input-has-value">
+                                                    <input type="text" class="form-control md-input ng-dirty ng-valid-parse ng-valid-required ng-valid-invalid-max-mobile ng-valid ng-valid-invalid-min-mobile ng-touched" name="mobile" ng-model="baseObj.mobile" placeholder="Mobile No." mobile-number="" mobile-numlen="10" ng-required="true" autocomplete="off" aria-label="Mobile No." id="input_11" tabindex="0" required="required" aria-required="false" aria-invalid="false">
+                                                </md-input-container>
+                                            </div>
+                                        </div>
+                                        <div class="error-login1">
+                                            <ng-messages for="prequoteform.mobile.$error" ng-show="(prequoteform.$submitted || prequoteform.mobile.$touched) &amp;&amp; prequoteform.mobile.$invalid" aria-hidden="true" class="ng-hide ng-inactive">
+                                                <!-- ngMessage: undefined -->
+                                                <!-- ngMessage: undefined -->
+                                                <!-- ngMessage: undefined -->
+                                            </ng-messages>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end ngIf: baseObj.option == '1' -->
+
+                                <!-- ngIf: baseObj.option == '2' -->
+
+                                <br clear="all">
+
+                                <div align="center" class="privacy-policy">By clicking on "PROCEED", you agree to our <a href="" target="_blank">Privacy Policy</a></div>
+                                <div align="center">
+                                    <button class="btn btn-default button-proceed" type="submit" ng-disabled="baseObj.loader" aria-disabled="false">
+                                        <!-- ngIf: baseObj.loader -->
+                                        Proceed
+                                        <i class="fa fa-long-arrow-right right-renewal-ar"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- end ngIf: !baseObj.forgotDOB -->
+            </div>
+        </div>
+        <!-- ngInclude: 'templates/_footer.html' -->
+        <div ng-include="&#39;templates/_footer.html&#39;" class="ng-scope">
+
+            <div class="footer ng-scope"><span>CIN: U74900HR2014PTC053454</span> | <a href="" target="_blank"> Contact Us</a> | <a href="" target="_blank"> Legal and Admin Policies</a> | <a href="#license" target="_blank">IRDAI Web aggregator Registration No. 06 Registration Code No. IRDAI/WBA21/15 Valid till 13/07/2021</a>
+                <p>Insurance is the subject matter of solicitation. Visitors are hereby informed that their information submitted on the website may be shared with insurers.</p>
+                <p>Product information is authentic and solely based on the information received from the Insurer © Copyright 2008-2020 policybazaar.com. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    <!--   <pbfooter ng-Pbbaseurl="qa"></pbfooter> -->
+    
+    
+    
+
+    <div class="goog-te-spinner-pos" aria-hidden="false">
+        <div class="goog-te-spinner-animation">
+            <svg xmlns="" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66">
+                <circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+            </svg>
+        </div>
+    </div>
+</body>
+
+</html>
