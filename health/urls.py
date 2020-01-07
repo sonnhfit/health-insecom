@@ -40,6 +40,7 @@ urlpatterns = [
     path('company/', health_views.CompanyInsurance.as_view(), name='company_url'),
     path('select-company/', health_views.SelectCompany.as_view(), name='select-company_url'),
     path('pay-renewal/', health_views.PayRenewal.as_view(), name='pay-renewal_url'),
-    path('health-quote/', health_views.HealthQuote.as_view(), name='health-quote_url')
+    path('health-quote/', health_views.HealthQuote.as_view(), name='health-quote_url'),
+    path('health-poly/', health_views.HealthPoly.as_view(), name='health_poly_url')
     
 ]

@@ -1,0 +1,276 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="" style="height: auto; min-height: 100%;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/css.css">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Health Claims Assistance</title>
+    <base href="{% static '' %}">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="./health-poly/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./health-poly/css/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="./health-poly/css/style.css">
+    <link rel="stylesheet" href="./health-poly/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./health-poly/css/ionicons.min.css">
+    <link rel="stylesheet" href="./health-poly/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="./health-poly/css/_all-skins.min.css">
+    <link rel="stylesheet" href="./health-poly/css/css">
+    <script src="./health-poly/js/jquery.min.js"></script>
+    <script src="./health-poly/js/jquery-ui.min.js"></script>
+    <script src="./health-poly/js/bootstrap.min.js"></script>
+    <script src="./health-poly/js/moment.min.js"></script>
+    <script src="./health-poly/js/adminlte.min.js"></script>
+    <script src="./health-poly/js/angular.min.js"></script>
+    <script src="./health-poly/js/angular-route.min.js"></script>
+    <script src="./health-poly/js/jquery-3.2.1.min.js"></script>
+    <script src="./health-poly/js/ui-bootstrap-2.5.0.min.js"></script>
+    <script src="./health-poly/js/angular-cookies.min.js"></script>
+    <script src="./health-poly/js/angularjs-dropdown-multiselect.min.js"></script>
+    <script src="./health-poly/js/clipboard.min.js"></script>
+    <script src="./health-poly/js/ngclipboard.js"></script>
+
+    <script src="./health-poly/js/app.js"></script>
+    <script src="./health-poly/js/resourceConfig.js"></script>
+    <script src="./health-poly/js/rootScopeService.js"></script>
+    <script src="./health-poly/js/serviceHelper.js"></script>
+    <script src="./health-poly/js/health.js"></script>
+
+<body class="ng-scope" ng-app="Claim" style="height: auto; min-height: 100%;">
+    <div class="wrapper" style="height: auto; min-height: 100%;">
+        <header class="main-header">
+            <a href="https://claim.policybazaar.com/index.html" class="logo"> <span class="logo-mini">Claim</span> <span class="logo-lg"><img src="./health-poly/images/pb_logo.png" width="198" height="39"></span> </a>
+            <nav class="navbar navbar-static-top">
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown user user-menu">1800-258-5881<span class="toll_no">[Toll Free]</span></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content-wrapper claimdata-wrapper ng-scope" ng-controller="health" style="min-height: 885px;">
+            <section class="content dashboard_table">
+                <div class="row top_block">
+                    <div class="happy_family_img layer"><img src="./health-poly/images/family_image.png" width="775" height="545" style="visibility: visible;"></div>
+                    <form role="form" name="ClaimHealthForm" class="ng-pristine ng-valid ng-valid-maxlength ng-valid-email">
+                        <div class="brief_data">
+                            <h2>Get assistance with Health Insurance claims</h2>
+                            <p>Our claims assistance team can take care of your worries, while you rest and recover. Just submit your details on the below, or call us on <span class="mob_no">1800-258-5881</span> from your registered mobile number and we will guide you step-by-step through the rest. Alternatively, you can also write to us at <a href="https://claim.policybazaar.com/">claims@policybazaar.com</a> from your registered email id.</p>
+                            <ul class="claim_form">
+                                <li><input name="Name" type="text" placeholder="Customer Name" ng-model="ClaimRequest.Name" class="ng-pristine ng-untouched ng-valid ng-empty"></li>
+                                <li><input name="Mobile" type="text" placeholder="Registered Mobile No" ng-model="ClaimRequest.MobileNo" only-valid-number="" maxlength="10" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength"></li>
+                                <li><input name="Email" type="email" placeholder="Registered Email" ng-model="ClaimRequest.EmailID" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-email"></li>
+                                <li><input name="AlternateNo" type="text" placeholder="Alternate No" ng-model="ClaimRequest.AlternateNo" only-valid-number="" maxlength="10" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength"></li>
+                                <li><input name="PolicyNumber" type="text" placeholder="Policy Number" ng-model="ClaimRequest.PolicyNumber" maxlength="20" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength"></li>
+                                <li><input name="InsurerClaimId" type="text" placeholder="Claim Id" ng-model="ClaimRequest.InsurerClaimId" maxlength="20" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength"></li>
+                                <li class="textbox"><textarea name="Remarks" placeholder="Remarks" cols="" rows="" ng-model="ClaimRequest.Comments" maxlength="400" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength"></textarea></li>
+                                <li class="button_block"><button type="submit" ng-click="SetClaimRequest();" ng-disabled="ClaimHealthForm.$invalid">Request Callback</button></li>
+                            </ul>
+                            <span class="disclaimer">*Policybazaar is acting only as a facilitator and claims settlement shall be at the sole discretion of the Insurer.</span>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="contant_section padding_layout_1">
+                <div class="container wow fadeIn">
+                    <div class="row claim_list">
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="full about_seo_section text_align_center margin_bottom_30">
+                                <div class="center">
+                                    <div class="about_info">
+                                        <img src="./health-poly/images/emergency_cashless_icon.png">
+                                        <div class="border_dotted_circle"></div>
+                                    </div>
+                                </div>
+                                <h4 class="theme_color">Emergency - cashless</h4>
+                                <p>
+                                    In case of an emergency, it's important to have your health registration card / policy copy ready. Don't worry, you can access the same by logging in to your <strong>`MyAccount`</strong> section.
+                                </p>
+                                <p>
+                                    Our executives will also be able to help you with any relevant procedures during <insert work="" hours=""> . We are also working towards setting up a 24-hour information centre to better help our customers, and should be available soon!
+                                </insert></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="full about_seo_section text_align_center margin_bottom_30">
+                                <div class="center">
+                                    <div class="about_info">
+
+                                        <img src="./health-poly/images/emergency_reimbursement_icon.png">
+                                        <div class="border_dotted_circle"></div>
+                                    </div>
+                                </div>
+                                <h4 class="theme_color">Emergency - Reimbursement</h4>
+                                <p>In the emergency situations where you are unable to find a networked hospital and urgently need medical supervision, you can get your treatment done at a hospital of your choice and file for a reimbursement later. For such cases, certain important things are to be kept in mind.</p>
+                                <p>
+                                    Inform your insurer as soon as possible, and no later than 24 hours of admission
+                                    To be eligible to file a claim, hospitalisation has to be for at least a period of 24 hours
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="full about_seo_section text_align_center margin_bottom_30">
+                                <div class="center">
+                                    <div class="about_info">
+
+                                        <img src="./health-poly/images/planned_cashless_icon.png">
+                                        <div class="border_dotted_circle"></div>
+                                    </div>
+                                </div>
+                                <h4 class="theme_color">Planned - Cashless</h4>
+                                <p>Upon being advised for hospitalisation, it is recommended that you to get in touch with your Policybazaar claims assistance executive or directly with your insurer to guide you through the process of selecting a hospital where you can get cashless services. </p>
+                                <p>You can also use the links below to find a hospital where your insurer provides cashless services:</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="full about_seo_section text_align_center margin_bottom_30">
+                                <div class="center">
+                                    <div class="about_info">
+
+                                        <img src="./health-poly/images/planned_reimbursement_icon.png">
+                                        <div class="border_dotted_circle"></div>
+                                    </div>
+                                </div>
+                                <h4 class="theme_color">Planned - Reimbursement</h4>
+                                <p>Though most cases of planned hospitalisation are served in a cashless manner through networked hospitals, you can always chose to get your treatment done at a non-networked hospital and file for a reimbursement claim.</p>
+                                <p>Make sure to plan properly and inform your insurer in advance for all such cases. Our claims experts will be happy to guide you through the steps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contant_section padding_layout_2">
+                <div class="container faq_section">
+
+                    <div class="panel-group" id="accordion-test-2">
+                        <h2 class="faq_heading">FAQ</h2>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <span class="accordion_list">1</span>
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-test-2" href="https://claim.policybazaar.com/#collapseOne-2" aria-expanded="true">
+                                        What is a Health Card?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne-2" class="panel-collapse collapse in" aria-expanded="true">
+                                <div class="panel-body accordion_data">
+                                    A health card is a card that comes along with the Health Policy. It is similar to an Identity card. This card would entitle you to avail cashless hospitalization facility at any of our network hospitals. A health card mentions the contact details and the contact numbers of the TPA. In case of a medical emergency, you can call on these numbers for queries, clarifications and for seeking any kind of assistance. Moreover, you need to display your health card at the time of admission into the hospital
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <span class="accordion_list">2</span>
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-test-2" href="https://claim.policybazaar.com/#collapseTwo-2" class="collapsed" aria-expanded="false">
+                                        What do you mean by Cashless Hospitalization?
+
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo-2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                <div class="panel-body accordion_data">
+                                    In the event of hospitalization, the patient or their family will have a bill to pay the hospital.
+                                    Under Cashless Hospitalization the patient does not settle the hospitalization expenses at the time of discharge from hospital. The settlement is done directly by the Insurer.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <span class="accordion_list">3</span>
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-test-2" href="https://claim.policybazaar.com/#collapseThree-2" class="collapsed" aria-expanded="false">
+                                        How does hospitalisation for Planned Hospitalisation work?
+
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree-2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                <div class="panel-body accordion_data">
+                                    <p>
+                                        The request for Pre- Authorization form for planned treatment has to be signed by the customer and sent by Hospital.&nbsp;
+                                        This request must reach Insurer at least 2 days before hospitalisation.&nbsp;
+                                    </p>
+                                    <p>Any change in the date of hospitalisation, Hospital, nature of illness or surgeon who is going to perform the procedure will make the authorization invalid. A fresh authorization will have to be taken.&nbsp;</p>
+                                    <p>The authorization is valid only for Network Hospitals.&nbsp;</p>
+                                    <p>The authorization will be addressed and faxed to the hospital.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <span class="accordion_list">4</span>
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-test-2" href="https://claim.policybazaar.com/#collapseFour-2" class="collapsed" aria-expanded="false">
+                                        How does one get Reimbursement for pre and post hospitalisation expenses under this scheme?
+
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour-2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                <div class="panel-body accordion_data">
+                                    <p>  If your policy allows reimbursement of medical expenses incurred towards the ailment/ disease for which hospitalisation was necessitated prior to hospitalisation and up to a certain number of days after discharge.&nbsp;</p>
+                                    <p>This is subject to the limits as described in the policy. The medical expenses incurred prior to Hospitalisation are called pre- hospitalisation expenses and those incurred subsequent to discharge as post Hospitalisation expenses.&nbsp;</p>
+                                    <p>To claim pre hospitalization expenses , Any expenses incurred on OP treatment which leads to IP hospitalization prior to 30 days prior to the date of hospitalization is settled as Pre hospitalization. All original bills have to be produced.</p>
+                                    <p>To claim post hospitalization expenses 7% of the Hospital bill (excluding Room rent) up to a maximum of Rs.5000/ is settled as post hospitalization. This is done based on the recommendation of the doctor and prescriptions along with discharge summary</p>
+                                    <p>In case of any non settlement, customer can contact customer service toll free number</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <span class="accordion_list">5</span>
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-test-2" href="https://claim.policybazaar.com/#collapseFive-2" class="collapsed" aria-expanded="false">
+                                        How does one get Reimbursements in case of treatment in non- network hospitals?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive-2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                <div class="panel-body accordion_data">
+                                    <p> Cashless Hospitalisation is available only in Network Hospitals. While it's recommended that you choose a network hospital you are at liberty to choose a non-network hospital also. In case you avail of treatment in a Non Network hospital, the Insurer will reimburse you the amount of bills subject to the policy taken by the policyholder.</p>
+                                    <p>The Policy Holders attention is drawn to the definition of Hospital in the Mediclaim policy. The Insurer should be contacted within 24 hours from the time of admission with details of the Insurer id card number, nature of illness, name &amp; address of the Hospital/ Nursing Home/ Clinic, Room Number etc. The claim will be registered by Customer Care and a claim number will be provided to the Policy holder. Claim form will be sent to the Policy holder address. This claim form must be filled fully and sent to the Insurer office along with the following documents in original.</p>
+                                    <p>Main Hospital Bill with Receipt for payment along with the break up.&nbsp;</p>
+                                    <p>Doctors prescription and medicine bills.&nbsp;</p>
+                                    <p>Discharge summary sheet from the hospital.&nbsp;</p>
+                                    <p>Investigation reports along with the X Ray film</p>
+                                    <p>Other relevant details and documents connected to hospitalisation.</p>
+                                    <p>Note:&nbsp;Only expenses relating to hospitalisation will be reimbursed as per the policy taken. All non-medical expenses will not be reimbursed.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contant_section">
+                <footer class="footer footer_block">
+                    <div class="legalInformation">
+                        <p>
+                            CIN: U74900HR2014PTC053454 Policybazaar Insurance Web Aggregator Private Limited, Registered Office no. - Plot No.119, Sector - 44, Gurgaon, Haryana - 122001
+                        </p>
+                        <a href="https://www.policybazaar.com/legal-and-admin-policies/#license">IRDAI Web aggregator Registration No. 06 Registration Code No. IRDAI/WBA21/15 Valid till 13/07/2021</a>
+                        <p class="small">Insurance is the subject matter of solicitation. Visitors are hereby informed that their information submitted on the website may be shared with insurers.</p>
+                        <p class="small">
+                            Product information is authentic and solely based on the information received from the Insurer © Copyright 2008-2020 policybazaar.com. All Rights Reserved.
+                        </p>
+                    </div>
+                    <!--Services Currently available in Delhi-NCR(10 am till 7 pm)<br>
+                    Information available regarding cashless processing at networked hospitals-->
+                </footer>
+            </section>
+        </div>
+
+    </div>
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

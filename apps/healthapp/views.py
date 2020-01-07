@@ -115,3 +115,10 @@ class HealthQuote(View):
 
     def get(self, request):
         return render(request,'health-quote-compare/health-quote.html')
+
+
+
+class HealthPoly(View):
+
+    def get(self, request):
+        return render(request,'health_poly/health-poly.html')
