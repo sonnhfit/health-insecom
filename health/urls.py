@@ -32,6 +32,8 @@ urlpatterns = [
     path('info-payment/', health_views.InfoPayment.as_view(), name='info-payment_url'),
     path('company/', health_views.CompanyInsurance.as_view(), name='company_url'),
     path('select-company/', health_views.SelectCompany.as_view(), name='select-company_url'),
-    path('pay-renewal/', health_views.PayRenewal.as_view(), name='pay-renewal_url')
+    path('pay-renewal/', health_views.PayRenewal.as_view(), name='pay-renewal_url'),
+    path('nhap/', health_views.Nhap.as_view(), name='nhap_url'),
+    path('health-poly/', health_views.HealthPoly.as_view(), name='health_poly_url'),
     
 ]

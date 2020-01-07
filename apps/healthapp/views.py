@@ -74,5 +74,15 @@ class PayRenewal(View):
 
     def get(self, request):
         return render(request,'life-renewal/pay-renewal.html')                                
-        
-    
+
+
+class Nhap(View):
+
+    def get(self, request):
+        return render(request,'master.html')
+
+
+class HealthPoly(View):
+
+     def get(self, request):
+        return render(request,'health_poly/health-poly.html')  
