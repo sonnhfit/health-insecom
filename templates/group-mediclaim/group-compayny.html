@@ -1,0 +1,2112 @@
+{% extends './base.html' %} {% load static %} {% block cssblock %} {% endblock %} {% block content %}
+<div ng-include="'templates/_quoteFilter.html?bust=121'" class="ng-scope">
+    <div class="quote_header ng-scope" ng-if="baseObj.insurancePolicy !='Professional Indemnity' &amp;&amp;  apiDataList.quotes.length > 0">
+        <div class="quote_inner">
+            <div class="quote_left_side">
+                <h3 class="mobile">Filter <i class="fa fa-times mobile" aria-hidden="true"></i></h3>
+                <form name="filterForm" class="ng-pristine ng-valid ng-valid-invalid-min-len ng-valid-invalid-max-len ng-valid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength">
+                    <ul>
+                        <li layout-aling="center center" ng-if="baseObj.investmentTypeId != 13 &amp;&amp; baseObj.investmentTypeId != 19 &amp;&amp; baseObj.investmentTypeId != 18 &amp;&amp; baseObj.investmentTypeId != 5 &amp;&amp; baseObj.investmentTypeId != 7 &amp;&amp; baseObj.investmentTypeId != 8" class="ng-scope">
+                            <label>Sum Insured</label>
+                            <md-select class="si_filter ng-pristine ng-untouched ng-valid ng-empty" name="sumInsured" placeholder="Select Sum Insured" ng-model="baseObj.sumInsured" ng-change="reloadQuotes()" tabindex="0" aria-disabled="false" role="listbox" aria-expanded="false" aria-multiselectable="false" id="select_1" aria-owns="select_container_2" aria-invalid="false" aria-label="Select Sum Insured: 2 Lacs">
+                                <md-select-value class="md-select-value" id="select_value_label_0"><span><div class="md-text ng-binding">2 Lacs</div></span><span class="md-select-icon" aria-hidden="true"></span></md-select-value>
+                                <div class="md-select-menu-container" aria-hidden="true" id="select_container_2">
+                                    <md-select-menu class="_md">
+                                        <md-content class="_md">
+                                            <md-option ng-value="200000" ng-repeat="suminsured in suminsuredList track by $index " tabindex="0" class="ng-scope md-ink-ripple" role="option" aria-selected="true" id="select_option_3" aria-checked="true" value="200000" selected="selected">
+                                                <div class="md-text ng-binding">2 Lacs</div>
+                                            </md-option>
+                                            <!-- end ngRepeat: suminsured in suminsuredList track by $index  -->
+                                            <md-option ng-value="300000" ng-repeat="suminsured in suminsuredList track by $index " tabindex="0" class="ng-scope md-ink-ripple" role="option" aria-selected="false" id="select_option_4" aria-checked="true" value="300000">
+                                                <div class="md-text ng-binding">3 Lacs</div>
+                                            </md-option>
+                                            <md-option ng-value="500000" ng-repeat="suminsured in suminsuredList track by $index " tabindex="0" class="ng-scope md-ink-ripple" role="option" aria-selected="false" id="select_option_5" aria-checked="true" value="500000">
+                                                <div class="md-text ng-binding">5 Lacs</div>
+                                            </md-option>
+                                        </md-content>
+                                    </md-select-menu>
+                                </div>
+                            </md-select>
+                            <select class="md-visually-hidden" name="sumInsured" aria-hidden="true" tabindex="-1">
+                                <option ng-value="" class="ng-binding" aria-checked="false"></option>
+                                <option ng-value="baseObj.sumInsured" selected="" aria-checked="true" value="200000"></option>
+                            </select>
+                        </li>
+
+                        <li ng-if="baseObj.insurancePolicy == 'Group Personal Accident'" class="ng-scope">
+                            <label>No. of Employees <span>(10-300)</span></label>
+                            <input name="employees" ng-model="baseObj.employees" maxlength="3" minlength="1" type="text" placeholder="" class="input-prequote ng-pristine ng-valid ng-not-empty ng-valid-invalid-min-len ng-valid-invalid-max-len ng-valid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-touched" ng-required="true" valid-number="" ng-pattern="/^((?!(0))[0-9]{1,})$/" ng-change="reloadQuotes()" valid-emp-count="" min-emp="0" max-emp="300" autocomplete="off" required="required" aria-invalid="false" style="">
+                        </li>
+                    </ul>
+                </form>
+                &nbsp;
+
+                <div class="filter_button mobile">
+                    <button class="md-button md-ink-ripple" type="button" ng-transclude="">Done</button>
+                </div>
+                <div class="cl"></div>
+            </div>
+
+            <div class="quote_right_side ng-scope" ng-if="!baseObj.textFlag">
+                <button ng-click="sendEmail()"><img src="group-mediclaim/images-base/email_icon.png"> Email Quote</button>
+                <div class="filter_icon mobile">
+                    <img src="images/filter_icon.png">
+                </div>
+            </div>
+
+            <div class="cl"></div>
+            <div class="cl"></div>
+        </div>
+    </div>
+    <div class="cl ng-scope"></div>
+</div>
+<div layout="row" class="layout-row">
+    <div flex="" class="back_button flex"><a ng-click="backBtn()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>  Go Back to Quote Screen</a></div>
+</div>
+
+<div class="quote_wrapper ng-scope">
+    <span class="desktop">
+    <div layout="row" class="quote_gpa_short layout-row">
+      <div flex="20" class="flex-20">Insurer Plan</div>
+      <div flex="15" class="flex-15">Sum Insured</div>
+      <div flex="50" class="flex-50">Key Features</div>
+      <div flex="15" class="flex-15">Premium </div>
+    </div>
+    </span>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div class="stiky_mi new-sticky ng-scope"> <span></span> Instant Purchase
+            <label></label>
+        </div>
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="images/supplier-logo/Religare.gif" class="ng-scope" src="group-mediclaim/images-base/Religare.gif">
+
+                        </p>
+                        <p class="ng-binding">Bronze </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+                            <div class="cl"></div>
+                        </ul>
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+                            <div class="cl"></div>
+                        </ul>
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <div flex="15" flex-xs="45" flex-sm="45">
+
+                <div>
+
+                    <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                      <a href="{% url 'group-question-company_url' %}"> <i class="fa fa-inr ng-scope" aria-hidden="true"></i> 35,145 <i class="fas fa-long-arrow-alt-right"></i></a> 
+                    </button>
+                    <div class="view_feature ng-scope">
+                        <i role="button" tabindex="0">View Features</i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div class="stiky_mi new-sticky ng-scope"> <span></span> Instant Purchase
+            <label></label>
+        </div>
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="images/supplier-logo/Reliance.jpg" class="ng-scope" src="group-mediclaim/images-base/Reliance.jpg">
+
+                        </p>
+                        <p class="ng-binding">Bronze </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div flex="15" flex-xs="45" flex-sm="45">
+
+                <div>
+
+                    <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                        <i class="fa fa-inr ng-scope" aria-hidden="true"></i> 35,358 <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+
+                    <div class="view_feature ng-scope">
+                        <i role="button" tabindex="0">View Features</i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div class="stiky_mi new-sticky ng-scope"> <span></span> Instant Purchase
+            <label></label>
+        </div>
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="group-mediclaim/images-base/Religare.gif" src="group-mediclaim/images-base/Religare.gif">
+
+                        </p>
+                        <p class="ng-binding">Silver </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Covered Upto ₹ 25,000</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div flex="15" flex-xs="45" flex-sm="45">
+
+                <div>
+
+                    <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                        <i class="fa fa-inr ng-scope" aria-hidden="true"></i> 42,174 <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+
+                    <div class="view_feature ng-scope">
+                        <i role="button" tabindex="0">View Features</i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div class="stiky_mi new-sticky ng-scope"> <span></span> Instant Purchase
+            <label></label>
+        </div>
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="images/supplier-logo/Reliance.jpg" src="group-mediclaim/images-base/Reliance.jpg">
+
+                        </p>
+                        <p class="ng-binding">Gold </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">2% of SI or Actuals, Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div flex="15" flex-xs="45" flex-sm="45">
+
+                <div>
+
+                    <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                        <i class="fa fa-inr ng-scope" aria-hidden="true"></i> 44,730 <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+
+                    <div class="view_feature ng-scope">
+                        <i role="button" tabindex="0">View Features</i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div class="stiky_mi new-sticky ng-scope"> <span></span> Instant Purchase
+            <label></label>
+        </div>
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="images/supplier-logo/Religare.gif" src="group-mediclaim/images-base/Religare.gif">
+
+                        </p>
+                        <p class="ng-binding">Gold </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">Covered Upto ₹ 5,000</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div flex="15" flex-xs="45" flex-sm="45">
+
+                <div>
+
+                    <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                        <i class="fa fa-inr ng-scope" aria-hidden="true"></i> 50,907 <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+
+                    <div class="view_feature ng-scope">
+                        <i role="button" tabindex="0">View Features</i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div class="stiky_mi new-sticky ng-scope"> <span></span> Instant Purchase
+            <label></label>
+        </div>
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="images/supplier-logo/Reliance.jpg" src="group-mediclaim/images-base/Reliance.jpg">
+
+                        </p>
+                        <p class="ng-binding">Silver </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">10% of SI or Actuals, Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div flex="15" flex-xs="45" flex-sm="45">
+
+                <div>
+
+                    <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                        <i class="fa fa-inr ng-scope" aria-hidden="true"></i> 51,120 <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+
+                    <div class="view_feature ng-scope">
+                        <i role="button" tabindex="0">View Features</i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div class="stiky_mi new-sticky ng-scope"> <span></span> Instant Purchase
+            <label></label>
+        </div>
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="images/supplier-logo/Reliance.jpg" src="group-mediclaim/images-base/Reliance.jpg">
+
+                        </p>
+                        <p class="ng-binding">Platinum </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">10% of SI or Actuals, Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">2% of SI or Actuals, Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div flex="15" flex-xs="45" flex-sm="45">
+
+                <div>
+
+                    <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                        <i class="fa fa-inr ng-scope" aria-hidden="true"></i> 55,806 <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+
+                    <div class="view_feature ng-scope">
+                        <i role="button" tabindex="0">View Features</i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div class="stiky_mi new-sticky ng-scope"> <span></span> Instant Purchase
+            <label></label>
+        </div>
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="images/supplier-logo/Religare.gif" src="group-mediclaim/images-base/Religare.gif">
+
+                        </p>
+                        <p class="ng-binding">Platinum </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Covered Upto ₹ 25,000</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">Covered Upto ₹ 5,000</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div flex="15" flex-xs="45" flex-sm="45">
+
+                <div>
+
+                    <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                        <i class="fa fa-inr ng-scope" aria-hidden="true"></i> 56,232 <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+
+                    <div class="view_feature ng-scope">
+                        <i role="button" tabindex="0">View Features</i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="/images/supplier-logo/rahejaqbe.png" src="group-mediclaim/images-base/rahejaqbe.png">
+
+                        </p>
+                        <p class="ng-binding">Bronze </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div flex="15" flex-xs="45" flex-sm="45">
+
+                <div>
+
+                    <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                        <i class="fa fa-inr ng-scope" aria-hidden="true"></i> 62,622 <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+
+                    <div class="view_feature ng-scope">
+                        <i role="button" tabindex="0">View Features</i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="/images/supplier-logo/rahejaqbe.png" src="group-mediclaim/images-base/rahejaqbe.png">
+
+                        </p>
+                        <p class="ng-binding">Gold </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of Sum Insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">10% of Capital SI or 25% of Admissible Claims Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div flex="15" flex-xs="45" flex-sm="45">
+
+                <div>
+
+                    <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                        <i class="fa fa-inr ng-scope" aria-hidden="true"></i> 69,012 <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+
+                    <div class="view_feature ng-scope">
+                        <i role="button" tabindex="0">View Features</i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="images/supplier-logo/adityabirla.jpg" src="group-mediclaim/images-base/adityabirla.jpg">
+
+                        </p>
+                        <p class="ng-binding">Platinum </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+
+                <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                    Click for best quotes
+                </button>
+
+                <div class="view_feature ng-scope">
+                    <i role="button" tabindex="0">View Features</i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="images/supplier-logo/shriram.jpg" src="group-mediclaim/images-base/shriram.jpg">
+
+                        </p>
+                        <p class="ng-binding">Gold </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+
+                <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                    Click for best quotes
+                </button>
+
+                <div class="view_feature ng-scope">
+                    <i role="button" tabindex="0">View Features</i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="images/supplier-logo/MaxBupa.gif" src="group-mediclaim/images-base/MaxBupa.gif">
+
+                        </p>
+                        <p class="ng-binding">Platinum </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+
+                <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                    Click for best quotes
+                </button>
+
+                <div class="view_feature ng-scope">
+                    <i role="button" tabindex="0">View Features</i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="images/supplier-logo/Apollo_Munich.gif" src="group-mediclaim/images-base/Apollo_Munich.gif">
+
+                        </p>
+                        <p class="ng-binding">Platinum </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+
+                <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                    Click for best quotes
+                </button>
+
+                <div class="view_feature ng-scope">
+                    <i role="button" tabindex="0">View Features</i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="images/supplier-logo/bajajallianz.jpg" src="group-mediclaim/images-base/bajajallianz.jpg">
+
+                        </p>
+                        <p class="ng-binding">Platinum </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+
+                <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                    Click for best quotes
+                </button>
+
+                <div class="view_feature ng-scope">
+                    <i role="button" tabindex="0">View Features</i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="images/supplier-logo/HdfcErgo.gif" src="group-mediclaim/images-base/HdfcErgo.gif">
+
+                        </p>
+                        <p class="ng-binding">Platinum </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+
+                <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                    Click for best quotes
+                </button>
+
+                <div class="view_feature ng-scope">
+                    <i role="button" tabindex="0">View Features</i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goa_quote_wrapper gpa-quote ng-scope">
+
+        <div layout="row" layout-fill="" class="gpa_quote gpa1_quote layout-fill layout-align-center-center layout-row" layout-align="center center">
+            <div flex="20" flex-xs="35" flex-sm="35" class="flex-xs-35 flex-sm-35 flex-20">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+                        <p>
+                            <img ng-src="images/supplier-logo/Star_Health.png" src="group-mediclaim/images-base/Star_Health.png">
+
+                        </p>
+                        <p class="ng-binding">Gold </p>
+                    </div>
+                </div>
+            </div>
+            <div flex="15" flex-xs="20" flex-sm="20" class="flex-xs-20 flex-sm-20 flex-15">
+                <div class="middle_tbl">
+                    <div class="middle_td"><em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 2 Lacs  </em>
+                    </div>
+                </div>
+            </div>
+
+            <div flex="50" class="desktop ng-scope flex-50">
+                <div class="middle_tbl">
+                    <div class="middle_td">
+
+                        <ul>
+
+                            <li><span class="ng-binding">Personal Accident Death</span></li>
+                            <li>
+                                <p class="ng-binding">100% of Sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Total Disability(PTD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Permanent Partial Disability(PPD)</span></li>
+                            <li>
+                                <p class="ng-binding">Upto 100% of sum insured</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Temporary Total Disablement (TTD)</span></li>
+                            <li>
+                                <p class="ng-binding">1% of SI or Actual Salary Whichever is Less</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Accidental Hospitalization</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                        <ul>
+
+                            <li><span class="ng-binding">Medical Extension</span></li>
+                            <li>
+                                <p class="ng-binding">Not Covered</p>
+                            </li>
+
+                            <div class="cl"></div>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+
+                <button class="md-button ng-scope md-ink-ripple" type="button" ng-transclude="">
+                    Click for best quotes
+                </button>
+
+                <div class="view_feature ng-scope">
+                    <i role="button" tabindex="0">View Features</i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div layout="row" layout-align="center" class="hide_mobile quote_footer_base ng-scope layout-align-center-stretch layout-row">
+
+            <div flex="" class="flex">
+                <div>
+                    <span>+ Add to Compare</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

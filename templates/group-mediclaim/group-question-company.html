@@ -1,0 +1,182 @@
+{% extends './base.html' %} 
+{% load static %} 
+
+{% block cssblock %}
+
+{% endblock %}
+
+
+{% block content %}
+<div layout="row" class="layout-row">
+    <div flex="" class="back_button flex"><a ng-click="backBtn()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>  Go Back to Quote Screen</a></div>
+</div>
+<div class="proposal_profile_wrapper">
+    <form name="proposalForm" novalidate="" scroll-to="" class="ng-pristine ng-invalid ng-invalid-required">
+        <div layout="row" class="layout-row">
+            <div flex="70" flex-xs="100" flex-sm="100" class="flex-xs-100 flex-sm-100 flex-70">
+                <div class="col accordionBox">
+                    <div class="Accordion">
+                        <div class="AccordionPane2 AccordionPanelOpen">
+
+                            <div class="AccordionPanelContent AccordionContentShow">
+
+                                <div layout="row" class="declaration ng-scope layout-row" ng-if="!baseObj.noPayNowFlag">
+                                    <div flex="" class="flex">
+                                        <fieldset>
+                                            <lagend>Declarations</lagend>
+
+                                            <div layout="row" class="dec-input-area layout-row">
+
+                                            </div>
+                                            <div layout="row" class="select_all layout-row">
+                                                <div flex="" ng-click="selectAll()" role="button" tabindex="0" class="flex">Select All</div>
+                                            </div>
+                                            <div layout="row" class="layout-row">
+                                                <div flex="5" flex-xs="10" flex-sm="5" class="flex-xs-10 flex-sm-5 flex-5">
+                                                    <md-checkbox aria-label="Checkbox 1" name="cb1" ng-required="true" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" aria-required="true" required="required" aria-checked="false" aria-invalid="true">
+                                                        <div class="md-container md-ink-ripple" md-ink-ripple="" md-ink-ripple-checkbox="">
+                                                            <div class="md-icon"></div>
+                                                        </div>
+                                                        <div ng-transclude="" class="md-label"></div>
+                                                    </md-checkbox>
+                                                </div>
+                                                <div flex="95" flex-xs="90" flex-sm="90" class="flex-xs-90 flex-sm-90 flex-95">
+                                                    <p>I/we understand that the Policy shall become void at the option of the Company, in the event of any untrue or incorrect statement, misrepresentation, non-description or non-disclosure of any material fact in the Proposal form/personal statement/As per details updated by you while buying the policy online, declaration and connected documents, or any material information having been withheld by me/us or anyone acting on my/our behalf.</p>
+                                                </div>
+                                            </div>
+                                            <div layout="row" class="layout-row">
+                                                <div flex="5" flex-xs="10" flex-sm="5" class="flex-xs-10 flex-sm-5 flex-5">
+                                                    <md-checkbox ng-model="baseObj.cb2" aria-label="Checkbox 2" name="cb2" ng-required="true" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" aria-required="true" required="required" aria-checked="false" aria-invalid="true">
+                                                        <div class="md-container md-ink-ripple" md-ink-ripple="" md-ink-ripple-checkbox="">
+                                                            <div class="md-icon"></div>
+                                                        </div>
+                                                        <div ng-transclude="" class="md-label"></div>
+                                                    </md-checkbox>
+                                                </div>
+                                                <div flex="95" flex-xs="90" flex-sm="90" class="flex-xs-90 flex-sm-90 flex-95">
+                                                    <p>Online payment is processed through Organization account or Corporate credit card only and the organization has authorized me to do so on its behalf.</p>
+                                                </div>
+                                            </div>
+                                            <div layout="row" class="layout-row">
+                                                <div flex="5" flex-xs="10" flex-sm="5" class="flex-xs-10 flex-sm-5 flex-5">
+                                                    <md-checkbox ng-model="baseObj.cb3" aria-label="Checkbox 3" name="cb3" ng-required="true" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" aria-required="true" required="required" aria-checked="false" aria-invalid="true">
+                                                        <div class="md-container md-ink-ripple" md-ink-ripple="" md-ink-ripple-checkbox="">
+                                                            <div class="md-icon"></div>
+                                                        </div>
+                                                        <div ng-transclude="" class="md-label"></div>
+                                                    </md-checkbox>
+                                                </div>
+                                                <div flex="95" flex-xs="90" flex-sm="90" class="flex-xs-90 flex-sm-90 flex-95">
+                                                    <p>I/we hereby confirm that all premiums have been/will be paid from bonafide sources and no premiums have been/will be paid out of proceeds of crime related to any of the offence listed in Prevention of Money Laundering Act, 2002 and applicable laws.</p>
+                                                </div>
+                                            </div>
+                                            <div layout="row" class="layout-row">
+                                                <div flex="5" flex-xs="10" flex-sm="5" class="flex-xs-10 flex-sm-5 flex-5">
+                                                    <md-checkbox ng-model="baseObj.cb4" aria-label="Checkbox 4" name="cb4" ng-required="true" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" aria-required="true" required="required" aria-checked="false" aria-invalid="true">
+                                                        <div class="md-container md-ink-ripple" md-ink-ripple="" md-ink-ripple-checkbox="">
+                                                            <div class="md-icon"></div>
+                                                        </div>
+                                                        <div ng-transclude="" class="md-label"></div>
+                                                    </md-checkbox>
+                                                </div>
+                                                <div flex="95" flex-xs="90" flex-sm="90" class="flex-xs-90 flex-sm-90 flex-95">
+                                                    <p>
+                                                        I / We hereby declare, on my behalf and on behalf of all persons proposed to be insured, that the above statements, answers and / or particulars given by me are true and complete in all respects to the best of my knowledge and that I / We am / are authorized to propose on behalf of these other persons.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div layout="row" class="layout-row">
+                                                <div flex="5" flex-xs="10" flex-sm="5" class="flex-xs-10 flex-sm-5 flex-5">
+                                                    <md-checkbox ng-model="baseObj.cb5" aria-label="Checkbox 5" name="cb5" ng-required="true" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" aria-required="true" required="required" aria-checked="false" aria-invalid="true">
+                                                        <div class="md-container md-ink-ripple" md-ink-ripple="" md-ink-ripple-checkbox="">
+                                                            <div class="md-icon"></div>
+                                                        </div>
+                                                        <div ng-transclude="" class="md-label"></div>
+                                                    </md-checkbox>
+                                                </div>
+                                                <div flex="95" flex-xs="90" flex-sm="90" class="flex-xs-90 flex-sm-90 flex-95">
+                                                    <p>I/we understand that the Policyholder is buying the health insurance and/ or (as applicable) Policy for the first time. In case the information provided for the purchase of the policy is incorrect all quotes shared shall become void at the option of the Company. In this event the company has right to cancel the policy and forfeit the premium.</p>
+                                                </div>
+                                            </div>
+                                            <div layout="row" class="layout-row">
+                                                <div flex="5" flex-xs="10" flex-sm="5" class="flex-xs-10 flex-sm-5 flex-5">
+                                                    <md-checkbox ng-model="baseObj.cb6" aria-label="Checkbox 6" name="cb6" ng-required="true" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" aria-required="true" required="required" aria-checked="false" aria-invalid="true">
+                                                        <div class="md-container md-ink-ripple" md-ink-ripple="" md-ink-ripple-checkbox="">
+                                                            <div class="md-icon"></div>
+                                                        </div>
+                                                        <div ng-transclude="" class="md-label"></div>
+                                                    </md-checkbox>
+                                                </div>
+                                                <div flex="95" flex-xs="90" flex-sm="90" class="flex-xs-90 flex-sm-90 flex-95">
+                                                    <p>I/We understand that the information provided by me/us will form the basis of the insurance policy , is subject to the board approved underwriting policy of the insurance company and that the policy will come into force only after full receipt of the premium chargeable. The company at its sole discretion reserves the right to accept or reject or load any proposal</p>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                                <div layout="row" class="dec_text ng-scope layout-row" ng-if="!baseObj.noPayNowFlag">(In the aforementioned paragraph 1 , "Company" refers to the Insurance Company. Under Paragraph 2, "Organization account" refers to the client/customer's organization account)</div>
+
+                                <div class="row formFields cAlign">
+                                    <a href="{% url 'group-payment-company_url' %}"> 
+                                    <button class="active_btn  md-button md-button proposal-proceed" type="submit" ng-disabled="baseObj.loader">
+                                     <span>Proceed</span>
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    
+                                        <div class="loader ng-hide" loader-css="" ng-show="baseObj.loader" aria-hidden="true">
+                                            <div class="loader-inner">
+                                                <img src="group-mediclaim/group-question-compayny/images/loader.gif" class="sme_loader">
+                                            </div>
+                                        </div>
+                                        <div class="md-ripple-container"></div>
+                                    </button>
+                                </a>
+                                </div>
+                                <div class="cl"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div flex="30" hide-xs="" hide-sm="" class="hide-sm hide-xs flex-30">
+
+                <div layout="row" class="ng-scope layout-row">
+                    <div flex="" class="flex">
+                        <h2 class="md-subhead proposal_premium">Total Premium: 
+  <em class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 35,145</em>
+</h2>
+                    </div>
+                </div>
+
+                <div style="text-align:center">
+                    <img ng-src="images/supplier-logo/Religare.gif" class="ng-scope" src="group-mediclaim/group-question-compayny/images/Religare.gif">
+
+                </div>
+                <div layout="row" class="proposal_r14 layout-row">
+                    <div flex="" class="flex">
+                        <div layout="row" class="proposal_r15 layout-row">
+                            <div flex="" class="flex">Order Details</div>
+                        </div>
+                        <div layout="row" class="proposal_r16 layout-row">
+                            <div flex="65" class="flex-65">Plan Name</div>
+                            <div flex="35" class="ng-binding flex-35">Bronze</div>
+                        </div>
+
+                        <div layout="row" class="proposal_r16 ng-scope layout-row">
+                            <div flex="65" class="flex-65">Sum Insured</div>
+                            <div flex="35" class="ng-binding flex-35">2 Lacs</div>
+                        </div>
+
+                        <div layout="row" class="proposal_r16 ng-scope layout-row" ng-if="ProposalData.NumberOfEmployees > 0">
+                            <div flex="65" class="flex-65">No. of Employees</div>
+                            <div flex="35" class="ng-binding flex-35">213</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+ {% endblock %} 

@@ -1,0 +1,838 @@
+{% extends 'master.html' %} 
+{% load static %} 
+{% block content %}
+<style>
+.policywarp nav section.desktopHeader{
+    min-height: 50px;
+}
+</style>
+<div id="policybazaar">
+
+    <div class="breadcrumbinner newsub_category_sme">
+        <div class="breadcrumbinner">
+            <ul class="breadcrumb">
+                <li class="active"><span title="You are here: " class="divider icon-location hasTooltip"></span></li><span class="homeIcon"></span>
+                <li><a class="pathway" href="" title="Insurance">Home</a>
+                    <img alt="" src="company/images/arrow.png"></li>
+                <li><a class="pathway" href="" title="Commercial Insurance">Commercial Insurance</a>
+                    <img alt="" src="company/images/arrow.png"></li>
+                <li><span class="currentLocation">Office Package Policy</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <link href="company/css/style.min_common.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="company/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="company/css/style-uncompress_error.css">
+    <link href="company/css/new_subcategory_error.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="company/css/jquery.fancybox.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="company/css/slick_bu.css">
+    <link href="company/css/review-slide.css" rel="stylesheet" type="text/css">
+    <!-- <script src="company/js/jquery-2.2.4.min.js"></script> -->
+    <section class="pbcategoryPages center_hd" itemscope="" itemtype="http://schema.org/FinancialProduct">
+        <meta itemprop="category" content="Insurance">
+        <meta itemprop="url" content="company/images/office-package-policy/">
+        <meta itemprop="description" content="Office Package Policy: Insure your office against all perils. Compare and choose best Office Package Insurance in India that protects your office &amp; everything in it.">
+        <span itemprop="brand" itemscope="" itemtype="http://schema.org/Brand">
+    <meta itemprop="name" content="PolicyBazaar">
+    </span>
+        <link href="company/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="company/css/smecj.css" rel="stylesheet" type="text/css">
+        <link href="company/css/owl.carousel.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="company/css/jquery-ui.css">
+        <link type="text/css" rel="stylesheet" href="company/css/sticky.css">
+        <script src="company/js/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="company/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="company/js/owl.carousel.js"></script>
+        <script type="text/javascript" src="company/js/url_config.js"></script>
+        <script type="text/javascript" src="company/js/custome_healthsme.js"></script>
+        <div class="sme_page_wrap">
+            <div class="sme_top">
+                <div class="sme_container">
+                    <div class="sme_head">One-stop destination for all your online insurance and financial needs!</div>
+                </div>
+            </div>
+            <div class="sme_bottom showForm" id="topForm">
+                <div class="slider_sme disForm">
+                    <div class="bottom_bar slim-scroll autoscroll">
+                        <div class="container rightContent">
+                            <div class="tab_slider healthsme-bg">
+                                <ul class="owl-carousel tab-list owl-loaded">
+                                    <div class="owl-stage-outer">
+                                        <div class="owl-stage" style="transform: translate3d(-877px, 0px, 0px); transition: all 0s ease 0s; width: 2048px;">
+                                            <div class="owl-item" style="width: 146.25px;">
+                                                <li class="item">
+                                                    <div class="slide_tabs" data-id="1">
+                                                        <a href="">
+                                                            <div class="sme_icon"><img src="company/images/group-medical.svg" class="img-responsive" alt=""></div><span>Group Health <br>Insurance</span></a>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item" style="width: 146.25px;">
+                                                <li class="item">
+                                                    <div class="slide_tabs" data-id="2">
+                                                        <a href="">
+                                                            <div class="sme_icon"><img src="company/images/group-personal.svg" class="img-responsive" alt=""></div><span>Group Personal <br>Accident</span></a>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item" style="width: 146.25px;">
+                                                <li class="item">
+                                                    <div class="slide_tabs" data-id="3">
+                                                        <a href="">
+                                                            <div class="sme_icon"><img src="company/images/group-term.svg" class="img-responsive" alt=""></div><span>Group Term<br> Life</span></a>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item" style="width: 146.25px;">
+                                                <li class="item">
+                                                    <div class="slide_tabs" data-id="19">
+                                                        <a href="company/images/workmen-compensation-policy/">
+                                                            <div class="sme_icon"><img src="company/images/workmen.svg" class="img-responsive" alt=""></div><span>Workmen <br>Compensation</span></a>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item" style="width: 146.25px;">
+                                                <li class="item">
+                                                    <div class="slide_tabs" data-id="13">
+                                                        <a href="company/images/marine-insurance/">
+                                                            <div class="sme_icon"><img src="company/images/marine.svg" class="img-responsive" alt=""></div><span>Marine <br>Insurance</span></a>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item" style="width: 146.25px;">
+                                                <li class="item">
+                                                    <div class="slide_tabs" data-id="14">
+                                                        <a href="company/images/professional-indemnity-insurance/">
+                                                            <div class="sme_icon"><img src="company/images/proffesional.svg" class="img-responsive" alt=""></div><span>Professional <br> Indemnity</span></a>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item active" style="width: 146.25px;">
+                                                <li class="item">
+                                                    <div class="slide_tabs" data-id="17">
+                                                        <a href="company/images/erection-risk/">
+                                                            <div class="sme_icon"><img src="company/images/erection.svg" class="img-responsive" alt=""></div><span data-tab="07">Erection All <br> Risk</span></a>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item active" style="width: 146.25px;">
+                                                <li class="item">
+                                                    <div class="slide_tabs" data-id="5">
+                                                        <a href="company/images/fire-insurance/">
+                                                            <div class="sme_icon"><img src="company/images/fire.svg" class="img-responsive" alt=""></div><span data-tab="08">Fire &amp; Burglary <br> Insurance</span></a>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item active" style="width: 146.25px;">
+                                                <li class="item">
+                                                    <div class="slide_tabs" data-id="16">
+                                                        <a href="company/images/contractor-all-risk-policy/">
+                                                            <div class="sme_icon"><img src="company/images/construction.svg" class="img-responsive" alt=""></div><span>Construction All<br> Risk</span></a>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item active" style="width: 146.25px;">
+                                                <li class="item tab-active">
+                                                    <div class="slide_tabs" data-id="7">
+                                                        <a href="company/images/office-package-policy/">
+                                                            <div class="sme_icon"><img src="company/images/office.svg" class="img-responsive" alt=""></div><span>Office Package <br>Policy</span></a>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item active" style="width: 146.25px;">
+                                                <li class="item">
+                                                    <div class="slide_tabs" data-id="8">
+                                                        <a href="">
+                                                            <div class="sme_icon"><img src="company/images/shop.svg" class="img-responsive" alt=""></div><span>Shop Owner's <br>Insurance</span></a>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item active" style="width: 146.25px;">
+                                                <li class="item">
+                                                    <div class="slide_tabs" data-id="18">
+                                                        <a href="company/images/plant-machinery/">
+                                                            <div class="sme_icon"><img src="company/images/contracter.svg" class="img-responsive" alt=""></div><span>Contractor's Plant <br>&amp; Machinery</span></a>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item active" style="width: 146.25px;">
+                                                <li class="item">
+                                                    <div class="slide_tabs" data-id="15">
+                                                        <a href="company/images/director-and-officers-liability-insurance/">
+                                                            <div class="sme_icon"><img src="company/images/directors-officers.svg" class="img-responsive" alt=""></div><span>Directors &amp; <br> Officers Liability</span></a>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item active" style="width: 146.25px;">
+                                                <li class="item">
+                                                    <div class="slide_tabs" data-id="12">
+                                                        <a href="company/images/general-liability-insurance/">
+                                                            <div class="sme_icon"><img src="company/images/general-liability.svg" class="img-responsive" alt=""></div><span>General <br> Liability</span></a>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-nav">
+                                        <button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button>
+                                        <button type="button" role="presentation" class="owl-next disabled"><span aria-label="Next">›</span></button>
+                                    </div>
+                                    <div class="owl-dots">
+                                        <button role="button" class="owl-dot"><span></span></button>
+                                        <button role="button" class="owl-dot active"><span></span></button>
+                                    </div>
+                                </ul>
+                                <div class="sme_popup">
+                                    <div class="heading"><i class="fa fa-check" aria-hidden="true"></i> Thank You!</div>
+                                    <div class="box">
+                                        <p>Thank you for sharing your details with us.</p>
+                                        <p>Our relationship manager will call you to discuss the details and guide you along.</p>
+                                        <p>In case you have any query or comments, please contact us at</p><span class="mail"><i class="fa fa-envelope" aria-hidden="true"></i> Contact Us : <a href="mailto:corporateinsurance@policybazaar.com">corporateinsurance@policybazaar.com</a></span></div>
+                                </div>
+                                <div class="tab-slider_cont open sme_form" id="01">
+                                    <h2 class="sme_tab_head">Office Package</h2>
+
+                                    <form class="row form-inline">
+                                        <div class="form-group col-md-4 col-sm-6 col-xs-12 input_field" id="smecompany">
+                                            <label for="companyname">Company Name</label>
+                                            <input id="healthsmeCompanyname" placeholder="Enter Company Name" autocomplete="new-smecompanyname" maxlength="255" class="form-control">
+                                            <div class="err"></div>
+                                        </div>
+                                        <div class="form-group custom_select  col-md-4 col-sm-6 col-xs-12 input_field hide dis_none" id="smeidemnity" style="display: none;">
+
+                                            <label for="riskcategory">Risk Category</label>
+                                            <select id="healthsmeIdemnity" class="fullbg form-control">
+                                                <option value="">Select Your Option</option>
+                                                <option value="9">Anaesthetist</option>
+                                                <option value="7">Cardio Surgeon</option>
+                                                <option value="11">Cosmetic Surgeon</option>
+                                                <option value="5">Dentist</option>
+                                                <option value="1">General Physician</option>
+                                                <option value="8">Neuro Surgeon</option>
+                                                <option value="6">Other non physicians e.g lithotripsy</option>
+                                                <option value="2">Pathologist</option>
+                                                <option value="10">Plastic Surgeon</option>
+                                                <option value="4">Radiologist</option>
+                                                <option value="3">Specialist Physician</option>
+                                            </select>
+                                            <div class="err"></div>
+                                        </div>
+                                        <div class="form-group custom_select hide col-md-4 col-sm-6 col-xs-12 input_field dis_none">
+                                            <label for="riskcategory">Insurance Policy</label>
+                                            <select id="healthsmeOption" class="fullbg form-control">
+                                                <option data-id="" value="">Select your option</option>
+                                                <option data-id="1" value="Group Health Insurance" selected="">Group Health Insurance</option>
+                                                <option data-id="2" value="Group Personal Accident">Group Personal Accident</option>
+                                                <option data-id="3" value="Group Term Life">Group Term Life</option>
+                                                <option data-id="14" value="Professional Indemnity">Professional Indemnity</option>
+                                                <option data-id="13" value="Marine">Marine Insurance</option>
+                                                <option data-id="19" value="Workmen Compensation">Workmen Compensation</option>
+                                                <option data-id="5" value="Fire &amp; Burglary">Fire &amp; Burglary Insurance</option>
+                                                <option data-id="8" value="Shop Owner's">Shop Owners Insurance</option>
+                                                <option data-id="7" value="Office Package" selected="selected">Office Package Policy</option>
+                                                <option data-id="16" value="Construction All Risk">Construction All Risk</option>
+                                                <option data-id="17" value="Erection All Risk">Erection All Risk</option>
+                                                <option data-id="18" value="Contractor's Plant &amp; Machinery"> Contractors Plant &amp; Machinery</option>
+                                                <option data-id="12" value="General Liability">General Liability</option>
+                                                <option data-id="15" value="Directors &amp; Officers Liability">Directors &amp; Officers Liability</option>
+                                            </select>
+
+                                            <div class="err"></div>
+                                        </div>
+                                        <div class="form-group  col-md-4 col-sm-6 col-xs-12 input_field">
+                                            <label for="contactperson">Contact Person</label>
+                                            <div class="custom_input_select">
+                                                <select id="healthsmeGender">
+                                                    <option value="">Select</option>
+                                                    <option value="Mr" selected="">Mr</option>
+                                                    <option value="Ms">Ms</option>
+                                                    <option value="Mrs">Mrs</option>
+                                                </select>
+                                                <input class="form-control" type="text" id="healthsmeContactPerson" autocomplete="new-smecontactperson" placeholder="Enter Contact Person Name" maxlength="100">
+                                            </div>
+                                            <div class="err"></div>
+                                        </div>
+                                        <div class="form-group col-md-4 col-sm-6 col-xs-12 input_field">
+                                            <label for="mobileno">Mobile No.</label>
+                                            <div class="custom_input_select">
+                                                <span>+91</span>
+                                                <input type="text" class="form-control" id="healthsmeMobile" autocomplete="new-smemobile" inputmode="numeric" placeholder="Enter Mobile Number" maxlength="10">
+                                            </div>
+                                            <div class="err"></div>
+                                        </div>
+                                        <div class="form-group col-md-4 col-sm-6 col-xs-12 input_field">
+                                            <label for="emailid">Email ID</label>
+                                            <input class="form-control type=" text "=" " id="healthsmeEmail " autocomplete="new-smeemail " maxlength="50 " placeholder="Enter Email Address "> 
+                                <div class="err "></div>
+                              </div>  
+                              <div class="form-group col-md-4 col-sm-6 col-xs-12 input_field ">
+                                <label for="city ">City</label>
+                                <input type="text " id="healthsmeCityPincode " class="form-control ui-autocomplete-input " maxlength="200 " placeholder="Enter Location of the Company " autocomplete="off ">
+                                <div class="err "></div>
+                              </div>
+                              <div class="sme_radio form-group col-md-4 col-sm-6 col-xs-12 input_field groupPolicyType " style="display: none; ">									
+                                <label for="city ">Type of Policy</label>
+                                <div class="form-control_padding ">
+            <div class="col-xs-6 gap-left ">
+                <label class="custom_radio "> <input type="radio " name="policyType " checked=" " value="1 "><p> <span class="circle "></span><span>Fresh</span></p></label>
+            </div>
+
+            <div class="col-xs-6 ">
+                <label class="custom_radio "> <input type="radio " name="policyType " value="2 "><p>  <span class="circle "></span><span>Renewal</span></p></label>
+            </div>
+
+        </div>
+
+                            <div class="err "></div>
+
+                        </div>
+
+                                    <div class="col-xs-12 text-center proceed_btn ">
+                                            <p>By clicking on "Proceed ", you agree to our <a href=" " target="_blank ">Privacy Policy</a> and <a href="https://www.policybazaar.com/legal-and-admin-policies/#termsofuse " target="_blank ">Terms of Use</a>.</p> 
+                                            <div class="loadingDiv ">
+                                            <a href="{% url 'info-payment_url' %}" class="btn btn-default " id="btnSubmitHealthsme ">Proceed<div class="process "><span class="loader "></span>
+                                            </div></a>
+                                            </div>
+
+                              </div></form>                          
+                             </div></div></div>
+             </div></div>
+            </div>
+        </div>
+
+    <div class="row breadcrum_rating policy_wrapper " style="visibility: visible; ">
+    <section class="leftSection fLeft newsub_category " rel="resptab_all_1 "> 
+                    <div class="tabbing ">
+                <ul class="tab_title ">
+                    <li><a href="javascript:void(0);" id="desktab_1 " class="active ">About Office Package Policy</a></li>
+
+                    <li><a href="javascript:void(0);" id="desktab_3 ">FAQ's</a></li>
+                </ul>
+                <div class="res_title2 active " id="resptab_1 ">
+                <a href="javascript:void(0) ">About Office Package Policy</a></div>
+                <div class="tab_content active " id="tab_1 ">
+                    <h1 itemprop="name "><span class="sprite_sme office-package-policy " title="Office Package Policy ">icon</span> Office Package Policy</h1>
+    <p class="paragraphBu ">Have you asked yourself this: "Have I insured my office against all threats that could impact my earning? " If not, or if you have not taken any action toward this then it's high time you acted. Any untoward incident could disrupt the functioning of your business and have financial implications. Thus it is important to protect your office premises and its infrastructure against unforeseen circumstances.&nbsp;Compare online and choose best Office Package Insurance Policy in India that protects your office &amp; everything in it.</p>
+    <h2><span class="sprite_sme office-package-insurance-policy " title="Office Package Insurance Policy ">icon</span><strong>Office Package Insurance Policy Provides Insurance for such Offices as:</strong></h2>
+    <ul class="data_ul ">
+    <li>Commercial Offices</li>
+    <li>Government Offices</li>
+    <li>ITES and BPO Call Centers</li>
+    <li>Software Development Office</li>
+    <li>Office Premises, including warehouse and manufacturing premises</li>
+    </ul>
+    <h2><span class="sprite_sme key-features-of-office-package-policy " title="Key Features of Office Package Policy ">icon</span><strong>Key Features of Office Package Policy:</strong></h2>
+    <ul class="data_ul ">
+    <li>The Office Package Insurance provides protection against damage to insured property</li>
+    <li>Your business is in safer hands in the event of third party legal liability</li>
+    <li>Personal accidental coverage is offered</li>
+    <li>A tailor-made policy that protects your business against financial risks of fire and allied perils, like theft, burglary, machinery breakdown etc.</li>
+    </ul>
+    <h2><span class="sprite_sme policy-inclusion-exclusion " title="Policy Inclusion Exclusion ">icon</span><strong>What It Covers and What It Doesn’t: Policy Inclusion/Exclusion</strong></h2>
+    <div class=" ">
+    <div class=" "><div class="footable "><table>
+    <tbody>
+    <tr>
+    <td>
+    <p class="paragraphBu "><strong>Office Package Policy Inclusion</strong></p>
+    </td>
+    <td>
+    <p class="paragraphBu "><strong>&nbsp;</strong><strong>Office Package Policy Exclusion</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p class="paragraphBu ">Office Package Policy protects the office premises in perils like fire, earthquake etc. Some insurers also provide coverage for risks related to terrorism. Moreover, coverage is extended for mechanical and electrical breakdown, fire and allied perils, burglary and accidental breakage as well.</p>
+    </td>
+    <td>
+    <p class="paragraphBu ">Office insurance policy doesn’t cover damages due to normal wear and tear, steady deterioration or gradually developing flaws.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p class="paragraphBu ">Cover the office premises against break ins, burglary and theft-related losses.</p>
+    </td>
+    <td>
+    <p class="paragraphBu ">Intentionally made damages are not covered by the policy.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p class="paragraphBu ">Some insurance companies offer coverage for the loss or damage owing to a dishonest acts of an employee such as an act of robbery, fraudulent conversion, misuse of official information etc.</p>
+    </td>
+    <td>
+    <p class="paragraphBu ">Any loss due to war or warlike situation, nuclear or atomic radiation is not included.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p class="paragraphBu ">Expenses incurred for fixing the glasses, housekeeping services and sanitary items.</p>
+    </td>
+    <td>
+    <p class="paragraphBu ">Any illegal activity responsible for loss or damage.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p class="paragraphBu ">Cost used in publicity tools including neon signs, hoarding for safety against fire, explosion, theft, lightning, flood</p>
+    </td>
+    <td>
+    <p class="paragraphBu ">In case of fire if the actual registered property value is found lesser than the chosen sum insured, the claim for the same will be reduced in quantity.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p class="paragraphBu ">The employees are covered for accidental death or injury during the tenure of employment. Third party legal liability cover is also included.</p>
+    </td>
+    <td>
+    <p class="paragraphBu ">If there is any loss or damage due to pollution, that damage will not be covered.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p class="paragraphBu ">Special assistance, if provided, in the event of accidental death of the insured or injury or disability.</p>
+    </td>
+    <td>
+    <p class="paragraphBu ">Consequential losses are not covered, i.e.&nbsp; if a severe tornado destroys your office, while the physical damages are covered but the loss of business revenue is not covered under the policy.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p class="paragraphBu ">Compensation is offered in the event of loss of baggage while the employee is on an official tour.</p>
+    </td>
+    <td>
+    <p class="paragraphBu ">The policy doesn’t cover for the loss where the manufacturer, repairer, supplier or other third party is at fault.</p>
+    </td>
+    </tr>
+    </tbody>
+    </table></div></div>
+    </div>
+    <h2 style="margin: 0px; "><span class="sprite_sme buy-office-package-insurance-policy " title="Buy Office Package Insurance Policy ">icon</span><strong>Compare and Buy Office Package Insurance Policy at PolicyBazaar</strong></h2>
+    <p class="paragraphBu ">Guard your business against different types of risks. Buy or renew office package insurance policy at PolicyBazaar in a hassle-free manner. Enter the basic details of the business and find a suitable policy that can be customized as per the individual needs.</p>
+    <h2><span class="sprite_sme reasons-to-rely-on-policybazaar " title="Reasons to Rely on Policybazaar ">icon</span><strong>Reasons to Rely on PolicyBazaar</strong></h2>
+    <ul class="data_ul ">
+    <li>Minimum paperwork</li>
+    <li>Free insurance quotes</li>
+    <li>Instant policy issuance</li>
+    </ul>
+    <p class="paragraphBu ">Come to PolicyBazaar and benefit from our unbiased expert services.</p>                <div style="font-size: 11px;font-family:arial;color: #172b4d; display: block;text-align: left;padding:10px 0 ">Written By: PolicyBazaar - Updated: 27 June 2018</div>
+                </div>
+
+                <div class="res_title2 " id="resptab_3 "><a href="javascript:void(0) ">FAQ's</a></div>
+                <div class="tab_content " id="tab_3 ">
+                    <span itemscope=" " itemtype="https://schema.org/FAQPage ">
+        <span itemscope=" " itemprop="mainEntity " itemtype="https://schema.org/Question ">         <article class="tabberArticle fullWidth ">
+                 <div class="pbfaqQues " itemprop="name ">
+                     <span class="que_icn ">Q:</span><p class="paragraphBu ">What is an office package policy?</p>
+                 </div>
+                <div class="pbfaqAns ">
+                    <span itemscope=" " itemprop="acceptedAnswer " itemtype="https://schema.org/Answer "><span itemprop="text ">                <span class="tabAns ">Ans:</span>
+                    <div class="ansData ">
+                        <p style="text-align: justify; " class="paragraphBu ">An office package policy is a comprehensive insurance package specifically designed to cover organizational infrastructure and establishments including IT/ITES sector, government offices, etc.</p>
+    <p style="text-align: justify; " class="paragraphBu ">This innovative cover allows you to safeguard your office property as well as employees under a single policy.</p>                </div>
+                    </span></span>            </div>
+            </article>
+        </span>    <span itemscope=" " itemprop="mainEntity " itemtype="https://schema.org/Question ">         <article class="tabberArticle fullWidth ">
+                 <div class="pbfaqQues " itemprop="name ">
+                     <span class="que_icn ">Q:</span><p class="paragraphBu ">What is construction plant &amp; machinery insurance policy all about?</p>
+                 </div>
+                <div class="pbfaqAns ">
+                    <span itemscope=" " itemprop="acceptedAnswer " itemtype="https://schema.org/Answer "><span itemprop="text ">                <span class="tabAns ">Ans:</span>
+                    <div class="ansData ">
+                        <p style="text-align: justify; " class="paragraphBu ">This policy is specifically designed to safeguard building contractors and tradesman against any loss/damage caused to their plants and machinery. The construction machines represent a large investment and any kind of loss or damage caused to them can lead to a financial catastrophe.</p>
+    <p style="text-align: justify; " class="paragraphBu ">Construction Plant &amp; Machinery insurance covers this cost and safeguards you against any loss of business machinery.</p>                </div>
+                    </span></span>            </div>
+            </article>
+        </span>    <span itemscope=" " itemprop="mainEntity " itemtype="https://schema.org/Question ">         <article class="tabberArticle fullWidth ">
+                 <div class="pbfaqQues " itemprop="name ">
+                     <span class="que_icn ">Q:</span><p class="paragraphBu ">Who needs office package policy?</p>
+                 </div>
+                <div class="pbfaqAns ">
+                    <span itemscope=" " itemprop="acceptedAnswer " itemtype="https://schema.org/Answer "><span itemprop="text ">                <span class="tabAns ">Ans:</span>
+                    <div class="ansData ">
+                        <p style="text-align: justify; " class="paragraphBu ">It doesn’t matter whether you are a big-firm owner or a small business owner, if you are operating out of an office space; you are going to need an office package policy to help you face the brunt of adverse circumstances, in case any unfortunate event takes place in your offices, such as fire or a burglary.</p>                </div>
+                    </span></span>            </div>
+            </article>
+        </span>    <span itemscope=" " itemprop="mainEntity " itemtype="https://schema.org/Question ">         <article class="tabberArticle fullWidth ">
+                 <div class="pbfaqQues " itemprop="name ">
+                     <span class="que_icn ">Q:</span><p class="paragraphBu ">What are the benefits offered by this policy?</p>
+                 </div>
+                <div class="pbfaqAns ">
+                    <span itemscope=" " itemprop="acceptedAnswer " itemtype="https://schema.org/Answer "><span itemprop="text ">                <span class="tabAns ">Ans:</span>
+                    <div class="ansData ">
+                        <p style="text-align: justify; " class="paragraphBu ">It provides a cover for the damage/loss of your machinery such as bulldozers, compressors, cranes, etc. The best part is, this insurance policy also covers them irrespective of the fact they are working or at rest, or have been dismantled for cleaning purposes</p>                </div>
+                    </span></span>            </div>
+            </article>
+        </span>    <span itemscope=" " itemprop="mainEntity " itemtype="https://schema.org/Question ">         <article class="tabberArticle fullWidth ">
+                 <div class="pbfaqQues " itemprop="name ">
+                     <span class="que_icn ">Q:</span><p class="paragraphBu ">What are the different types of offices that can be covered under an Office Package Policy?</p>
+                 </div>
+                <div class="pbfaqAns ">
+                    <span itemscope=" " itemprop="acceptedAnswer " itemtype="https://schema.org/Answer "><span itemprop="text ">                <span class="tabAns ">Ans:</span>
+                    <div class="ansData ">
+                        <p style="text-align: justify; " class="paragraphBu ">Office package policy is designed to cover different sectors such as ITES and BPO Call Centres, Government Offices, Commercial Offices, Office premises which include manufacturing plants as well as warehouse and Software Development Offices.</p>                </div>
+                    </span></span>            </div>
+            </article>
+        </span>    <span itemscope=" " itemprop="mainEntity " itemtype="https://schema.org/Question ">         <article class="tabberArticle fullWidth ">
+                 <div class="pbfaqQues " itemprop="name ">
+                     <span class="que_icn ">Q:</span><p class="paragraphBu ">How much premium would one need to pay?</p>
+                 </div>
+                <div class="pbfaqAns ">
+                    <span itemscope=" " itemprop="acceptedAnswer " itemtype="https://schema.org/Answer "><span itemprop="text ">                <span class="tabAns ">Ans:</span>
+                    <div class="ansData ">
+                        <p class="paragraphBu ">The premium amount depends on various factors such as risk exposure and the insurer’s underwriting requirements</p>                </div>
+                    </span></span>            </div>
+            </article>
+        </span>    <span itemscope=" " itemprop="mainEntity " itemtype="https://schema.org/Question ">         <article class="tabberArticle fullWidth ">
+                 <div class="pbfaqQues " itemprop="name ">
+                     <span class="que_icn ">Q:</span><p class="paragraphBu ">What are the features of an office package policy?</p>
+                 </div>
+                <div class="pbfaqAns ">
+                    <span itemscope=" " itemprop="acceptedAnswer " itemtype="https://schema.org/Answer "><span itemprop="text ">                <span class="tabAns ">Ans:</span>
+                    <div class="ansData ">
+                        <p style="text-align: justify; " class="paragraphBu ">As the name suggests, this policy comes in a package which signifies that it offers coverage against various unprecedented threats. An office package policy not only safeguards your office premises against the risk of fire, earthquake, etc. but also gives you coverage against activities like burglary, accidental breakage, mechanical/electrical breakdown, etc.</p>
+    <p style="text-align: justify; " class="paragraphBu ">You can also get coverage for housekeeping services, sanitary items, publicity tools (such as neon signs) and safety appliances against explosions, lightning, etc.</p>                </div>
+                    </span></span>            </div>
+            </article>
+        </span>    <span itemscope=" " itemprop="mainEntity " itemtype="https://schema.org/Question ">         <article class="tabberArticle fullWidth ">
+                 <div class="pbfaqQues " itemprop="name ">
+                     <span class="que_icn ">Q:</span><p class="paragraphBu ">What is the duration of this cover?</p>
+                 </div>
+                <div class="pbfaqAns ">
+                    <span itemscope=" " itemprop="acceptedAnswer " itemtype="https://schema.org/Answer "><span itemprop="text ">                <span class="tabAns ">Ans:</span>
+                    <div class="ansData ">
+                        <p class="paragraphBu ">The duration of this cover is 1 year, and you will need to renew this police yearly if you want to continue with its benefits.</p>                </div>
+                    </span></span>            </div>
+            </article>
+        </span>    <span itemscope=" " itemprop="mainEntity " itemtype="https://schema.org/Question ">         <article class="tabberArticle fullWidth ">
+                 <div class="pbfaqQues " itemprop="name ">
+                     <span class="que_icn ">Q:</span><p class="paragraphBu ">What are the exclusions of an office package policy?</p>
+                 </div>
+                <div class="pbfaqAns ">
+                    <span itemscope=" " itemprop="acceptedAnswer " itemtype="https://schema.org/Answer "><span itemprop="text ">                <span class="tabAns ">Ans:</span>
+                    <div class="ansData ">
+                        <p style="text-align: justify; " class="paragraphBu ">Office package insurance doesn’t cover normal wear and tear or gradual deterioration of office equipment.</p>
+    <p style="text-align: justify; " class="paragraphBu ">Furthermore, any loss caused to your office property due to war or war-like situations isn’t covered.</p>                </div>
+                    </span></span>            </div>
+            </article>
+        </span>    <span itemscope=" " itemprop="mainEntity " itemtype="https://schema.org/Question ">         <article class="tabberArticle fullWidth ">
+                 <div class="pbfaqQues " itemprop="name ">
+                     <span class="que_icn ">Q:</span><p class="paragraphBu ">Is there a list of exclusions we need to know about before signing up for this policy?</p>
+                 </div>
+                <div class="pbfaqAns ">
+                    <span itemscope=" " itemprop="acceptedAnswer " itemtype="https://schema.org/Answer "><span itemprop="text ">                <span class="tabAns ">Ans:</span>
+                    <div class="ansData ">
+                        <p class="paragraphBu ">This policy has certain major exclusions you should know before signing up for the policy. Few of them are:</p>
+    <p class="paragraphBu ">1. Replaceable attachments and parts</p>
+    <p class="paragraphBu ">2. Mechanical/electrical breakdown</p>
+    <p class="paragraphBu ">3. The explosion of any pressure vessel or boiler</p>
+    <p class="paragraphBu ">4. Waterborne crafts and vessels</p>
+    <p class="paragraphBu ">5. Total or even partial immersion in tidal water</p>
+    <p class="paragraphBu ">6. Acts of terrorism, war or civil war</p>
+    <p class="paragraphBu ">7. Radioactive or nuclear energy/radiation emission</p>
+    <p class="paragraphBu ">8. Wilful negligence</p>
+    <p class="paragraphBu ">9. Damage caused due to underground working</p>                </div>
+                    </span></span>            </div>
+            </article>
+        </span>    <span itemscope=" " itemprop="mainEntity " itemtype="https://schema.org/Question ">         <article class="tabberArticle fullWidth ">
+                 <div class="pbfaqQues " itemprop="name ">
+                     <span class="que_icn ">Q:</span><p class="paragraphBu ">What are the salient features of an office package policy?</p>
+                 </div>
+                <div class="pbfaqAns ">
+                    <span itemscope=" " itemprop="acceptedAnswer " itemtype="https://schema.org/Answer "><span itemprop="text ">                <span class="tabAns ">Ans:</span>
+                    <div class="ansData ">
+                        <p style="text-align: justify; " class="paragraphBu ">With this policy, you can get protection against any damage caused to the insured property due to the situations described in the policy. In case, you are facing any issues with third-party legal liability, the office package policy will come to your rescue.</p>
+    <p style="text-align: justify; " class="paragraphBu ">Along with protection against financial risks, this insurance policy also takes care of any personal accidental expenses incurred by your organisation.</p>                </div>
+                    </span></span>            </div>
+            </article>
+        </span>    <span itemscope=" " itemprop="mainEntity " itemtype="https://schema.org/Question ">         <article class="tabberArticle fullWidth ">
+                 <div class="pbfaqQues " itemprop="name ">
+                     <span class="que_icn ">Q:</span><p class="paragraphBu ">Is there any cancellation charge for cancelling the policy?</p>
+                 </div>
+                <div class="pbfaqAns ">
+                    <span itemscope=" " itemprop="acceptedAnswer " itemtype="https://schema.org/Answer "><span itemprop="text ">                <span class="tabAns ">Ans:</span>
+                    <div class="ansData ">
+                        <p class="paragraphBu ">Yes, you can get the policy cancelled by providing a written notice. In this case, you will get a refund of the premium subtracted by the amount for the period you were enrolled in the policy.</p>                </div>
+                    </span></span>            </div>
+            </article>
+        </span>    <span itemscope=" " itemprop="mainEntity " itemtype="https://schema.org/Question ">         <article class="tabberArticle fullWidth ">
+                 <div class="pbfaqQues " itemprop="name ">
+                     <span class="que_icn ">Q:</span><p class="paragraphBu ">Do I have to always update my insurance provider about any changes in my contact details?</p>
+                 </div>
+                <div class="pbfaqAns ">
+                    <span itemscope=" " itemprop="acceptedAnswer " itemtype="https://schema.org/Answer "><span itemprop="text ">                <span class="tabAns ">Ans:</span>
+                    <div class="ansData ">
+                        <p class="paragraphBu ">Yes, it’ really important to let the insurer know about any changes in your contact details as it will ensure timely delivery of all the correspondence sent to you.</p>                </div>
+                    </span></span>            </div>
+            </article>
+        </span></span>
+
+                </div>
+            </div>
+
+                        </section>
+        <div class="clearfix "></div>
+        <!--Right Section Starts Here-->
+        <section class="rightSection fRight r25 newreview ">
+
+            <div class="clearfix "></div>
+            <div class="newsub_category ">            
+                <div class="side_article product-article ">
+
+         <span class="bg_org head ">Articles</span>
+            <div id="pbNews " class="article_item ratedArticle ">
+           <ul class="data_ul "><li class="squareList "><a target="_blank " class="blueClr " href=" ">9 Essential Things to Know about Marine Insurance</a></li><li class="squareList "><a target="_blank " class="blueClr " href=" ">5 Things you Must know about your Business Insurance</a></li><li class="squareList "><a target="_blank " class="blueClr " href=" ">Cargo Insurance: Facts to be Considered!</a></li><li class="squareList "><a target="_blank " class="blueClr " href=" ">Are you Running a Business? Here are 6 Reasons why you Need Business Insurance</a></li><li class="squareList "><a target="_blank " class="blueClr " href=" ">What is Burglary Insurance?</a></li></ul>        </div>
+            <div class="viewAll ">
+
+                    <div class="view_more_btn ">
+                <a href=" ">view more</a>
+            </div>
+
+      </div>
+    </div>
+
+                 <div class="clearfix "></div>
+             <div class="listing reviewbox ">
+
+    <!-- Ratings -->
+    <div class="hide " itemscope=" " itemtype="http://schema.org/Product ">
+        <span itemprop="name " content="Office Package Policy "> </span>
+        <span itemprop="description " content="Office Package Policy: Insure your office against all perils. Compare and choose best Office Package Insurance in India that protects your office &amp; everything in it. "> </span>
+        <span itemprop="brand " itemscope=" " itemtype="http://schema.org/Brand ">
+            <meta itemprop="name " content="PolicyBazaar ">
+        </span>
+        <div class="ratingValue " itemprop="aggregateRating " itemscope=" " itemtype="http://schema.org/AggregateRating ">
+            <meta itemprop="bestRating " content="5 ">
+            <meta itemprop="worstRating " content="1 ">
+            <meta itemprop="ratingValue " content="0 ">
+            <meta itemprop="reviewCount " content="0 ">
+        </div>
+    </div>
+
+    <div class="card ratingsBlock ">
+        <div class="ratingHeading "><div class="card_heading ">Average Rating</div>
+            <div class="ratingValue ">
+
+            <div class="rating_text car_rating_txt ">
+                <a href="company/images/office-package-policy/#reviewslide ">
+                <div class="starts_block "> 
+                    <span class="star_rig "></span><span class="star_rig "></span><span class="star_rig "></span><span class="star_rig "></span><span class="star_rig "></span>            </div>
+                </a>
+
+              <!--<span style="font-size:12px;display: block; "><label id='ratingValue'>  </label> / 5</span>-->
+
+               <label id="ratingValue ">0 / 5 </label>
+              <div class="based_rating ">(Based on 0 Reviews)</div>
+            </div>
+            </div>
+        </div>
+
+        <div class="review_btn "> 
+            <a target="_blank " href=" " class="button ">Write a Review</a>
+        </div>
+    </div>
+    <!-- Ratings -->                    </div>
+
+                            <div class="side_article product-article ">    
+                    <span class="bg_org head ">Other Insurance</span>
+                   <div id="pbNews " class="article_item ">
+                        <ul class="data_ul ">
+                                                    <li class="squareList "><a class="blueClr " href="company/images/business-insurance/ ">Business Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href="company/images/burglary-insurance/ ">Burglary Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href="company/images/cargo-insurance/ ">Cargo Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href="company/images/contractor-all-risk-policy/ ">Contractor Risk Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href="company/images/comprehensive-liability-insurance/ ">Comprehensive Liability Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href="company/images/cyber-insurance/ ">Cyber Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href="company/images/director-and-officers-liability-insurance/ ">D&amp;O Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href="company/images/erection-risk/ ">Erection All Risk Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href="company/images/fire-insurance/ ">Fire Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href=" ">Group Health Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href=" ">Group Life Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href="company/images/general-liability-insurance/ ">General Liability Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href=" ">Group Personal Accident Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href=" ">Group Travel Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href="company/images/public-liability-insurance/ ">Liability Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href="company/images/marine-insurance/ ">Marine Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href="company/images/plant-machinery/ ">Contractor's Plant &amp; Machinery Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href=" ">Shop Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href="company/images/transit-insurance/ ">Transit Insurance</a></li>
+                                                        <li class="squareList "><a class="blueClr " href="company/images/workmen-compensation-policy/ ">Workmen Compensation Insurance</a></li>
+                                                    </ul>        
+                   </div>                       
+           </div>
+            </div>
+        </section>
+    </div>
+    <div class="clearfix "></div>
+    </section>
+    <div class="clearfix "></div>
+    <!--Testimonial Section Starts Here-->
+    <article class="pbTestimonials container newsub_category ">
+        <div class="row ">
+            <h2 class="title clientsays ">What our clients say</h2>
+            <div class="navSlide ">
+
+                <div class="slider autoplay slick-initialized slick-slider ">
+                    <button type="button " data-role="none " class="slick-prev slick-arrow " aria-label="Previous " role="button " style="display: block; ">Previous</button>
+
+                    <div aria-live="polite " class="slick-list draggable " style="padding: 0px 10px; ">
+                        <div class="slick-track " role="listbox " style="opacity: 1; width: 6358px; left: -1122px; ">
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide slick-cloned " data-slick-index="-4 " aria-hidden="true " tabindex="-1 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    Got good deal without agent calling or speaking to anyone!! <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Sonia Khanna</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide slick-cloned " data-slick-index="-3 " aria-hidden="true " tabindex="-1 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    The services provided by Policybazaar are extremely helpful in making the right choice. Overall I had a good experience with Policybazaar. <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Parag Lele</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide slick-cloned " data-slick-index="-2 " aria-hidden="true " tabindex="-1 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    Thank you for facilitating and following up on the policy. Its been a very pleasurable experience with you folks at Policybazaar. <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Ananth Narayan</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide slick-cloned slick-active " data-slick-index="-1 " aria-hidden="false " tabindex="-1 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    I would like to thank the website 'www.policybazaar.com' because of which i could get a good policy. <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Rashmi Sirsath</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide slick-current slick-active slick-center " data-slick-index="0 " aria-hidden="false " tabindex="-1 " role="option " aria-describedby="slick-slide00 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    You are doing a great job. Proud to be a customer of Policybazaar. <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Neha Jain</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide slick-active " data-slick-index="1 " aria-hidden="false " tabindex="-1 " role="option " aria-describedby="slick-slide01 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    I did not even need help from an agent! This is very good! <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Urvashi Solanki</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide " data-slick-index="2 " aria-hidden="true " tabindex="-1 " role="option " aria-describedby="slick-slide02 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    Thanks for correction done in time and really Appreciated....!! GOOD TO HAVE POLICYBAZAAR..!! LIFE IS EASY WITH YOU..!! <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Bhaaskar Lokhande</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide " data-slick-index="3 " aria-hidden="true " tabindex="-1 " role="option " aria-describedby="slick-slide03 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    Very simple to use, friendly website <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Shraddha Sharma</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide " data-slick-index="4 " aria-hidden="true " tabindex="-1 " role="option " aria-describedby="slick-slide04 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    Thanking you very much for your support for getting our policy quickly, I would appreciate your work. <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Prabhat Yadav</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide " data-slick-index="5 " aria-hidden="true " tabindex="-1 " role="option " aria-describedby="slick-slide05 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    Got good deal without agent calling or speaking to anyone!! <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Sonia Khanna</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide " data-slick-index="6 " aria-hidden="true " tabindex="-1 " role="option " aria-describedby="slick-slide06 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    The services provided by Policybazaar are extremely helpful in making the right choice. Overall I had a good experience with Policybazaar. <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Parag Lele</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide " data-slick-index="7 " aria-hidden="true " tabindex="-1 " role="option " aria-describedby="slick-slide07 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    Thank you for facilitating and following up on the policy. Its been a very pleasurable experience with you folks at Policybazaar. <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Ananth Narayan</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide " data-slick-index="8 " aria-hidden="true " tabindex="-1 " role="option " aria-describedby="slick-slide08 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    I would like to thank the website 'www.policybazaar.com' because of which i could get a good policy. <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Rashmi Sirsath</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide slick-cloned slick-center " data-slick-index="9 " aria-hidden="true " tabindex="-1 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    You are doing a great job. Proud to be a customer of Policybazaar. <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Neha Jain</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide slick-cloned " data-slick-index="10 " aria-hidden="true " tabindex="-1 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    I did not even need help from an agent! This is very good! <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Urvashi Solanki</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide slick-cloned " data-slick-index="11 " aria-hidden="true " tabindex="-1 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    Thanks for correction done in time and really Appreciated....!! GOOD TO HAVE POLICYBAZAAR..!! LIFE IS EASY WITH YOU..!! <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Bhaaskar Lokhande</span>
+                            </div>
+                            <div class="testimonailArticles fLeft testimonialBlock slick-slide slick-cloned " data-slick-index="12 " aria-hidden="true " tabindex="-1 " style="width: 374px; ">
+                                <p class="pRelative ">
+                                    Very simple to use, friendly website <span class="dummy_image "></span>
+
+                                    <em class="arrow_clientsay "></em>
+                                </p>
+                                <span class="clientName ">Shraddha Sharma</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button " data-role="none " class="slick-next slick-arrow " aria-label="Next " role="button " style="display: block; ">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix "></div>
+    </article>
+        <!--Testimonial Section End Here-->
+    <!--Partners scroller Blocks-->
+    <!--Partners scroller Blocks-->
+<style>
+@media only screen and (min-width: 1200px) {
+    .row {
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 100% !important;
+}
+}
+</style>
+    </div>
+{% endblock %}

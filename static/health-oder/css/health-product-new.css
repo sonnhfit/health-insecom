@@ -782,13 +782,13 @@ ul.star-rating-green li span.blank-star{background:url(../images/stars-green.png
 .prequote-member-gorup md-checkbox.md-checked .md-icon {    background-color: #43ceb3;}
 
 .qut-new-detail-wrp { width: 1215px !important; }
-.qut-detail-wrp { width:890px; }
+.qut-detail-wrp { width:845px; }
 .qut-card-wrapper {height: auto; text-align: left;}
 .quotes-profiles {background: #005387;}
 .header-logo-wrapper span:first-child {padding-left: 0px;}
 .product_left {margin-left: 0px;}  
 .product_prquote { padding: 0px 0 20px !important;  width: 100%;  border-bottom: 1px solid #f1f1f1;   margin-bottom: 10px;}
-.prequote-box-margin {    margin: 0 -5px 11px;    padding-top: 10px;}
+.prequote-box-margin {    margin: 0 7px 11px;    padding-top: 10px;}
 [layout="row"] > [flex="6"] { max-width: 6%; }
 [layout="row"] > [flex="58"] { max-width: 58%; }
 [layout="row"] > [flex="42"] { max-width: 42%; }
@@ -897,8 +897,8 @@ md-progress-circular.hospitals-loader.md-hue-2 .md-inner .md-left .md-half-circl
 .right-si-value select {   width: auto;    font-size: 17px!important;    margin: -8px 0 0 -2px!important;padding: 0 5px 0 0!Important;}
 .right-si-value select option{    font-size: 14px!important; }
 ul.product-tabs-view{ margin:0px; padding:0px; float:left; width:100%;}
-ul.product-tabs-view li {  margin: 0px 3px 0 0;  list-style-type: none;   padding:3px 5px;   float: left;  width: 83.9px;   background: rgba(162, 162, 162, 0.82);    color: #fff;    font-size: 11px;    border-radius: 4px 4px 0 0;    text-align: center;    line-height: 14px; cursor:pointer;}
-ul.product-tabs-view li.active{ background:#43ceb3; cursor: pointer; }
+ul.product-tabs-view li {  margin: 0px 3px 0 0;  list-style-type: none;   padding:3px 6px;   float: left;  width: 83.9px;   background: rgba(162, 162, 162, 0.82);    color: #fff;    font-size: 11px;    border-radius: 4px 4px 0 0;    text-align: center;    line-height: 14px; cursor:pointer;}
+ul.product-tabs-view li.active{ background:#43ceb3; cursor:inherit; }
 ul.product-tabs-view li:last-child{ margin:0px 0px 0 0;width: 86px;}
 .cancer-tab-icon{ background:url(../images/product-tabs-icons.png) no-repeat 0px -2px; width:25px; height:27px; float:left;}
 .term-tab-icon{ background:url(../images/product-tabs-icons.png) no-repeat 0px -55px; width:25px; height:27px; float:left;}
@@ -1045,11 +1045,11 @@ ul.multiyear-tabs-new{    margin: -5px 0 0;  padding: 0px;   list-style-type: no
 /*ul.multiyear-tabs-new li{     font-size: 13px;  color: #fff;   margin:-1px 0 5px 6px;   padding: 11px 0 0;   list-style-type: none;    float: left;
   width: 84px;    min-height: 37px; cursor:pointer;   background:#005387; border-radius: 5px;}*/
   ul.multiyear-tabs-new li{     font-size: 13px;  color: #43ceb3;   margin:-1px 0 5px 6px;   padding: 11px 0 0;   list-style-type: none;    float: left;
-  width: 81px;    min-height: 56px; cursor:pointer;   background:#fff; border-radius: 5px;border: 1px solid}
+  width: 81px;    min-height: 37px; cursor:pointer;   background:#fff; border-radius: 5px;border: 1px solid}
 ul.multiyear-tabs-new li span{ display:block; font-size: 10.5px; padding: 5px 0 0 0;font-weight: 500;}
 /*ul.multiyear-tabs-new li.green-select-box3{ background: #43ceb3; }*/
 ul.multiyear-tabs-new li.green-select-box3{ background: #43ceb3;color: #fff }
-ul.multiyear-tabs-new li:first-child { padding-top: 20px;  min-height: 56px;}
+ul.multiyear-tabs-new li:first-child { padding-top: 20px;  min-height: 28px;}
 ul.multiyear-tabs-new li.green-select-box4{ background: #43ceb3; }
 
 .covered-box-pb {    max-width:21%!important;}

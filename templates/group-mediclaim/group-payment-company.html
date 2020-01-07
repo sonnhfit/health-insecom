@@ -1,0 +1,72 @@
+{% extends './base.html' %} 
+{% load static %} 
+
+{% block cssblock %}
+
+{% endblock %}
+
+
+{% block content %}
+<div id="feedLoading" class="loder ng-hide" ng-show="baseObj.isLoading" aria-hidden="true">
+    <h1 style="padding-top:10%; color:#ffffff; font-size:20px;">Please be patient while redirecting you for checkout</h1>
+    <img src="group-mediclaim/group-payment-compayny/images/page-loader.gif" class="loaderimg">
+</div>
+<div layout="row" class="ng-scope layout-row" ng-if="!baseObj.loader">
+    <div flex="" class="back_button flex"><a ng-click="backBtn()"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Go Back to Quote Screen</a></div>
+</div>
+<div class="proposal_profile_wrapper">
+    <p class="checkout_top_msg ng-binding">
+        Thank you <strong class="ng-binding">Mr quang</strong> for choosing Policybazaar for your Group Personal Accident requirements.
+        <br> You have selected Bronze policy from Religare Health Insurance Company Ltd. On clicking PAY NOW you will be re-directed to the payment gateway
+    </p>
+    <div layout="row" class="checkout_header only_mobile layout-row">
+        <div flex="20" class="flex-20">Insurer</div>
+        <div flex="40" class="flex-40">Plan Name</div>
+        <div flex="" class="flex">Status</div>
+  
+        <div flex="" class="flex">Final Premium</div>
+    </div>
+    <div class="checkout_body">
+        <div layout="row" layout-xs="column" layout-sm="column" layout-align="center center" class="layout-xs-column layout-sm-column layout-align-center-center layout-row">
+            <div flex="20" flex-xs="100" class="flex-xs-100 flex-20"><img src="group-mediclaim/group-payment-compayny/images/Religare.gif"></div>
+            <div flex="40" flex-sm="100" class="column ng-binding flex-sm-100 flex-40"><b class="mobile_check">Plan Name</b>Bronze</div>
+            <div flex="" class="column flex"><b class="mobile_check">Status</b>Pending</div>
+  
+            
+            
+            <div flex-xs="100" class="column ng-binding ng-scope flex-xs-100 flex" flex="" ng-if="CheckoutData.PlanBookingDetails.RevisedPremium == 0 || CheckoutData.PlanBookingDetails.RevisedPremium == CheckoutData.PlanBookingDetails.FinalPremium">
+                <b class="mobile_check">Final Premium</b><i class="fa fa-inr" aria-hidden="true"></i> 35,145</div>
+            
+        </div>
+    </div>
+
+    
+    <div class="row formFields cAlign checout ng-scope" ng-if="CheckoutData.IsE2E">
+        <button class="active_btn md-button" type="submit" ng-disabled="baseObj.loader" ng-click="redirectPayment()">
+            <span>Pay Now</span><i class="fa fa-arrow-right" aria-hidden="true" ng-hide="baseObj.loader"></i>
+            <div class="loader ng-hide" loader-css="" ng-show="baseObj.loader" aria-hidden="true">
+                <div class="loader-inner">
+                    <img src="group-mediclaim/group-payment-compayny/images/loader.gif" class="sme_loader">
+                </div>
+            </div>
+            <div class="md-ripple-container"></div>
+            <label></label>
+        </button>
+        <div class="cl"></div>
+    </div>
+    
+    <div class="cl"></div>
+    <div layout="row" class="checkout_header layout-row" style="margin-top:25px;">
+        <div flex="" class="flex">Personal Details</div>
+    </div>
+    <div class="member_info">
+        <div layout="row" layout-xs="column" layout-wrap="" class="layout-wrap layout-xs-column layout-row">
+            <div flex="35" flex-xs="100" flex-sm="100" class="ng-binding flex-xs-100 flex-sm-100 flex-35"><b>Name : </b> Mr quang</div>
+            
+            <div flex="35" flex-xs="100" flex-sm="100" class="flex-xs-100 flex-sm-100 flex-35"><b>Mobile No. : </b> &nbsp;<span class="ng-binding">+91 xxxxxx3243</span></div>
+            <div flex="30" flex-xs="100" flex-sm="100" class="flex-xs-100 flex-sm-100 flex-30"><b>Email : </b> &nbsp;<span class="ng-binding">q***g@gmail.com</span></div>
+        </div>
+        
+    </div>
+</div>
+ {% endblock %} 
