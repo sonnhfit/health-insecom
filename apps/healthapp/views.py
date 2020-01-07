@@ -45,4 +45,19 @@ class PreQuote(View):
     def get(self, request):
         return render(request,'home_insuarance/PreQuote.html')
 
-     
+class Quotes(View):
+
+    def get(self, request):
+        return render(request,'home_insuarance/Quotes.html')
+
+
+class Product(View):
+
+    def get(self, request):
+        return render(request,'home_insuarance/Product.html')
+
+
+class Form(View):
+
+    def get(self, request):
+        return render(request,'home_insuarance/form.html')

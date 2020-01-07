@@ -1,0 +1,541 @@
+{% extends './base-note.html' %} 
+{% load static %}
+{% block cssblock %}
+<script type="text/javascript" src="./home-insurance/css-m4/a47654126d"></script>	
+<script src="./home-insurance/css-m4/jquery"></script>
+<script src="./home-insurance/css-m4/jqueryval"></script>
+<script src="./home-insurance/css-m4/quotes"></script>
+{% endblock %}
+{% block content %}
+<div class="container-fluid sub_header d-sm-none d-md-block d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <a href="">Edit Detail</a> <span><img src="./home-insurance/images-m4/home_icon.png"></span>
+                <b>Property <br> Details</b>
+            </div>
+            <div class="col-2">
+                <b>Building Value</b>
+                <p>₹5 Lac</p>
+            </div>
+            <div class="col-2">
+                <b>Content Value</b>
+                <p>₹20 Lac</p>
+            </div>
+            <div class="col-2">
+                <b>Policy Term</b>
+                <p>9</p>
+            </div>
+            <div class="col-2">
+                
+            </div>
+        </div>
+    </div>
+</div>
+<form action="" method="post" novalidate="novalidate">
+    
+    <input data-val="true" data-val-number="The field BookingID must be a number." data-val-required="The BookingID field is required." id="BookingID" name="BookingID" type="hidden" value="32424">
+    <div class="col-12 back_btn"><div class="col-12"><a href=""> Go Back to the Quotes Screen</a></div></div>
+    <div class="container product_main">
+        
+
+        <div class="row">
+            <div class="col-md-9 col-sm-12 col-xs-12">
+                <div id="summary">
+                    <div class="row">
+                        <div class="col-12 product1">
+                            <input data-val="true" data-val-required="The QuotesPremiumRevision field is required." id="QuotesPremiumRevision" name="QuotesPremiumRevision" type="hidden" value="False">
+                            <img src="./home-insurance/images-m4/HdfcErgo.gif">
+                            <h1>Home Insurance-SFSP(Including Terrorism)</h1>
+                        </div>
+                    </div>
+                        <div id="buildingmasterdiv">
+                            <h6 class="pro_heading">Building Structure Benefits</h6>
+                            <div class="col-12">
+                                <div class="row product14">
+
+                                        <div class="col-3">
+                                            <input checked="checked" class="buildingaddonscheckbox" data-disabled="True" data-premium="0" data-text="Terrorism" data-val="true" data-val-required="The Selected field is required." id="4" name="BuildingAddon[0].Selected" type="checkbox" value="true" disabled="disabled"><input name="BuildingAddon[0].Selected" type="hidden" value="false">
+                                            <input value="4" class="buildingaddonid" data-val="true" data-val-number="The field PropertyAddonID must be a number." data-val-required="The PropertyAddonID field is required." id="BuildingAddon_0__PropertyAddonID" name="BuildingAddon[0].PropertyAddonID" type="hidden">
+                                            <input value="0" class="buildingpremium" data-val="true" data-val-number="The field Premium must be a number." data-val-required="The Premium field is required." id="BuildingAddon_0__Premium" name="BuildingAddon[0].Premium" type="hidden">
+                                            <span>Terrorism</span>
+                                            
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <h6 class="pro_heading">Content Details</h6>
+                        <div class="row product3">
+                            <div class="col-12">
+                                <div class="row product11">
+                                    <div class="col-4"><span class="d-sm-none d-md-block d-none">Recommended Products</span> <span class="d-sm-block d-md-none">Products</span></div>
+                                    <div class="col-3"><span class="d-sm-none d-md-block d-none">Value of all items</span> <span class="d-sm-block d-md-none">Value</span></div>
+                                    <div class="col-3 premiumcls">Premium</div>
+                                    <div class="col-2 actioncls">Action</div>
+                                </div>
+                            </div>
+                            <div class="col-12 product4 contentmaindiv">
+
+                                    <div class="row product12 contentaddondiv">
+                                        <div class="col-4">
+                                            <label class="contentaddonnamelabel" data-addonid="14" data-ratefactor="0.004095500000">Furniture-Fixture</label>
+                                            
+                                        </div>
+                                        <div class="col-3">
+                                            <input value="14" class="contentpropertyaddonid" data-val="true" data-val-number="The field PropertyAddonID must be a number." data-val-required="The PropertyAddonID field is required." id="ContentAddon_0__PropertyAddonID" name="ContentAddon[0].PropertyAddonID" type="hidden">
+                                            <input value="1000000" class="contentpropertysuminsured valid" data-val="true" data-val-number="The field SumInsured must be a number." id="ContentAddon_0__SumInsured" maxlength="8" name="ContentAddon[0].SumInsured" type="text">
+                                            <input value="4096" class="contentpropertypremium" data-val="true" data-val-number="The field Premium must be a number." data-val-required="The Premium field is required." id="ContentAddon_0__Premium" name="ContentAddon[0].Premium" type="hidden">
+                                        </div>
+                                        <div class="col-2">
+                                            <label class="contentdisplaypremium">₹4,096</label>
+                                        </div>
+                                        <div class="col-3 contentaddmorebuttondiv">
+                                            <img class="imgremove" src="./home-insurance/images-m4/action.png">
+                                        </div>
+                                    </div>
+                                    <div class="row product12 contentaddondiv">
+                                        <div class="col-4">
+                                            <label class="contentaddonnamelabel" data-addonid="15" data-ratefactor="0.004095500000">Electrical Appliances</label>
+                                            
+                                        </div>
+                                        <div class="col-3">
+                                            <input value="15" class="contentpropertyaddonid" data-val="true" data-val-number="The field PropertyAddonID must be a number." data-val-required="The PropertyAddonID field is required." id="ContentAddon_1__PropertyAddonID" name="ContentAddon[1].PropertyAddonID" type="hidden">
+                                            <input value="1000000" class="contentpropertysuminsured valid" data-val="true" data-val-number="The field SumInsured must be a number." id="ContentAddon_1__SumInsured" maxlength="8" name="ContentAddon[1].SumInsured" type="text">
+                                            <input value="4096" class="contentpropertypremium" data-val="true" data-val-number="The field Premium must be a number." data-val-required="The Premium field is required." id="ContentAddon_1__Premium" name="ContentAddon[1].Premium" type="hidden">
+                                        </div>
+                                        <div class="col-2">
+                                            <label class="contentdisplaypremium">₹4,096</label>
+                                        </div>
+                                        <div class="col-3 contentaddmorebuttondiv">
+                                            <img class="imgremove" src="./home-insurance/images-m4/action.png">
+                                        </div>
+                                    </div>
+
+                                <div class="row product12 hide contentaddondiv" id="contentsamplediv">
+                                    <div class="col-4 contentaddonselectdiv">
+                                        <select class="contentaddonselect">
+                                            %selectlist%
+                                        </select>
+                                            <input type="hidden" id="hidden_28" data-ratefactor="0.004095500000">
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="hidden" name="%contentpropertyaddonidname%" id="_contentpropertyaddonidid_" class="contentpropertyaddonid" data-cntreached="2">
+                                        <input type="hidden" name="%contentpropertypremiumname%" id="_contentpropertypremiumid_" class="contentpropertypremium">
+                                        <input type="text" name="%contentpropertysuminsuredname%" id="_contentpropertysuminsuredid_" class="contentpropertysuminsured" placeholder="Enter Sum Insured" maxlength="8">
+                                    </div>
+                                    <div class="col-2">
+                                        <label class="contentdisplaypremium">%contentdisplaypremium%</label>
+                                    </div>
+                                    <div class="col-md-3 col-12 contentaddmorebuttondiv">
+                                        <button class="contentaddmorebutton">+ Add More</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="row product13 contentaddondiv">
+                                    <div class="col-4  contentaddonselectdiv">
+                                        <select class="contentaddonselect">
+                                            <option value="-1">Select add-on for content</option>
+                                                <option data-ratefactor="0.004095500000" value="28">Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+
+                                        <input class="contentpropertyaddonid" data-val="true" data-val-number="The field PropertyAddonID must be a number." data-val-required="The PropertyAddonID field is required." id="ContentAddon_2__PropertyAddonID" name="ContentAddon[2].PropertyAddonID" type="hidden" value="0">
+                                        <input class="contentpropertysuminsured" data-val="true" data-val-number="The field SumInsured must be a number." id="ContentAddon_2__SumInsured" maxlength="8" name="ContentAddon[2].SumInsured" placeholder="Enter Sum Insured" type="text" value="">
+                                        <input class="contentpropertypremium" data-val="true" data-val-number="The field Premium must be a number." data-val-required="The Premium field is required." id="ContentAddon_2__Premium" name="ContentAddon[2].Premium" type="hidden" value="0">
+                                    </div>
+                                    <div class="col-2">
+                                        <label class="contentdisplaypremium"></label>
+                                    </div>
+                                    <div class="col-12 col-md-3 contentaddmorebuttondiv">
+                                        <button class="contentaddmorebutton">+ Add More</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+                <div class="row product6">
+                    <div class="col-12">
+                        <div id="allfeatures">
+                            <h3 class="product5">All Features</h3>
+                            HDFC ERGO covers your property up to 15 years. Get Discount up to 25% +15% (As per the policy tenure opted). Option to cover Terrorism, Flexibility in customization of policy. Reduced premiums saving your money. No documentation, get instant online policy.
+                        </div>
+                        <div id="brochures">
+                            <p>&nbsp;</p>
+                            <h3 class="product5">Document / Brochures</h3>
+                                <span>
+                                    <a href="" target="_blank"><img src="./home-insurance/images-m4/pdf.gif"></a>
+                                </span>
+                                <em style="padding-left:35px;">PolicyWording</em>
+                            <p>&nbsp;</p>
+                        </div>
+                        <div id="insurer">
+                            <h3 class="product5">About Insurer</h3>
+                            HDFC ERGO General Insurance Company Ltd. is a joint venture between HDFC Ltd., India’s premier Housing Finance Institution and ERGO International AG, the primary insurance entity of Munich Re Group. The Company offers complete range of general insurance products ranging from Motor, Health, Travel, Home and Personal Accident in the retail space and customized products like Property, Marine and Liability Insurance in the corporate space.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row product_rgt">
+                    <div class="col-12 product_rgt12">
+                        <p><span>Total Premium</span> <em><span id="totpremium">₹10,240</span><span>(exclusive of 18% GST)</span></em></p>
+                        <!-- <button type="submit" id="proposalsubmit"></button> -->
+                        <a href="{% url 'form_url' %}" id="buton">
+                            Proceed<span class="button_arrow3"></span><span class="productloadingbtn hide"><div class="lds-ripple"><div></div><div></div></div></span>
+                        </a>
+                    </div>
+                        <div class="col-12 product_rgt13 desktop">
+                            <div class="product_rgt1">
+                                <span>BASE POLICY</span>
+                                <b>Base Premium</b><em id="basepremium">₹2,048</em>
+                            </div>
+                        </div>
+                    <span class="desktop">
+                        <div class="col-12 product_rgt13 buildingaddon" style="display:none">
+                            <div class="product_rgt1 buildingdiv">
+                                <span>Add-on For Building</span>
+                            </div>
+                        </div>
+                        <div class="col-12 product_rgt13 contentaddon" style="">
+                            <div class="product_rgt1 contentdiv">
+                                <span>Add-on For Content</span>
+                            <b id="14_b">Furniture-Fixture</b><em id="14_em">₹4,096<img id="14_img" class="imgremove1" src="./home-insurance/images-m4/action.png"></em><b id="15_b">Electrical Appliances</b><em id="15_em">₹4,096<img id="15_img" class="imgremove1" src="./home-insurance/images-m4/action.png"></em></div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <input type="hidden" id="hidden1_28" data-ratefactor="0.004095500000" value="Others">
+            <input type="hidden" id="hidden1_14" data-ratefactor="0.004095500000" value="Furniture-Fixture">
+        <input type="hidden" id="hidden1_15" data-ratefactor="0.004095500000" value="Electrical Appliances">
+        <input type="hidden" id="hidden1_0" data-ratefactor="0">
+</form>
+{% endblock %}
+
+
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var isEditMode = 'False' === 'True';
+            var planID = '2566';
+            var contentSI = '2000000';
+            String.prototype.replaceAll = function (search, replacement) {
+                var target = this;
+                return target.replace(new RegExp(search, 'g'), replacement);
+            };
+            String.prototype.parseInteger = function () {
+                return parseInt(this.replaceAll(",", "").replaceAll("₹", "")) || 0;
+            };
+            UpdateTotPremium1();
+            $("body").on("change", ".contentaddonselect", function () {
+                var $this = $(this);
+                //if ($this && $this.val() > 0) {
+                UpdateDOM($this, "S");
+                //}
+            });
+
+            $("body").on("click", ".contentaddmorebutton", function (e) {
+                e.preventDefault();
+                UpdateDOM($(this), "A");
+            });
+
+            $("body").on("keyup focusout", ".contentpropertysuminsured", function (e) {
+                $(this).val($(this).val().replace(/[^0-9\.]/g, ''));
+                var txtval = parseInt($(this).val()) || 0;                
+                if (e.type == "focusout") {
+                    if ($(this).parents("div.product13:first").length > 0 && txtval == 0) {
+                        $(this).parents("div.contentaddondiv:first").find(".contentaddonselect").val("-1").trigger('change');
+                        return;
+                    }
+                    txtval = txtval < contentValMinMaxValueProduct.MinValue ? contentValMinMaxValueProduct.MinValue : txtval;
+                    txtval = txtval > contentValMinMaxValueProduct.MaxValue ? contentValMinMaxValueProduct.MaxValue : txtval;
+                }
+                $(this).val(txtval);
+                UpdateDOM($(this), "T");
+            });
+
+            $(".buildingaddonscheckbox").change(function () {
+                if ($(".buildingaddonscheckbox:checked").length) $(".buildingaddon").show();
+                else $(".buildingaddon").hide();
+                UpdateBuildingAddonDiv($(this).data('text'), $(this).data('premium').toString(), $(this).attr('id'), this.checked);
+                UpdateTotPremium1();
+            });
+
+            $("body").on("click", ".imgremove,.imgremove1", function (e) {
+                var $cntreachedelem = $("#contentsamplediv .contentpropertyaddonid");
+                $cntreachedelem.data('cntreached', parseInt($(".contentaddondiv").not("#contentsamplediv").length - 1) - 1);
+
+                if ($(e.target).attr('class') == "imgremove") {
+                    var $nearestdiv = $(this).parents(".contentaddondiv:first");
+                    var $nearestaddonidelem = $nearestdiv.find(".contentpropertyaddonid");
+                    var $nearestcontentpropertypremiumelem = $nearestdiv.find(".contentpropertypremium");
+                    $nearestdiv.remove();
+                    RemoveAddonDiv($nearestaddonidelem.val());
+                    ReOrderContentDiv();
+                    UpdateTotPremium1();
+                    $(".contentaddondiv:last").find(".contentaddonselect").append("<option data-ratefactor=" + $("#hidden1_" + $nearestaddonidelem.val()).data("ratefactor") + " value=" + $nearestaddonidelem.val() + ">" + $("#hidden1_" + $nearestaddonidelem.val()).val() + "</option>");
+                }
+                else {
+                    var $this = $(this);
+                    var isBurglary = $this.attr('id').indexOf("burglaryrow_img") > -1 ? true : false;
+                    if (isBurglary) {
+                        RemoveAddonDiv('burglaryrow');
+                        UpdateTotPremium1();
+                        $("#checkburglaryopted").removeAttr("checked");
+                    }
+                    else {
+                        var $nearestdiv = $('.contentpropertyaddonid[value="' + $this.attr('id').split('_')[0] + '"]').parents(".contentaddondiv:first");
+                        if ($nearestdiv.hasClass("product13")) {
+                            return;
+                        }
+
+                        var $nearestaddonidelem = $nearestdiv.find(".contentpropertyaddonid");
+                        $nearestdiv.remove();
+                        RemoveAddonDiv($nearestaddonidelem.val());
+                        ReOrderContentDiv();
+                        UpdateTotPremium1();
+                        $(".contentaddondiv:last").find(".contentaddonselect").append("<option data-ratefactor=" + $("#hidden1_" + $nearestaddonidelem.val()).data("ratefactor") + " value=" + $nearestaddonidelem.val() + ">" + $("#hidden1_" + $nearestaddonidelem.val()).val() + "</option>");
+                    }
+                }
+                if ($(".contentdiv .imgremove1").length) $(".contentaddon").show();
+                else $(".contentaddon").hide();
+            });
+
+            $(window).bind("scroll", function () {
+                var scrollTop = $(this).scrollTop();
+                $(".leftpanel a").removeClass('active');
+                if (scrollTop <= 465)
+                    $(".summary").addClass("active");
+                else if (scrollTop > 465 && scrollTop <= 1060)
+                    $(".allfeatures").addClass("active");
+                else if (scrollTop > 1060 && scrollTop <= 1180)
+                    $(".brochures").addClass("active");
+                else if (scrollTop > 1180)
+                    $(".insurer").addClass("active");
+            });
+            $(".summary,.allfeatures,.brochures,.insurer").click(function (e) {
+                e.preventDefault();
+                var target = "#" + $(this).attr('class');
+                $('html, body').stop().animate({
+                    scrollTop: target == "#summary" ? 0 : $(target).offset().top
+                }, 750);
+            });
+
+            function ReOrderContentDiv() {
+                var cnter = 0;
+                $(".contentaddondiv").not("#contentsamplediv").each(function () {
+                    var $this = $(this);
+                    $this.find(".contentpropertyaddonid").attr('name', 'ContentAddon[' + cnter + '].PropertyAddonID');
+                    $this.find(".contentpropertysuminsured").attr('name', 'ContentAddon[' + cnter + '].SumInsured');
+                    $this.find(".contentpropertypremium").attr('name', 'ContentAddon[' + cnter + '].Premium');
+                    $this.find(".contentpropertyaddonid").attr('id', 'ContentAddon_' + cnter + '__.PropertyAddonID');
+                    $this.find(".contentpropertysuminsured").attr('id', 'ContentAddon_' + cnter + '__.SumInsured');
+                    $this.find(".contentpropertypremium").attr('id', 'ContentAddon_' + cnter + '__.Premium');
+                    cnter++;
+                });
+                $("#contentsamplediv .contentpropertyaddonid").data('cntreached', cnter);
+            }
+
+            function UpdateTotPremium(premium, ischecked) {
+                premium = premium.replaceAll(",", "").replaceAll("₹", "").parseInteger();
+                var existingpremium = $("#totpremium").text();
+                existingpremium = existingpremium.replaceAll(",", "").replaceAll("₹", "").parseInteger();
+                if (ischecked)
+                    $("#totpremium").text("₹" + ((premium + existingpremium).toFixed(0)).parseInteger().toLocaleString('en-IN'));
+                else
+                    $("#totpremium").text("₹" + ((existingpremium - premium).toFixed(0)).parseInteger().toLocaleString('en-IN'));
+            }
+
+            function UpdateTotPremium1() {
+                var totpremium = 0;
+                $(".contentpropertypremium").each(function () {
+                    totpremium += $(this).val().toString().parseInteger();
+                });
+                $(".buildingpremium").each(function () {
+                    if ($(this).siblings(".buildingaddonscheckbox:first").is(":checked"))
+                        totpremium += $(this).val().toString().parseInteger();
+                });
+                totpremium += $("#basepremium").text().parseInteger();
+                var burglaryval = $("#BurlgaryPremium").val();
+                burglarypremium = burglaryval ? burglaryval.toString().parseInteger() : 0;
+                if ($("#checkburglaryopted").is(":checked"))
+                    totpremium += burglarypremium;
+                //else
+                //    totpremium -= burglarypremium;
+                $("#totpremium").text("₹" + totpremium.toLocaleString("en-IN"));
+            }
+
+            function UpdateBuildingAddonDiv(addonname, premium, id, ischecked) {
+                if (ischecked && $("#" + id + "_b").length == 0) {
+                    $(".buildingdiv").append("<b id=" + id + "_b" + ">" + addonname + "</b><em id=" + id + "_em" + ">" + "₹" + premium.toString().parseInteger().toLocaleString('en-IN') + "</em>");
+                }
+                else
+                    RemoveAddonDiv(id);
+            }
+
+            function RemoveAddonDiv(id) {
+                $("#" + id + "_b").remove();
+                $("#" + id + "_em").remove();
+                $("#" + id + "_img").remove();
+            }
+
+            function UpdateContentAddonDiv(addonname, premium, id) {
+                var arrid = [];
+                id = id || 0;
+                if ($("#" + id + "_b").length == 0 && id) {
+                    $(".contentdiv").append("<b id=" + id + "_b" + ">" + addonname + "</b><em id=" + id + "_em" + ">" + "₹" + premium.toString().parseInteger().toLocaleString('en-IN') + "<img id=" + id + "_img class='imgremove1' src='./home-insurance/images-m4/action.png'></em>");
+                }
+                $(".contentaddonnamelabel").each(function () {
+                    if ($(this).attr('data-addonid'))
+                        arrid.push($(this).attr('data-addonid').toString())
+                });
+                if ($(".contentaddonselect") && $(".contentaddonselect option:selected").val() && $(".contentaddonselect option:selected").val() > 0)
+                    arrid.push($(".contentaddonselect option:selected").val());
+                $(".contentdiv b").each(function () {
+                    if ($(this).attr('id'))
+                        if (arrid.indexOf($(this).attr('id').toString().split('_')[0]) < 0 &&
+                            $(this).attr('id').toString().split('_')[0].parseInteger() != id.toString().parseInteger()) {
+                            $("#" + $(this).attr('id').toString().split('_')[0] + "_b").remove();
+                            $("#" + $(this).attr('id').toString().split('_')[0] + "_em").remove();
+                        }
+                });
+            }
+
+            function UpdateDOM($this, type) {
+                var $nearestdiv = $this.parents(".contentaddondiv:first");
+                var $nearestaddonidelem = $nearestdiv.find(".contentpropertyaddonid");
+                var $nearestcontentdisplaypremiumelem = $nearestdiv.find(".contentdisplaypremium");
+                var $nearestcontentpropertysuminsuredelem = $nearestdiv.find(".contentpropertysuminsured");
+                var $nearestcontentpropertypremiumelem = $nearestdiv.find(".contentpropertypremium");
+                var $nearestcontentaddonselectelem = $nearestdiv.find(".contentaddonselect");
+                var $cntreachedelem = $("#contentsamplediv .contentpropertyaddonid");
+                var $nearestcontentlabel = $nearestdiv.find(".contentaddonnamelabel");
+
+                if (type == "S") {
+                    if (!($this && $this.val() > 0)) {
+                        $nearestcontentpropertysuminsuredelem.val(''); $nearestcontentdisplaypremiumelem.text(''); $nearestaddonidelem.val(0);
+                        $nearestcontentpropertypremiumelem.val(0); UpdateContentAddonDiv(); return;
+                    }
+                    $nearestaddonidelem.val($this.val());
+                    if ($nearestcontentpropertysuminsuredelem.val() > 0) {
+                        var calculatedpremium = ($this.find(":selected").data('ratefactor') * parseInt($nearestcontentpropertysuminsuredelem.val()).toFixed(0)).toString().parseInteger().toLocaleString('en-IN');
+                        $("#" + $nearestaddonidelem.val() + "_em").html("₹" + calculatedpremium + "<img id=" + $nearestaddonidelem.val() + "_img class='imgremove1' src='./home-insurance/images-m4/action.png'/>");
+                        $nearestcontentdisplaypremiumelem.text("₹" + calculatedpremium);
+                        $nearestcontentpropertypremiumelem.val(calculatedpremium.replaceAll(",", "").parseInteger());
+                        UpdateContentAddonDiv($nearestcontentaddonselectelem.find(":selected").text(), $nearestcontentpropertypremiumelem.val(), $nearestcontentaddonselectelem.find(":selected").val());
+
+                        UpdateTotPremium1();
+                        if ($(".contentdiv .imgremove1").length) $(".contentaddon").show();
+                        else $(".contentaddon").hide();
+                    }
+                }
+                else if (type == "T") {
+                    if ($nearestaddonidelem.val() > 0) {
+                        var calculatedpremium = parseInt(($this.val() * ($nearestcontentlabel.data('ratefactor') ? $nearestcontentlabel.data('ratefactor') : $nearestcontentaddonselectelem.find(":selected").data('ratefactor'))).toFixed(0)).toLocaleString('en-IN');
+                        $("#" + $nearestaddonidelem.val() + "_em").html("₹" + calculatedpremium + "<img id=" + $nearestaddonidelem.val() + "_img class='imgremove1' src='./home-insurance/images-m4/action.png'/>");
+                        $nearestcontentdisplaypremiumelem.text("₹" + calculatedpremium);
+                        $nearestcontentpropertypremiumelem.val(calculatedpremium.replaceAll(",", "").parseInteger());
+                        UpdateContentAddonDiv($nearestcontentaddonselectelem.find(":selected").text(), $nearestcontentpropertypremiumelem.val(), $nearestcontentaddonselectelem.find(":selected").val());
+
+                        UpdateTotPremium1();
+                        if ($(".contentdiv .imgremove1").length) $(".contentaddon").show();
+                        else $(".contentaddon").hide();
+                    }
+                }
+                else if (type == "A") {
+                    if ($nearestaddonidelem.val() > 0 && $nearestcontentpropertysuminsuredelem.val() > 0) {
+
+                        $cntreachedelem.data('cntreached', parseInt($(".contentaddondiv").not("#contentsamplediv").length - 1) + 1);
+                        var dropdownselectedtxt = $nearestdiv.find(".contentaddonselectdiv .contentaddonselect option:selected").text();
+                        var dropdownselectedratefactor = $nearestdiv.find(".contentaddonselectdiv .contentaddonselect option:selected").data('ratefactor');
+                        $nearestdiv.find(".contentaddonselectdiv .contentaddonselect").hide();
+                        $nearestdiv.find(".contentaddonselectdiv").append("<label class = 'contentaddonnamelabel' data-addonid='" + $nearestaddonidelem.val() + "' data-ratefactor=" + dropdownselectedratefactor + ">" + dropdownselectedtxt + "</label>");
+                        $nearestdiv.find(".contentaddmorebutton").remove();
+
+                        var elem = $("<select>" + $nearestcontentaddonselectelem.html() + "</select>");
+                        elem.find('option[value="' + $nearestaddonidelem.val() + '"]').remove();
+
+                        var $clone = $("#contentsamplediv").clone().removeClass("hide");
+                        $clone = $clone.html().replace("%selectlist%", elem.html()).replace("%contentdisplaypremium%", '')
+                        .replace("%contentpropertyaddonidname%", 'ContentAddon[' + $cntreachedelem.data("cntreached") + '].PropertyAddonID')
+                        .replace("%contentpropertypremiumname%", 'ContentAddon[' + $cntreachedelem.data("cntreached") + '].Premium')
+                        .replace("%contentpropertysuminsuredname%", 'ContentAddon[' + $cntreachedelem.data("cntreached") + '].SumInsured')
+                        .replace("_contentpropertyaddonidid_", 'ContentAddon_' + $cntreachedelem.data("cntreached") + '__PropertyAddonID')
+                        .replace("_contentpropertypremiumid_", 'ContentAddon_' + $cntreachedelem.data("cntreached") + '__Premium')
+                        .replace("_contentpropertysuminsuredid_", 'ContentAddon_' + $cntreachedelem.data("cntreached") + '__SumInsured');
+
+                        $(".contentaddmorebutton").not("#contentsamplediv .contentaddmorebutton").remove();
+                        $(".contentaddondiv").removeClass('product13').addClass('product12');
+                        $(".contentmaindiv").append('<div class="row product13 contentaddondiv">' + $clone + '</div>');
+                        $nearestdiv.find(".contentaddmorebuttondiv").removeClass("col-12 col-md-3").addClass("col-3").append("<img class='imgremove' src='./home-insurance/images-m4/action.png'>");
+                        UpdateContentAddonDiv($nearestcontentaddonselectelem.find(":selected").text(), $nearestcontentpropertypremiumelem.val(), $nearestcontentaddonselectelem.find(":selected").val());
+                        UpdateTotPremium1();
+                    }
+                }
+            }
+
+            if (isEditMode) {
+                $(".buildingaddonscheckbox").each(function () {
+                    UpdateBuildingAddonDiv($(this).data('text'), $(this).data('premium'), $(this).siblings(".buildingaddonid:first").val(), this.checked);
+                });
+            }
+
+            $(".contentaddondiv").each(function () {
+                if ($(this).find(".contentpropertyaddonid").val() > 0)
+                    UpdateContentAddonDiv($(this).find('.contentaddonnamelabel').text(), $(this).find(".contentpropertypremium").val(), $(this).find(".contentpropertyaddonid").val());
+            });
+
+            $("#proposalsubmit").click(function () {
+                if (!($(".contentaddon").is(':visible') || 'False' == "True") && contentSI > 0 && (planID != 2567 && planID != 2594 && planID != 2603 && planID != 2604)) { alert("Please give content breakup!"); return false; }
+                var totalSI = 0;
+                var flag = false;
+                //var flag1 = false;
+                $(".contentpropertysuminsured").each(function () {
+                    var $this = $(this);
+                    var $nearestselected = $this.parents('.contentaddondiv:first').find('select.contentaddonselect').find(":selected").val();
+                    if ((!$this.val() || $this.val() <= 0) && $nearestselected > 0) {
+                        alert("Please provide Sum Insured!");
+                        flag = true;
+                    }
+                    if ($this.val() && $this.val() > 0 && $this.siblings(".contentpropertypremium:first").val().toString().parseInteger() > 0) {
+                        totalSI += $this.val().toString().parseInteger();
+                    }
+                    //if ($this.val().toString().parseInteger() > 2000000 && (planID == 2566 || planID == 2596)) {
+                    //    flag1 = true;
+                    //}
+                });
+                if (totalSI != contentSI.parseInteger() && (planID != 2567 && planID != 2594 && planID != 2603 && planID != 2604)) { alert("Content breakup should be equal to content value!"); return false; }
+                else if (flag) return false;
+                //else if (flag1) { alert("Sum Insured for furniture fixture & electrical applicances should be less than 20 Lacs for this plan."); return false;}
+                $(".contentpropertysuminsured").removeAttr('disabled');
+                $(".buildingaddonscheckbox").removeAttr('disabled');
+            });
+            $(".contentpropertysuminsured:not(:last)").trigger('blur');
+            $(".buildingaddonscheckbox").each(function () { if ($(this).data('disabled') == "True") $(this).attr('disabled', 'disabled'); });
+            $("#checkburglaryopted").change(function () {
+                if (this.checked) {
+                    UpdateContentAddonDiv('Burglary', $("#BurlgaryPremium").val(), 'burglaryrow');
+                }
+                else {
+                    $(".contentdiv").find("#burglaryrow_b").remove();
+                    $(".contentdiv").find("#burglaryrow_em").remove();
+                }
+                UpdateTotPremium1();
+            }).trigger('change');
+
+            if (planID == 2567 || planID == 2594 || "False" == "True") {
+                $(".contentdisplaypremium").hide();
+                $(".contentaddmorebuttondiv").hide();
+                $(".product13.contentaddondiv").hide();
+                $(".contentaddon").hide();
+                if ("False" == "False") {
+                    $(".contentpropertysuminsured").attr('disabled', 'disabled');
+                }
+                $(".premiumcls, .actioncls").hide();
+            }
+        });
+    </script>

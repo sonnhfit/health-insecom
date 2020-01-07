@@ -27,6 +27,9 @@ urlpatterns = [
     path('', health_views.HealthInsurance.as_view()),
     path('home-insurance/', health_views.Home.as_view(), name='home-insurance_url'),
     path('prequote/', health_views.PreQuote.as_view(), name='prequote_url'),
+    path('quotes/', health_views.Quotes.as_view(), name='quotes_url'),
+    path('product/', health_views.Product.as_view(), name='product_url'),
+    path('form/', health_views.Form.as_view(), name='form_url'),
     path('health-add/', apis_views.GetAllCustomerParent.as_view()),
 
 ]
