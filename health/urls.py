@@ -30,6 +30,7 @@ urlpatterns = [
     path('quotes/', health_views.Quotes.as_view(), name='quotes_url'),
     path('product/', health_views.Product.as_view(), name='product_url'),
     path('form/', health_views.Form.as_view(), name='form_url'),
+    path('renewals/', health_views.Renewals.as_view(), name='renewals-URL'),
     path('health-add/', apis_views.GetAllCustomerParent.as_view()),
 
 ]

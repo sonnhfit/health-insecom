@@ -61,3 +61,9 @@ class Form(View):
 
     def get(self, request):
         return render(request,'home_insuarance/form.html')
+
+
+class Renewals(View):
+
+    def get(self, request):
+        return render(request,'renewals/renewals.html')
