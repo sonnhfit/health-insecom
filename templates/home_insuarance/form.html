@@ -1,0 +1,393 @@
+{% extends './base-note.html' %} 
+{% load static %}
+
+{% block cssblock %}
+<script type="text/javascript" src="./home-insurance/css-m5/a47654126d"></script>	
+<script src="./home-insurance/css-m5/jquery"></script>
+<script src="./home-insurance/css-m5/jqueryval"></script>
+<link href="./home-insurance/css-m5/bootstrapdatepickercss" rel="stylesheet">
+<script src="./home-insurance/css-m5/bootstrap"></script>
+<script src="./home-insurance/css-m5/bootstrapdatepickerjs"></script>
+<script src="./home-insurance/css-m5/bootstrapautocomplete"></script>
+<script src="./home-insurance/css-m5/postquote"></script>
+{% endblock %}
+
+{% block content %}
+<form action="" id="proposalform" method="post" novalidate="novalidate">    <div class="container-fluid">
+    <div class="row back_btn"><div class="col-md-12"><a href=""> Go Back to the Product Screen</a></div></div>
+    <div class="container proposal_profile_wrapper">
+        <div class="row pro_left">
+            <div class="col-md-9">
+                <h1>Proposal Form</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic9"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span>Full Name </span></div>
+                            <div class="col-6 p-0">
+                                <input data-val="true" data-val-regex="Enter only alphabets" data-val-regex-pattern="^[a-zA-Z\s]+$" data-val-required="*Required" id="FullName" name="FullName" placeholder="Full Name" type="text" value="twtw">
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="FullName" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic10"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span>Date of birth</span></div>
+                            <div class="col-6 p-0">
+                                <input class="datepicker" data-val="true" data-val-required="*Required" id="DateOfBirth" name="DateOfBirth" placeholder="Date of Birth" readonly="true" type="text" value="">
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="DateOfBirth" data-valmsg-replace="true"></span>
+                    </div>
+                    
+                          <div class="col-md-6">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic11"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span>Mobile Number</span></div>
+                            <div class="col-6 p-0">
+                                <input data-val="true" data-val-regex="Mobile No must start with 7,8,9" data-val-regex-pattern="^[6789]\d{9}$" data-val-required="*Required" disabled="True" id="MobileNo" maxlength="10" minlength="10" name="MobileNo" placeholder="Mobile Number" type="text" value="XXXXXX1232">
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="MobileNo" data-valmsg-replace="true"></span>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic12"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span>Email Id</span></div>
+                            <div class="col-6 p-0">
+                                <input data-val="true" data-val-regex="Email is not valid" data-val-regex-pattern="^[a-zA-Z0-9_\.-.*]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,6}$" data-val-required="*Required" disabled="True" id="EmailID" maxlength="100" name="EmailID" placeholder="Email ID" type="text" value="a@gmail.com">
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="EmailID" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic13"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span>Marital Status</span></div>
+                            <div class="col-6 p-0">
+                                <select data-val="true" data-val-number="The field MaritialStatusID must be a number." data-val-required="*Required" id="MaritialStatusID" name="MaritialStatusID"><option value="">Select Marital Status</option>
+<option value="1">Single</option>
+<option value="2">Married</option>
+</select>
+                                
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="MaritialStatusID" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic14"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span>Pan Number</span></div>
+                            <div class="col-6 p-0">
+                                <input class="uppercase" data-val="true" data-val-regex="Not a valid pan number" data-val-regex-pattern="^[A-Za-z]{5}\d{4}[A-Za-z]{1}$" id="PanNo" maxlength="10" minlength="10" name="PanNo" placeholder="Pan Number" type="text" value="">
+                                
+                            </div>
+                        </div>
+                       <span class="field-validation-valid defaultpannovalidation" data-valmsg-for="PanNo" data-valmsg-replace="true"></span>
+                        <span class="field-validation-error pannoerror" style="display:none"><span>*Required</span></span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic14"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span class="line_height2">Aadhar Number</span></div>
+                            <div class="col-6 p-0">
+                                <input class="onlynumbers" data-val="true" data-val-range="Invalid aadhar number" data-val-range-max="999999999999" data-val-range-min="100000000000" data-val-regex="Invalid aadhar number" data-val-regex-pattern="^[0-9]*$" id="AadharNo" maxlength="12" minlength="12" name="AadharNo" placeholder="Aadhar Number" type="text" value="">
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="AadharNo" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic15"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span>Annual Income</span></div>
+                            <div class="col-6 p-0">
+                                <select data-val="true" data-val-number="The field AnnualIncomeID must be a number." data-val-required="*Required" id="AnnualIncomeID" name="AnnualIncomeID"><option value="">Select Annual Income</option>
+<option value="1">upto 3 lakhs</option>
+<option value="2">3 - 5 lakhs</option>
+<option value="3">5 - 7 lakhs</option>
+<option value="4">7 - 10 lakhs</option>
+<option value="5">10 - 15 lakhs</option>
+<option value="6">15 lakhs +</option>
+</select>
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="AnnualIncomeID" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic16"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span>Occupation</span></div>
+                            <div class="col-6 p-0">
+                                <select data-val="true" data-val-number="The field OccupationID must be a number." data-val-required="*Required" id="OccupationID" name="OccupationID"><option value="">Select Occupation</option>
+<option value="138">Salaried</option>
+<option value="139">Self Employed</option>
+<option value="140">Student</option>
+<option value="141">Retired</option>
+<option value="142">Professional</option>
+<option value="143">Any Other</option>
+</select>
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="OccupationID" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic17"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span>Address line 1</span></div>
+                            <div class="col-6 p-0">
+                                <input data-val="true" data-val-required="*Required" id="AddressLine1" maxlength="200" name="AddressLine1" placeholder="Address Line 1" type="text" value="">
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="AddressLine1" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic17"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span>Address line 2</span></div>
+                            <div class="col-6 p-0">
+                                
+                                <input data-val="true" data-val-required="*Required" id="AddressLine2" maxlength="200" name="AddressLine2" placeholder="Address Line 2" type="text" value="">
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="AddressLine2" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic25"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span>City Name</span></div>
+                            <div class="col-6 p-0">
+                                <input class="typeahead" data-provide="typeahead" data-url="/Common/AutoCompleteCityStateList" data-val="true" data-val-remote="Please select city from list" data-val-remote-additionalfields="*.TempCity" data-val-remote-url="/PreQuote/GetCityStateByCityName" data-val-required="Please select city from list" id="citylist" name="TempCity" placeholder="Select City" type="text" value="Haldia(Bihar)">
+                                <input data-val="true" data-val-number="The field City must be a number." data-val-required="Please select city from list" id="CityID" name="CityID" type="hidden" value="606">
+                                <input data-val="true" data-val-number="The field StateID must be a number." data-val-required="The StateID field is required." id="StateID" name="StateID" type="hidden" value="5">
+                                
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="CityID" data-valmsg-replace="true"></span>
+                        <span class="field-validation-valid" data-valmsg-for="TempCity" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic14"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span>Pincode</span></div>
+                            <div class="col-6 p-0">
+                                <select data-url="/Common/GetPincodeListJSON" data-val="true" data-val-required="*Required" id="pincode" name="ZipCode"></select>
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="ZipCode" data-valmsg-replace="true"></span>
+                    </div>
+                        <div class="col-md-6">
+                            <div class="row pre_wrapper pro">
+                                <div class="col-2 p-0">
+                                    <em><i class="icon ic144"></i></em>
+                                </div>
+                                <div class="col-4 p-0"><span>Construction Type</span></div>
+                                <div class="col-6 p-0">
+                                    <select data-val="true" data-val-number="The field HDFCConstructionTypeID must be a number." data-val-required="*Required" id="HDFCConstructionTypeID" name="HDFCConstructionTypeID"><option value="">Select Construction</option>
+<option value="1">Earthquake Resistant Construction</option>
+<option value="2">Superior Construction</option>
+<option value="3">Class I Construction</option>
+</select>
+                                </div>
+                            </div>
+                            <span class="field-validation-valid" data-valmsg-for="HDFCConstructionTypeID" data-valmsg-replace="true"></span>
+                        </div>
+
+                                                <div class="col-md-12">
+                            <div class="row pre_wrapper pro">
+                                <div class="col-md-1 col-2 p-0">
+                                    <em style="padding:10px 0px 0px 0px"><input data-val="true" data-val-required="The IsHypothecatedBankFinance field is required." id="ishypothecated" name="IsHypothecatedBankFinance" type="checkbox" value="true"><input name="IsHypothecatedBankFinance" type="hidden" value="false"></em>
+                                </div>
+                                <div class="col-md-11 col-10 p-0"><p><b class="line_height1">Is Hypothecated to Bank?</b></p> </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 hide financialinstitution" style="display: none;">
+                            <div class="row pre_wrapper pro">
+                                <div class="col-2 p-0">
+                                    <em><i class="icon ic17"></i></em>
+                                </div>
+                                <div class="col-4 p-0"><span class="line_h">Financial Institution Name</span></div>
+                                <div class="col-6 p-0">
+                                    <input id="FinancialInstitutionName" maxlength="100" name="FinancialInstitutionName" placeholder="Financial Institution Name" type="text" value="">
+                                </div>
+                            </div>
+                            <span class="field-validation-valid" data-valmsg-for="FinancialInstitutionName" data-valmsg-replace="true"></span>
+                            <span class="field-validation-error financialinstitutionspan" style="display:none"><span>*Required</span></span>
+                        </div>
+                    <div class="col-md-12">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-md-1 col-2 p-0">
+                                <em style="padding:10px 0px 0px 0px"><input data-val="true" data-val-required="The IsRiskAddressAsCommunication field is required." id="isriskaddsame" name="IsRiskAddressAsCommunication" type="checkbox" value="true"><input name="IsRiskAddressAsCommunication" type="hidden" value="false"></em>
+                            </div>
+                            <div class="col-md-11 col-10 p-0"><p>Is your address same as Risk location Address Details?</p> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 riskdetails">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic17"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span class="line_height2">Risk Address line 1</span></div>
+                            <div class="col-6 p-0">
+                                <input class="riskaddress1" id="RiskAddressLine1" maxlength="200" name="RiskAddressLine1" placeholder="Risk Address Line 1" type="text" value="">
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="RiskAddressLine1" data-valmsg-replace="true"></span>
+                        <span class="field-validation-error riskaddressline1error" style="display:none"><span>*Required</span></span>
+                    </div>
+                    <div class="col-md-6 riskdetails">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic17"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span class="line_height2">Risk Address line 2</span></div>
+                            <div class="col-6 p-0">
+                                <input class="riskaddress2" id="RiskAddressLine2" maxlength="200" name="RiskAddressLine2" placeholder="Risk Address Line 2" type="text" value="">
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="RiskAddressLine2" data-valmsg-replace="true"></span>
+                        <span class="field-validation-error riskaddressline2error" style="display:none"><span>*Required</span></span>
+                    </div>
+                    <div class="col-md-6 riskdetails">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic25"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span>City Name</span></div>
+                            <div class="col-6 p-0">
+                                <input class="typeahead riskcity" data-provide="typeahead" data-url="/Common/AutoCompleteCityStateList" data-val="true" data-val-remote="Please select city from list" data-val-remote-additionalfields="*.RiskTempCity" data-val-remote-url="/PreQuote/GetCityStateByCityName" id="riskcitylist" name="RiskTempCity" placeholder="Select City" type="text" value="">
+                                <input data-val="true" data-val-number="The field City must be a number." data-val-required="The City field is required." id="RiskCityID" name="RiskCityID" type="hidden" value="0">
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="RiskCityID" data-valmsg-replace="true"></span>
+                        <span class="field-validation-valid" data-valmsg-for="RiskTempCity" data-valmsg-replace="true"></span>
+                        <span class="field-validation-error riskcityerror" style="display:none"><span>*Required</span></span>
+                    </div>
+                    <div class="col-md-6 riskdetails">
+                        <div class="row pre_wrapper pro">
+                            <div class="col-2 p-0">
+                                <em><i class="icon ic14"></i></em>
+                            </div>
+                            <div class="col-4 p-0"><span>Pincode</span></div>
+                            <div class="col-6 p-0">
+                                <select class="riskzipcode" data-url="/Common/GetPincodeListJSON" id="riskpincode" name="RiskZipCode"></select>
+                                
+                            </div>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="RiskZipCode" data-valmsg-replace="true"></span>
+                        <span class="field-validation-error riskzipcodeerror" style="display:none"><span>*Required</span></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button class="btn pro_button">Proceed <span class="button_arrow1"></span><span class="proposalloadingbtn hide"><div class="lds-ripple"><div></div><div></div></div></span></button>
+                    </div>
+                </div>
+            </div>
+            <input data-val="true" data-val-number="The field BuildingValue must be a number." data-val-range="Value should be between 1 lac and 2 cr" data-val-range-max="20000000" data-val-range-min="100000" data-val-regex="Invalid value" data-val-regex-pattern="^\d+$" id="buildingval" name="buildingvalue" type="hidden" value="500000">
+            <input id="supplierid" name="supplierid" type="hidden" value="17">
+            <div class="col-md-3 premim_box d-sm-none d-md-block d-none">
+                <div class="row pro_Premim">
+                    <div class="col-md-7">Total Premium</div>
+                    <div class="col-md-5">₹12,083</div>
+                </div>
+                <div class="row">
+                    <img src="./home-insurance/images-m5/HdfcErgo.gif">
+                </div>
+                
+                <div class="row pr_main">
+                    <div class="col-md-12 pr1">
+                        Order Details
+                    </div>
+                    <div class="col-md-12 pr2">
+                        Products
+                    </div>
+                    <div class="col-md-12 pr3">
+                        <span>Type of Building</span><b>Owned</b>
+                    </div>
+                    <div class="col-md-12 pr3">
+                        <span>Building Value</span><b>5 Lac</b>
+                    </div>
+                    <div class="col-md-12 pr3">
+                        <span>Content Value </span><b>20 Lac</b>
+                    </div>
+                    
+                        <div class="col-md-12 pr2">
+                            Add on
+                        </div>
+                                                <div class="col-md-12 pr3">
+                            <span>Terrorism</span>
+                                <b>Included</b>
+                        </div>
+                        <div class="col-md-12 pr3">
+                            <span>Furniture-Fixture</span>
+                                <b>₹4,096</b>
+                        </div>
+                        <div class="col-md-12 pr3">
+                            <span>Electrical Appliances</span>
+                                <b>₹4,096</b>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+{% endblock %}
+
+    <script>
+        var totalPremium = '12083';
+        $(".datepicker").datepicker({
+            format: "dd/mm/yyyy",
+            startDate: '06/01/1920',
+            endDate: '06/01/2001',
+            autoclose: true
+        });
+    </script>
+
+
+
+
+
