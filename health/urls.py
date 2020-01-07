@@ -25,7 +25,14 @@ urlpatterns = [
     path('compare-health/', health_views.ComapreHealth.as_view(), name='compare_health_url'),
     path('health-oder/', health_views.HealthOder.as_view(), name='health-oder_url'),
     path('', health_views.HealthInsurance.as_view()),
+    path('home-insurance/', health_views.Home.as_view(), name='home-insurance_url'),
+    path('prequote/', health_views.PreQuote.as_view(), name='prequote_url'),
+    path('quotes/', health_views.Quotes.as_view(), name='quotes_url'),
+    path('product/', health_views.Product.as_view(), name='product_url'),
+    path('form/', health_views.Form.as_view(), name='form_url'),
+    path('renewals/', health_views.Renewals.as_view(), name='renewals-URL'),
     path('health-add/', apis_views.GetAllCustomerParent.as_view()),
+
     path('group-company/', health_views.GroupCompany.as_view(), name='group-company_url'),
     path('group-question-company/', health_views.GroupQuestionCompany.as_view(), name='group-question-company_url'),
     path('group-payment-company/', health_views.GroupPaymentCompany.as_view(), name='group-payment-company_url'),
@@ -33,7 +40,7 @@ urlpatterns = [
     path('company/', health_views.CompanyInsurance.as_view(), name='company_url'),
     path('select-company/', health_views.SelectCompany.as_view(), name='select-company_url'),
     path('pay-renewal/', health_views.PayRenewal.as_view(), name='pay-renewal_url'),
-    path('nhap/', health_views.Nhap.as_view(), name='nhap_url'),
-    path('health-poly/', health_views.HealthPoly.as_view(), name='health_poly_url'),
+    path('health-quote/', health_views.HealthQuote.as_view(), name='health-quote_url'),
+    path('health-poly/', health_views.HealthPoly.as_view(), name='health_poly_url')
     
 ]

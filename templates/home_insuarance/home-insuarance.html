@@ -1,0 +1,136 @@
+{% extends './base.html' %} 
+{% load static %}
+
+{% block cssblock %}
+<script type="text/javascript" src="./home-insurance/css-m1/a47654126d"></script>
+<script src="./home-insurance/css-m1/bootstrap"></script>
+<script src="./home-insurance/css-m1/jquery"></script>
+<script src="./home-insurance/css-m1/jqueryval"></script>
+<script src="./home-insurance/css-m1/prequote1"></script>
+{% endblock %}
+
+{% block content %}
+<form action="" id="formprequote1" method="post" novalidate="novalidate">    <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 left_side d-sm-none d-md-block d-none">
+            <h2 class="text-center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bảo hiểm nhà ở</font></font></h2>
+            <br>
+            <ul style="max-width:430px;">
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nhận bảo hiểm toàn diện cho cả nội dung và cấu trúc của nhà bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đảm bảo tài sản của bạn từ bất kỳ xảy ra sai lầm.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mua chính sách bảo hiểm nhà ở mức phí bảo hiểm tương đối thấp hơn so với các chính sách bảo hiểm khác.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giảm căng thẳng và mức độ căng thẳng cho bạn sẽ có bảo hiểm nhà để quay trở lại, trong trường hợp không lường trước được.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Các khoản thanh toán bảo hiểm kịp thời cho phép các gia đình trải qua quá trình xây dựng lại một cách nhanh chóng, giúp họ tiếp tục và trở lại cuộc sống hàng ngày bình thường.</font></font></li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12 position-relative right_side">
+            <div class="round_arrow d-sm-none d-md-block d-none">
+            </div>
+            <div class="row pre_navi">
+                <div class="col-6 p-0 ownershiptype owned active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sở hữu </font></font></div>
+                <div class="col-6 p-0 ownershiptype rented"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đã thuê </font></font></div>
+                <input value="1" data-val="true" data-val-required="*Required" id="OwnerShipType" name="OwnerShipType" type="hidden">
+                <input id="MatrixLeadIdEncrypted" name="MatrixLeadIdEncrypted" type="hidden" value="">
+                <input id="CustomerIdEncrypted" name="CustomerIdEncrypted" type="hidden" value="">
+                <input id="Headers_UtmDetails_UtmSource" name="Headers.UtmDetails.UtmSource" type="hidden" value="">
+                <input id="Headers_UtmDetails_UtmMedium" name="Headers.UtmDetails.UtmMedium" type="hidden" value="">
+                <input id="Headers_UtmDetails_UtmTerm" name="Headers.UtmDetails.UtmTerm" type="hidden" value="">
+                <input id="Headers_UtmDetails_UtmCampaign" name="Headers.UtmDetails.UtmCampaign" type="hidden" value="">
+            </div>
+
+            <div class="row pre_wrapper">
+                <div class="col-2 col-sm-2 p-0">
+                    <em><i class="icon ic1"></i></em>
+                </div>
+                <div class="col-3 col-sm-3 p-0"><span class="line_height"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">loại tài sản</font></font></span></div>
+                <div class="col-7 col-sm-7 p-0">
+                    <select data-val="true" data-val-number="The field PropertyType must be a number." data-val-required="*Required" id="PropertyType" name="PropertyType"><option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chọn loại tài sản</font></font></option>
+<option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bằng phẳng</font></font></option>
+<option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nhà độc lập</font></font></option>
+</select>
+                </div>
+                <span class="field-validation-valid" data-valmsg-for="PropertyType" data-valmsg-replace="true"></span>
+            </div>
+            <div class="row pre_wrapper mt-4 propdiv" style="display: flex;">
+                <div class="col-2 col-sm-2 p-0">
+                    <em><i class="icon ic2"></i></em>
+                </div>
+                <div class="col-3 col-sm-3 p-0"><span class="line_height"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">giá trị xây dựng </font></font></span></div>
+                <div class="col-7 col-sm-7 p-0">
+                    <input value="" class="onlynumbers" data-val="true" data-val-number="The field BuildingValue must be a number." data-val-range="Value should be between 1 lac and 2 cr" data-val-range-max="20000000" data-val-range-min="100000" data-val-regex="Invalid value" data-val-regex-pattern="^\d+$" id="BuildingValue" maxlength="8" name="BuildingValue" placeholder="Value of building" type="text">
+                </div>
+                <span class="field-validation-valid buildingvalerror" data-valmsg-for="BuildingValue" data-valmsg-replace="true"></span>
+            </div>
+            <div class="row pre_wrapper mt-4 cntntdiv">
+                <div class="col-2 col-sm-2 p-0">
+                    <em><i class="icon ic3"></i></em>
+                </div>
+                <div class="col-3 col-sm-3 p-0"><span class="line_height"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">giá trị của nội dung</font></font></span></div>
+                <div class="col-7 col-sm-7 p-0">
+                    <input value="" class="onlynumbers" data-val="true" data-val-number="The field Content Value must be a number." data-val-range="Value should be between 1 lac and 2 cr" data-val-range-max="20000000" data-val-range-min="100000" data-val-regex="Invalid value" data-val-regex-pattern="^\d+$" id="ContentValue" maxlength="8" name="ContentValue" placeholder="Value of content" type="text">
+                </div>
+                <span class="field-validation-error buildingcontenterror hide"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">* Hoặc là giá trị xây dựng hoặc nội dung được yêu cầu.</font></font></span></span>
+                <span class="field-validation-valid contentvalerror" data-valmsg-for="ContentValue" data-valmsg-replace="true"></span>
+            </div>
+            <div class="row pre_wrapper mt-4 propage" style="display: flex;">
+                <div class="col-2 col-sm-2 p-0">
+                    <em><i class="icon ic4"></i></em>
+                </div>
+                <div class="col-3 col-sm-3 p-0"><span class="line_height"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tuổi của tài sản</font></font></span></div>
+                <div class="col-7 col-sm-7 p-0">
+                    <select data-val="true" data-val-number="The field BuildingAge must be a number." data-val-required="*Required" id="BuildingAge" name="BuildingAge"><option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tuổi của tài sản</font></font></option>
+<option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt;5 năm</font></font></option>
+<option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 5 - 10 năm</font></font></option>
+<option value="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 10 - 15 năm</font></font></option>
+<option value="4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 15 - 20 năm</font></font></option>
+<option value="5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt; 25 năm</font></font></option>
+</select>
+                    
+                </div>
+                <span class="field-validation-valid" data-valmsg-for="BuildingAge" data-valmsg-replace="true"></span>
+            </div>
+            <div class="row pre_wrapper mt-4">
+                <div class="col-2 col-sm-2 p-0">
+                    <em><i class="icon ic4_policy_term"></i></em>
+                </div>
+                <div class="col-3 col-sm-3 p-0"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thời hạn chính sách</font></font></span></div>
+                <div class="col-7 col-sm-7 p-0">
+                    <select data-val="true" data-val-number="The field PolicyTerm must be a number." data-val-required="*Required" id="PolicyTerm" name="PolicyTerm"><option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chọn thuật ngữ chính sách</font></font></option>
+<option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></option>
+<option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></option>
+<option value="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></option>
+<option value="4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></option>
+<option value="5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></option>
+<option value="6"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6</font></font></option>
+<option value="7"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></option>
+<option value="8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">số 8</font></font></option>
+<option value="9"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9</font></font></option>
+<option value="10"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></option>
+<option value="11"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11</font></font></option>
+<option value="12"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12</font></font></option>
+<option value="13"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13</font></font></option>
+<option value="14"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">14</font></font></option>
+<option value="15"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15</font></font></option>
+<option value="16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">16</font></font></option>
+<option value="17"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">17</font></font></option>
+<option value="18"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">18</font></font></option>
+<option value="19"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">19</font></font></option>
+<option value="20"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20</font></font></option>
+</select>
+                </div>
+                <span class="field-validation-valid" data-valmsg-for="PolicyTerm" data-valmsg-replace="true"></span>
+            </div>
+            <div class="row mt-4 pre_button">
+                <div class="col-12 col-sm-12 haha">
+                    <!-- <button id="pq1submitbutton" type="submit"></button> -->
+                    <a href="{% url 'prequote_url' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TIẾN TRÌNH </font></font><i class="button_arrow" style="display: none;"></i><span class="pq1loadingbtn hide"><div class="lds-ripple"><div></div><div></div></div></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+{% endblock %}
+
+
+	

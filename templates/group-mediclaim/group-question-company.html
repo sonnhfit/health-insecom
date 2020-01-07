@@ -116,10 +116,29 @@
                                 </div>
 
                                 <div layout="row" class="dec_text ng-scope layout-row" ng-if="!baseObj.noPayNowFlag">(In the aforementioned paragraph 1 , "Company" refers to the Insurance Company. Under Paragraph 2, "Organization account" refers to the client/customer's organization account)</div>
-
+<style>
+.active_btn {
+    float: right;
+    background: #fa774d;
+    box-shadow: 0 0 10px #ccc;
+    min-width: 221px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: none;
+    letter-spacing: 1px;
+    line-height: 42px;
+    transition: all .3s ease;
+    max-height: 39px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    
+}
+</style>
                                 <div class="row formFields cAlign">
-                                    <a href="{% url 'group-payment-company_url' %}"> 
-                                    <button class="active_btn  md-button md-button proposal-proceed" type="submit" ng-disabled="baseObj.loader">
+                                    <a class="active_btn" href="{% url 'group-payment-company_url' %}"> 
+                                    <!-- <button class="active_btn  md-button md-button proposal-proceed" type="submit" ng-disabled="baseObj.loader"> -->
                                      <span>Proceed</span>
                                         <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                     
@@ -129,7 +148,7 @@
                                             </div>
                                         </div>
                                         <div class="md-ripple-container"></div>
-                                    </button>
+                                    <!-- </button> -->
                                 </a>
                                 </div>
                                 <div class="cl"></div>
