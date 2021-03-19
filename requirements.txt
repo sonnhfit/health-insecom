@@ -1,7 +1,7 @@
 Django==2.2.2
 django-cors-headers==3.0.2
 django-redis==4.10.0
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 django-ckeditor==5.8.0
 django-js-asset==1.2.2
 numpy==1.17.4
